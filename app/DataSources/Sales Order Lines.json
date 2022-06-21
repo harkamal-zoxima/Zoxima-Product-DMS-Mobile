@@ -1,0 +1,106 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr431_salesorderlineses",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr431_salesorderlines",
+    "Name": "Sales Order Lines",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cr431_baseprice": "Base Price",
+      "cr431_baseprice_base": "Base Price (Base)",
+      "cr431_DealerIndentLine": "Dealer Indent Line",
+      "cr431_discount": "Discount%",
+      "cr431_name": "Order Line ID",
+      "cr431_priceafterdiscount": "Price After Discount",
+      "cr431_priceafterdiscount_base": "Price After Discount (Base)",
+      "cr431_ProductMasterLookup": "Product Master ",
+      "cr431_SalesOrder": "Sales Order",
+      "cr431_salesorderlines_AsyncOperations": "System Jobs",
+      "cr431_salesorderlines_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr431_salesorderlines_DuplicateBaseRecord": "Duplicate Records (cr431_salesorderlines_DuplicateBaseRecord)",
+      "cr431_salesorderlines_DuplicateMatchingRecord": "Duplicate Records (cr431_salesorderlines_DuplicateMatchingRecord)",
+      "cr431_salesorderlines_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr431_salesorderlines_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr431_salesorderlines_ProcessSession": "Process Sessions",
+      "cr431_salesorderlines_SyncErrors": "Sync Errors",
+      "cr431_salesorderlinesid": "Sales Order Lines",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "exchangerate": "Exchange Rate",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "transactioncurrencyid": "Currency",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Sales Order Lines",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Sales Order Lines (Views)",
+    "Name": "_cr431_salesorderlines_views",
+    "RelatedEntityName": "Sales Order Lines",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "2a0272f3-4cb3-4567-972c-d991dcba3b12": "Active Sales Order Lines",
+      "311792df-7f73-4ce7-99f0-7e7f0f2af637": "Inactive Sales Order Lines",
+      "a39ddd18-9cbf-4018-b2e2-c8dde5427061": "Sales Order Lines Lookup View",
+      "b58bd296-0533-4682-9a82-b83339ed385d": "Sales Order Lines Associated View",
+      "fadbb64e-64cf-40db-a410-4b50b676776d": "Sales Order Lines Advanced Find View"
+    }
+  },
+  {
+    "DisplayName": "Status (Sales Order Lines)",
+    "Name": "cr431_salesorderlines_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Sales Order Lines"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Sales Order Lines",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Sales Order Lines)",
+    "Name": "cr431_salesorderlines_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Sales Order Lines"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Sales Order Lines",
+    "Type": "OptionSetInfo"
+  }
+]

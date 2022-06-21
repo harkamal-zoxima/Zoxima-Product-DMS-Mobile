@@ -1,10 +1,7 @@
 "'Visit Products' As screen":
-    Fill: =RGBA(31, 31, 31, 1)
-    LoadingSpinnerColor: =RGBA(255, 200, 61, 1)
     OnVisible: =Set(varOpen, false)
 
     Gallery1_2 As gallery.galleryVertical:
-        BorderColor: =RGBA(109, 109, 109, 1)
         Height: =859
         Items: =Filter(If(CountRows(FilterList)=0, OfflineProducts, AllProducts), Search.Text in 'Product Name')
         Layout: =Layout.Vertical
@@ -35,32 +32,16 @@
             ZIndex: =2
 
         Image2_1 As image:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledFill: =RGBA(0, 0, 0, 0)
-            FocusedBorderThickness: =4
             Height: =184
-            HoverBorderColor: =RGBA(0, 0, 0, 0)
-            HoverFill: =RGBA(0, 0, 0, 0)
             Image: =ThisItem.'Image URL'
             OnSelect: =Select(Parent)
-            PressedBorderColor: =RGBA(0, 0, 0, 0)
-            PressedFill: =RGBA(0, 0, 0, 0)
             Width: =263
             X: =30
             Y: =15
             ZIndex: =3
 
         Label1_2 As label:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
             Color: =RGBA(255, 191, 0, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FocusedBorderThickness: =4
             Font: =Font.Lato
             FontWeight: =FontWeight.Semibold
             Height: =60
@@ -72,16 +53,11 @@
             ZIndex: =4
 
         Label2_60 As label:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
             Color: =RGBA(255, 191, 0, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FocusedBorderThickness: =4
             Font: =Font.Lato
             FontWeight: =FontWeight.Semibold
             Height: =37
+            Size: =14
             Text: =Concatenate("₹", LookUp(OfflinePriceList, Product.'Product Item'= ThisItem.'Product Item').Price + 55)
             Width: =109
             X: =33
@@ -89,16 +65,11 @@
             ZIndex: =5
 
         Label2_58 As label:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
             Color: =RGBA(237, 237, 237, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FocusedBorderThickness: =4
             Font: =Font.Lato
             FontWeight: =FontWeight.Semibold
             Height: =29
+            Size: =14
             Text: ="MRP"
             Width: =109
             X: =33
@@ -106,16 +77,11 @@
             ZIndex: =7
 
         Label2_59 As label:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
             Color: =RGBA(237, 237, 237, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FocusedBorderThickness: =4
             Font: =Font.Lato
             FontWeight: =FontWeight.Semibold
             Height: =29
+            Size: =14
             Text: ="Special Price"
             Width: =133
             X: =160
@@ -123,16 +89,11 @@
             ZIndex: =8
 
         Label2_61 As label:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
             Color: =RGBA(255, 191, 0, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FocusedBorderThickness: =4
             Font: =Font.Lato
             FontWeight: =FontWeight.Semibold
             Height: =37
+            Size: =14
             Text: =Concatenate("₹", LookUp(OfflinePriceList, Product.'Product Item'= ThisItem.'Product Item').Price)
             Width: =109
             X: =172
@@ -140,13 +101,7 @@
             ZIndex: =9
 
         Label2_57 As label:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
             Color: =RGBA(237, 237, 237, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FocusedBorderThickness: =4
             Font: =Font.Lato
             FontWeight: =FontWeight.Semibold
             Height: =34
@@ -159,22 +114,13 @@
 
         Bag As text:
             BorderColor: =RGBA(166, 166, 166, 1)
-            BorderThickness: =2
             Color: =RGBA(255, 255, 255, 1)
             Default: =""
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            DisabledFill: =RGBA(244, 244, 244, 1)
-            Fill: =RGBA(31, 31, 31, 1)
-            FocusedBorderThickness: =4
             Font: =Font.Lato
             FontWeight: =FontWeight.Semibold
             Format: =TextFormat.Number
             Height: =34
             HintText: ="0"
-            HoverBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
-            HoverColor: =RGBA(255, 255, 255, 1)
-            HoverFill: =RGBA(31, 31, 31, 1)
             OnChange: |
                 =If(
                     !IsBlank(
@@ -237,13 +183,11 @@
                 );
             OnSelect: =Select(Parent)
             PaddingLeft: =5
-            PressedBorderColor: =RGBA(255, 200, 61, 1)
-            PressedColor: =RGBA(255, 255, 255, 1)
-            PressedFill: =RGBA(31, 31, 31, 1)
             RadiusBottomLeft: =10
             RadiusBottomRight: =10
             RadiusTopLeft: =10
             RadiusTopRight: =10
+            Size: =14
             Width: =68
             X: =93
             Y: =271
@@ -338,13 +282,8 @@
         BorderColor: =RGBA(160, 0, 2, 1)
         BorderThickness: =1
         Color: =RGBA(160, 0, 2, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
         Fill: =RGBA(255, 255, 255, 1)
         FocusedBorderColor: =ColorFade(Self.Fill, 75%)
-        Font: =Font.'Segoe UI'
-        FontWeight: =FontWeight.Semibold
         HoverBorderColor: =RGBA(103, 204, 107, 1)
         HoverColor: =
         HoverFill: =
@@ -361,42 +300,22 @@
         ZIndex: =10
 
     Icon2_5 As icon.Filter:
-        BorderColor: =RGBA(109, 109, 109, 1)
         Color: =RGBA(160, 0, 2, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(220, 220, 220, 1)
-        DisabledFill: =RGBA(0, 0, 0, 0)
-        FocusedBorderThickness: =4
         Height: =23
-        HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =
         HoverFill: =RGBA(0, 0, 0, 0)
         Icon: =Icon.Filter
         OnSelect: =Navigate(Filter, ScreenTransition.Fade)
-        PressedBorderColor: =RGBA(0, 0, 0, 0)
-        PressedColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
-        PressedFill: =RGBA(0, 0, 0, 0)
         Width: =31
         X: =574
         Y: =156
         ZIndex: =11
 
     Icon14_1 As icon.BackArrow:
-        BorderColor: =RGBA(109, 109, 109, 1)
         Color: =RGBA(255, 255, 255, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(220, 220, 220, 1)
-        DisabledFill: =RGBA(0, 0, 0, 0)
-        FocusedBorderThickness: =4
         Height: =43
-        HoverBorderColor: =RGBA(0, 0, 0, 0)
-        HoverColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
-        HoverFill: =RGBA(0, 0, 0, 0)
         Icon: =Icon.BackArrow
         OnSelect: =Back()
-        PressedBorderColor: =RGBA(0, 0, 0, 0)
-        PressedColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
-        PressedFill: =RGBA(0, 0, 0, 0)
         Width: =43
         X: =18
         Y: =15
@@ -410,24 +329,13 @@
         ZIndex: =14
 
         Search As text:
-            BorderColor: =RGBA(109, 109, 109, 1)
-            Color: =RGBA(255, 255, 255, 1)
+            BorderThickness: =1
             Default: =""
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            DisabledFill: =RGBA(244, 244, 244, 1)
-            Fill: =RGBA(31, 31, 31, 1)
             FocusedBorderThickness: =2
             Font: =Font.Lato
             Height: =39
             HintText: ="Search Products"
-            HoverBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
-            HoverColor: =RGBA(255, 255, 255, 1)
-            HoverFill: =RGBA(31, 31, 31, 1)
             PaddingLeft: =45
-            PressedBorderColor: =RGBA(255, 200, 61, 1)
-            PressedColor: =RGBA(255, 255, 255, 1)
-            PressedFill: =RGBA(31, 31, 31, 1)
             RadiusBottomLeft: =10
             RadiusBottomRight: =10
             RadiusTopLeft: =10
@@ -439,20 +347,9 @@
             ZIndex: =12
 
         Icon12_1 As icon.Search:
-            BorderColor: =RGBA(109, 109, 109, 1)
             Color: =RGBA(128, 128, 128, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(220, 220, 220, 1)
-            DisabledFill: =RGBA(0, 0, 0, 0)
-            FocusedBorderThickness: =4
             Height: =34
-            HoverBorderColor: =RGBA(0, 0, 0, 0)
-            HoverColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
-            HoverFill: =RGBA(0, 0, 0, 0)
             Icon: =Icon.Search
-            PressedBorderColor: =RGBA(0, 0, 0, 0)
-            PressedColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
-            PressedFill: =RGBA(0, 0, 0, 0)
             Width: =24
             X: =209
             Y: =23

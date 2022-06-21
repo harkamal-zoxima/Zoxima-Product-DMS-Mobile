@@ -1,9 +1,7 @@
 DistributorOnboarding As screen:
     Fill: =RGBA(59, 59, 59, 1)
-    LoadingSpinnerColor: =RGBA(255, 200, 61, 1)
 
     Gallery2_5 As gallery.galleryVertical:
-        BorderColor: =RGBA(89, 0, 0, 1)
         BorderStyle: =BorderStyle.None
         Height: =697
         Items: =Filter(If(Gallery14.Selected.Title = "Draft", Filter('Distributor Onboarding', 'Status (zx_status)' = 'Status (Distributor Onboarding)'.Draft), Gallery14.Selected.Title = "Pending for approval", Filter('Distributor Onboarding', 'Status (zx_status)' = 'Status (Distributor Onboarding)'.'Pending for approval'),Gallery14.Selected.Title = "Approved", Filter('Distributor Onboarding', 'Status (zx_status)' = 'Status (Distributor Onboarding)'.Approved),Gallery14.Selected.Title = "Reject", Filter('Distributor Onboarding', 'Status (zx_status)' = 'Status (Distributor Onboarding)'.Rejected)), TextInput4.Text in 'Name of the Firm')
@@ -19,11 +17,7 @@ DistributorOnboarding As screen:
             DisabledColor: =RGBA(255, 255, 255, 1)
             DisabledFill: =RGBA(255, 255, 255, 1)
             DisplayMode: =DisplayMode.Disabled
-            Fill: =RGBA(164, 38, 44, 1)
-            FontWeight: =FontWeight.Semibold
             Height: =468
-            HoverColor: =RGBA(255, 255, 255, 1)
-            HoverFill: =ColorFade(RGBA(164, 38, 44, 1), -20%)
             OnSelect: =Select(Parent)
             RadiusBottomLeft: |
                 =50
@@ -52,8 +46,6 @@ DistributorOnboarding As screen:
         Label45 As label:
             BorderColor: =RGBA(237, 102, 102, 1)
             BorderStyle: =BorderStyle.None
-            Color: =RGBA(0, 0, 0, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
             Height: =74
             OnSelect: =Select(Parent)
             Size: =19
@@ -65,13 +57,7 @@ DistributorOnboarding As screen:
 
         Button18 As button:
             BorderThickness: =1
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            DisabledFill: =RGBA(244, 244, 244, 1)
             Fill: =RGBA(222, 96, 33, 1)
-            FontWeight: =FontWeight.Semibold
-            HoverColor: =RGBA(255, 255, 255, 1)
-            HoverFill: =ColorFade(RGBA(164, 38, 44, 1), -20%)
             OnSelect: =Select(Parent)
             Size: =16
             Text: ="Draft"
@@ -81,10 +67,6 @@ DistributorOnboarding As screen:
             ZIndex: =4
 
         Icon20 As icon.Edit:
-            BorderColor: =RGBA(89, 0, 0, 1)
-            Color: =RGBA(89, 0, 0, 1)
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledColor: =RGBA(244, 244, 244, 1)
             Height: =39
             Icon: =Icon.Edit
             OnSelect: |
@@ -100,9 +82,7 @@ DistributorOnboarding As screen:
             ZIndex: =5
 
         Label46 As label:
-            BorderColor: =RGBA(89, 0, 0, 1)
             Color: =RGBA(164, 164, 164, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
             Height: =42
             OnSelect: =Select(Parent)
             Size: =19
@@ -116,9 +96,7 @@ DistributorOnboarding As screen:
             ZIndex: =8
 
         Label46_1 As label:
-            BorderColor: =RGBA(89, 0, 0, 1)
             Color: =RGBA(164, 164, 164, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
             Height: =42
             OnSelect: =Select(Parent)
             Size: =19
@@ -132,9 +110,7 @@ DistributorOnboarding As screen:
             ZIndex: =9
 
         Label46_2 As label:
-            BorderColor: =RGBA(89, 0, 0, 1)
             Color: =RGBA(164, 164, 164, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
             Height: =62
             OnSelect: =Select(Parent)
             Size: =19
@@ -148,9 +124,7 @@ DistributorOnboarding As screen:
             ZIndex: =10
 
         Label46_3 As label:
-            BorderColor: =RGBA(89, 0, 0, 1)
             Color: =RGBA(164, 164, 164, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
             Height: =52
             OnSelect: =Select(Parent)
             Size: =19
@@ -164,9 +138,7 @@ DistributorOnboarding As screen:
             ZIndex: =11
 
         Label46_4 As label:
-            BorderColor: =RGBA(89, 0, 0, 1)
             Color: =RGBA(164, 164, 164, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
             Height: =66
             OnSelect: =Select(Parent)
             Size: =19
@@ -180,9 +152,7 @@ DistributorOnboarding As screen:
             ZIndex: =12
 
         Label46_5 As label:
-            BorderColor: =RGBA(89, 0, 0, 1)
             Color: =RGBA(164, 164, 164, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
             Height: =42
             OnSelect: =Select(Parent)
             Size: =19
@@ -196,9 +166,7 @@ DistributorOnboarding As screen:
             ZIndex: =13
 
         Label46_6 As label:
-            BorderColor: =RGBA(89, 0, 0, 1)
             Color: =RGBA(164, 164, 164, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
             Height: =42
             OnSelect: =Select(Parent)
             Size: =19
@@ -211,9 +179,7 @@ DistributorOnboarding As screen:
             ZIndex: =14
 
         Label46_7 As label:
-            BorderColor: =RGBA(89, 0, 0, 1)
             Color: =RGBA(164, 164, 164, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
             Height: =54
             OnSelect: =Select(Parent)
             Size: =19
@@ -227,9 +193,7 @@ DistributorOnboarding As screen:
             ZIndex: =15
 
         Label46_8 As label:
-            BorderColor: =RGBA(89, 0, 0, 1)
             Color: =RGBA(164, 164, 164, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
             Height: =42
             OnSelect: =Select(Parent)
             Size: =19
@@ -243,9 +207,7 @@ DistributorOnboarding As screen:
             ZIndex: =16
 
         Label46_9 As label:
-            BorderColor: =RGBA(89, 0, 0, 1)
             Color: =RGBA(164, 164, 164, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
             Height: =42
             OnSelect: =Select(Parent)
             Size: =19
@@ -266,7 +228,6 @@ DistributorOnboarding As screen:
             ZIndex: =17
 
             Circle6 As circle:
-                BorderColor: =RGBA(89, 0, 0, 1)
                 Fill: =RGBA(38, 163, 69, 1)
                 Height: =45
                 OnSelect: |-
@@ -277,10 +238,7 @@ DistributorOnboarding As screen:
                 ZIndex: =6
 
             Icon21 As icon.Phone:
-                BorderColor: =RGBA(89, 0, 0, 1)
                 Color: =RGBA(255, 255, 255, 1)
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                DisabledColor: =RGBA(244, 244, 244, 1)
                 Height: =38
                 Icon: =Icon.Phone
                 OnSelect: |-
@@ -297,14 +255,8 @@ DistributorOnboarding As screen:
         Button22 As button:
             BorderColor: =
             BorderThickness: =1
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            DisabledFill: =RGBA(244, 244, 244, 1)
             Fill: =RGBA(242, 97, 97, 1)
-            FontWeight: =FontWeight.Semibold
             Height: =39
-            HoverColor: =RGBA(255, 255, 255, 1)
-            HoverFill: =ColorFade(RGBA(164, 38, 44, 1), -20%)
             OnSelect: |-
                 =Patch('Distributor Onboarding', LookUp('Distributor Onboarding', 'Record Id' =  ThisItem.'Record Id'), { 'Status (zx_status)': 'Status (Distributor Onboarding)'.'Pending for approval'})
             Size: =19
@@ -317,14 +269,8 @@ DistributorOnboarding As screen:
 
         Button26 As button:
             BorderThickness: =1
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            DisabledFill: =RGBA(244, 244, 244, 1)
             Fill: =RGBA(230, 87, 87, 1)
-            FontWeight: =FontWeight.Semibold
             Height: =42
-            HoverColor: =RGBA(255, 255, 255, 1)
-            HoverFill: =ColorFade(RGBA(164, 38, 44, 1), -20%)
             OnSelect: |-
                 =Patch(
                     'Distributor Onboarding',
@@ -344,14 +290,8 @@ DistributorOnboarding As screen:
 
         Button26_1 As button:
             BorderThickness: =1
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            DisabledFill: =RGBA(244, 244, 244, 1)
             Fill: =RGBA(230, 87, 87, 1)
-            FontWeight: =FontWeight.Semibold
             Height: =42
-            HoverColor: =RGBA(255, 255, 255, 1)
-            HoverFill: =ColorFade(RGBA(164, 38, 44, 1), -20%)
             OnSelect: |-
                 =Patch('Distributor Onboarding', LookUp('Distributor Onboarding', 'Record Id' =  ThisItem.'Record Id'), { 'Status (zx_status)': 'Status (Distributor Onboarding)'.Rejected})
             Size: =18
@@ -363,7 +303,6 @@ DistributorOnboarding As screen:
             ZIndex: =20
 
     Circle5 As circle:
-        BorderColor: =RGBA(89, 0, 0, 1)
         Fill: =RGBA(238, 49, 55, 1)
         Height: =86
         OnSelect: =
@@ -373,10 +312,7 @@ DistributorOnboarding As screen:
         ZIndex: =3
 
     Icon12_2 As icon.ArrowLeft:
-        BorderColor: =RGBA(89, 0, 0, 1)
         Color: =RGBA(255, 255, 255, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(244, 244, 244, 1)
         Height: =52
         Icon: =Icon.ArrowLeft
         OnSelect: =Navigate(Menu)
@@ -385,18 +321,9 @@ DistributorOnboarding As screen:
         ZIndex: =6
 
     TextInput4 As text:
-        BorderColor: =RGBA(89, 0, 0, 1)
-        BorderThickness: =2
-        Color: =RGBA(0, 0, 0, 1)
         Default: =""
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        FocusedBorderThickness: =4
         Height: =56
         HintText: ="Search.."
-        HoverBorderColor: =RGBA(89, 0, 0, 1)
-        HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =RGBA(255, 255, 255, 1)
         PaddingLeft: =90
         Size: =19
@@ -406,10 +333,7 @@ DistributorOnboarding As screen:
         ZIndex: =7
 
     Icon16_1 As icon.Search:
-        BorderColor: =RGBA(89, 0, 0, 1)
         Color: =RGBA(164, 164, 164, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(244, 244, 244, 1)
         Height: =39
         Icon: =Icon.Search
         PaddingLeft: =5
@@ -429,15 +353,12 @@ DistributorOnboarding As screen:
 
         Button11 As button:
             DisabledBorderColor: =RGBA(237, 27, 36, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
             DisabledFill: =RGBA(237, 27, 36, 1)
             DisplayMode: =DisplayMode.Disabled
             Fill: =RGBA(237, 27, 36, 1)
             FocusedBorderColor: =ColorFade(Self.Fill, -75%)
             FontWeight: =FontWeight.Bold
             Height: =244
-            HoverColor: =RGBA(255, 255, 255, 1)
-            HoverFill: =ColorFade(RGBA(164, 38, 44, 1), -20%)
             RadiusBottomLeft: =90
             RadiusBottomRight: =90
             Size: =24
@@ -448,9 +369,7 @@ DistributorOnboarding As screen:
 
         Label40 As label:
             Align: =Align.Center
-            BorderColor: =RGBA(89, 0, 0, 1)
             Color: =RGBA(255, 255, 255, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
             Height: =70
             Size: =21
             Text: ="Distributor Onboarding"
@@ -459,7 +378,6 @@ DistributorOnboarding As screen:
             ZIndex: =5
 
     Gallery14 As gallery.galleryHorizontal:
-        BorderColor: =RGBA(89, 0, 0, 1)
         Height: =79
         Items: |-
             =Table( 
@@ -487,9 +405,7 @@ DistributorOnboarding As screen:
 
         Label41 As label:
             Align: =Align.Center
-            BorderColor: =RGBA(89, 0, 0, 1)
             Color: =RGBA(255, 255, 255, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
             Height: =55
             OnSelect: =Select(Parent)
             Size: =17
@@ -499,7 +415,6 @@ DistributorOnboarding As screen:
             ZIndex: =1
 
         Rectangle18 As rectangle:
-            BorderColor: =RGBA(89, 0, 0, 1)
             Fill: =RGBA(237, 27, 36, 1)
             Height: =4
             OnSelect: =Select(Parent)
@@ -509,10 +424,7 @@ DistributorOnboarding As screen:
             ZIndex: =2
 
     Icon17_1 As icon.Add:
-        BorderColor: =RGBA(89, 0, 0, 1)
         Color: =RGBA(255, 255, 255, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(244, 244, 244, 1)
         Height: =55
         Icon: =Icon.Add
         OnSelect: |-

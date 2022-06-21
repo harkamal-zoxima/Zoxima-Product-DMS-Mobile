@@ -1,6 +1,4 @@
 "'customer info_1' As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
-    Fill: =RGBA(31, 31, 31, 1)
-    LoadingSpinnerColor: =RGBA(255, 200, 61, 1)
 
     Canvas3_1 As fluidGrid.fluidGridWithBlankCard:
         BorderThickness: =0
@@ -29,13 +27,6 @@
                 ZIndex: =1
 
                 Label5_84 As label:
-                    BorderColor: =RGBA(0, 0, 0, 0)
-                    BorderStyle: =BorderStyle.None
-                    BorderThickness: =2
-                    Color: =RGBA(255, 255, 255, 1)
-                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    FocusedBorderThickness: =4
                     Font: =Font.Lato
                     FontWeight: =FontWeight.Bold
                     Height: =32
@@ -48,29 +39,13 @@
                     ZIndex: =1
 
                 TextInput2_62 As text:
-                    BorderColor: =RGBA(109, 109, 109, 1)
-                    BorderThickness: =2
-                    Color: =RGBA(255, 255, 255, 1)
                     Default: =data2.'Account Name (name)'
-                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
                     DisabledColor: =RGBA(128, 128, 128, 1)
-                    DisabledFill: =RGBA(244, 244, 244, 1)
                     DisplayMode: =DisplayMode.Disabled
-                    Fill: =RGBA(31, 31, 31, 1)
-                    FocusedBorderThickness: =4
                     Font: =Font.Lato
                     FontWeight: =FontWeight.Semibold
                     HintText: =""
-                    HoverBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
-                    HoverColor: =RGBA(255, 255, 255, 1)
-                    HoverFill: =RGBA(31, 31, 31, 1)
-                    PressedBorderColor: =RGBA(255, 200, 61, 1)
-                    PressedColor: =RGBA(255, 255, 255, 1)
-                    PressedFill: =RGBA(31, 31, 31, 1)
-                    RadiusBottomLeft: =0
-                    RadiusBottomRight: =0
-                    RadiusTopLeft: =0
-                    RadiusTopRight: =0
+                    Size: =14
                     Visible: ='Dashboard Toptab_1'.Selected.Title = "Order Info"
                     Width: =582
                     X: =29
@@ -78,13 +53,6 @@
                     ZIndex: =2
 
                 Label5_85 As label:
-                    BorderColor: =RGBA(0, 0, 0, 0)
-                    BorderStyle: =BorderStyle.None
-                    BorderThickness: =2
-                    Color: =RGBA(255, 255, 255, 1)
-                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    FocusedBorderThickness: =4
                     Font: =Font.Lato
                     FontWeight: =FontWeight.Bold
                     Height: =32
@@ -97,29 +65,13 @@
                     ZIndex: =3
 
                 TextInput2_63 As text:
-                    BorderColor: =RGBA(109, 109, 109, 1)
-                    BorderThickness: =2
-                    Color: =RGBA(255, 255, 255, 1)
                     Default: =data2.'First Name'
-                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
                     DisabledColor: =RGBA(128, 128, 128, 1)
-                    DisabledFill: =RGBA(244, 244, 244, 1)
                     DisplayMode: =DisplayMode.Disabled
-                    Fill: =RGBA(31, 31, 31, 1)
-                    FocusedBorderThickness: =4
                     Font: =Font.Lato
                     FontWeight: =FontWeight.Semibold
                     HintText: =""
-                    HoverBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
-                    HoverColor: =RGBA(255, 255, 255, 1)
-                    HoverFill: =RGBA(31, 31, 31, 1)
-                    PressedBorderColor: =RGBA(255, 200, 61, 1)
-                    PressedColor: =RGBA(255, 255, 255, 1)
-                    PressedFill: =RGBA(31, 31, 31, 1)
-                    RadiusBottomLeft: =0
-                    RadiusBottomRight: =0
-                    RadiusTopLeft: =0
-                    RadiusTopRight: =0
+                    Size: =14
                     Visible: ='Dashboard Toptab_1'.Selected.Title = "Order Info"
                     Width: =265
                     X: =29
@@ -127,13 +79,6 @@
                     ZIndex: =4
 
                 Label5_86 As label:
-                    BorderColor: =RGBA(0, 0, 0, 0)
-                    BorderStyle: =BorderStyle.None
-                    BorderThickness: =2
-                    Color: =RGBA(255, 255, 255, 1)
-                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    FocusedBorderThickness: =4
                     Font: =Font.Lato
                     FontWeight: =FontWeight.Bold
                     Height: =32
@@ -146,29 +91,13 @@
                     ZIndex: =5
 
                 TextInput2_64 As text:
-                    BorderColor: =RGBA(109, 109, 109, 1)
-                    BorderThickness: =2
-                    Color: =RGBA(255, 255, 255, 1)
                     Default: =data2.'Last Name'
-                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
                     DisabledColor: =RGBA(128, 128, 128, 1)
-                    DisabledFill: =RGBA(244, 244, 244, 1)
                     DisplayMode: =DisplayMode.Disabled
-                    Fill: =RGBA(31, 31, 31, 1)
-                    FocusedBorderThickness: =4
                     Font: =Font.Lato
                     FontWeight: =FontWeight.Semibold
                     HintText: =""
-                    HoverBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
-                    HoverColor: =RGBA(255, 255, 255, 1)
-                    HoverFill: =RGBA(31, 31, 31, 1)
-                    PressedBorderColor: =RGBA(255, 200, 61, 1)
-                    PressedColor: =RGBA(255, 255, 255, 1)
-                    PressedFill: =RGBA(31, 31, 31, 1)
-                    RadiusBottomLeft: =0
-                    RadiusBottomRight: =0
-                    RadiusTopLeft: =0
-                    RadiusTopRight: =0
+                    Size: =14
                     Visible: ='Dashboard Toptab_1'.Selected.Title = "Order Info"
                     Width: =265
                     X: =346
@@ -176,13 +105,6 @@
                     ZIndex: =6
 
                 Label5_87 As label:
-                    BorderColor: =RGBA(0, 0, 0, 0)
-                    BorderStyle: =BorderStyle.None
-                    BorderThickness: =2
-                    Color: =RGBA(255, 255, 255, 1)
-                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    FocusedBorderThickness: =4
                     Font: =Font.Lato
                     FontWeight: =FontWeight.Bold
                     Height: =32
@@ -195,29 +117,13 @@
                     ZIndex: =7
 
                 TextInput2_65 As text:
-                    BorderColor: =RGBA(109, 109, 109, 1)
-                    BorderThickness: =2
-                    Color: =RGBA(255, 255, 255, 1)
                     Default: =data2.'Main Phone'
-                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
                     DisabledColor: =RGBA(128, 128, 128, 1)
-                    DisabledFill: =RGBA(244, 244, 244, 1)
                     DisplayMode: =DisplayMode.Disabled
-                    Fill: =RGBA(31, 31, 31, 1)
-                    FocusedBorderThickness: =4
                     Font: =Font.Lato
                     FontWeight: =FontWeight.Semibold
                     HintText: =""
-                    HoverBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
-                    HoverColor: =RGBA(255, 255, 255, 1)
-                    HoverFill: =RGBA(31, 31, 31, 1)
-                    PressedBorderColor: =RGBA(255, 200, 61, 1)
-                    PressedColor: =RGBA(255, 255, 255, 1)
-                    PressedFill: =RGBA(31, 31, 31, 1)
-                    RadiusBottomLeft: =0
-                    RadiusBottomRight: =0
-                    RadiusTopLeft: =0
-                    RadiusTopRight: =0
+                    Size: =14
                     Visible: ='Dashboard Toptab_1'.Selected.Title = "Order Info"
                     Width: =570
                     X: =30
@@ -225,13 +131,6 @@
                     ZIndex: =8
 
                 Label5_88 As label:
-                    BorderColor: =RGBA(0, 0, 0, 0)
-                    BorderStyle: =BorderStyle.None
-                    BorderThickness: =2
-                    Color: =RGBA(255, 255, 255, 1)
-                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    FocusedBorderThickness: =4
                     Font: =Font.Lato
                     FontWeight: =FontWeight.Bold
                     Height: =32
@@ -244,29 +143,13 @@
                     ZIndex: =9
 
                 TextInput2_66 As text:
-                    BorderColor: =RGBA(109, 109, 109, 1)
-                    BorderThickness: =2
-                    Color: =RGBA(255, 255, 255, 1)
                     Default: =data2.'First Name'
-                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
                     DisabledColor: =RGBA(128, 128, 128, 1)
-                    DisabledFill: =RGBA(244, 244, 244, 1)
                     DisplayMode: =DisplayMode.Disabled
-                    Fill: =RGBA(31, 31, 31, 1)
-                    FocusedBorderThickness: =4
                     Font: =Font.Lato
                     FontWeight: =FontWeight.Semibold
                     HintText: =""
-                    HoverBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
-                    HoverColor: =RGBA(255, 255, 255, 1)
-                    HoverFill: =RGBA(31, 31, 31, 1)
-                    PressedBorderColor: =RGBA(255, 200, 61, 1)
-                    PressedColor: =RGBA(255, 255, 255, 1)
-                    PressedFill: =RGBA(31, 31, 31, 1)
-                    RadiusBottomLeft: =0
-                    RadiusBottomRight: =0
-                    RadiusTopLeft: =0
-                    RadiusTopRight: =0
+                    Size: =14
                     Visible: ='Dashboard Toptab_1'.Selected.Title = "Order Info"
                     Width: =265
                     X: =30
@@ -274,13 +157,6 @@
                     ZIndex: =10
 
                 Label5_89 As label:
-                    BorderColor: =RGBA(0, 0, 0, 0)
-                    BorderStyle: =BorderStyle.None
-                    BorderThickness: =2
-                    Color: =RGBA(255, 255, 255, 1)
-                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    FocusedBorderThickness: =4
                     Font: =Font.Lato
                     FontWeight: =FontWeight.Bold
                     Height: =32
@@ -293,29 +169,13 @@
                     ZIndex: =11
 
                 TextInput2_67 As text:
-                    BorderColor: =RGBA(109, 109, 109, 1)
-                    BorderThickness: =2
-                    Color: =RGBA(255, 255, 255, 1)
                     Default: =data2.'First Name'
-                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
                     DisabledColor: =RGBA(128, 128, 128, 1)
-                    DisabledFill: =RGBA(244, 244, 244, 1)
                     DisplayMode: =DisplayMode.Disabled
-                    Fill: =RGBA(31, 31, 31, 1)
-                    FocusedBorderThickness: =4
                     Font: =Font.Lato
                     FontWeight: =FontWeight.Semibold
                     HintText: =""
-                    HoverBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
-                    HoverColor: =RGBA(255, 255, 255, 1)
-                    HoverFill: =RGBA(31, 31, 31, 1)
-                    PressedBorderColor: =RGBA(255, 200, 61, 1)
-                    PressedColor: =RGBA(255, 255, 255, 1)
-                    PressedFill: =RGBA(31, 31, 31, 1)
-                    RadiusBottomLeft: =0
-                    RadiusBottomRight: =0
-                    RadiusTopLeft: =0
-                    RadiusTopRight: =0
+                    Size: =14
                     Visible: ='Dashboard Toptab_1'.Selected.Title = "Order Info"
                     Width: =265
                     X: =346
@@ -323,13 +183,6 @@
                     ZIndex: =12
 
                 Label5_90 As label:
-                    BorderColor: =RGBA(0, 0, 0, 0)
-                    BorderStyle: =BorderStyle.None
-                    BorderThickness: =2
-                    Color: =RGBA(255, 255, 255, 1)
-                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    FocusedBorderThickness: =4
                     Font: =Font.Lato
                     FontWeight: =FontWeight.Bold
                     Height: =32
@@ -342,29 +195,13 @@
                     ZIndex: =13
 
                 TextInput2_68 As text:
-                    BorderColor: =RGBA(109, 109, 109, 1)
-                    BorderThickness: =2
-                    Color: =RGBA(255, 255, 255, 1)
                     Default: =
-                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
                     DisabledColor: =RGBA(128, 128, 128, 1)
-                    DisabledFill: =RGBA(244, 244, 244, 1)
                     DisplayMode: =DisplayMode.Disabled
-                    Fill: =RGBA(31, 31, 31, 1)
-                    FocusedBorderThickness: =4
                     Font: =Font.Lato
                     FontWeight: =FontWeight.Semibold
                     HintText: =""
-                    HoverBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
-                    HoverColor: =RGBA(255, 255, 255, 1)
-                    HoverFill: =RGBA(31, 31, 31, 1)
-                    PressedBorderColor: =RGBA(255, 200, 61, 1)
-                    PressedColor: =RGBA(255, 255, 255, 1)
-                    PressedFill: =RGBA(31, 31, 31, 1)
-                    RadiusBottomLeft: =0
-                    RadiusBottomRight: =0
-                    RadiusTopLeft: =0
-                    RadiusTopRight: =0
+                    Size: =14
                     Visible: ='Dashboard Toptab_1'.Selected.Title = "Order Info"
                     Width: =582
                     X: =30
@@ -372,13 +209,6 @@
                     ZIndex: =14
 
                 Label5_91 As label:
-                    BorderColor: =RGBA(0, 0, 0, 0)
-                    BorderStyle: =BorderStyle.None
-                    BorderThickness: =2
-                    Color: =RGBA(255, 255, 255, 1)
-                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    FocusedBorderThickness: =4
                     Font: =Font.Lato
                     FontWeight: =FontWeight.Bold
                     Height: =32
@@ -391,30 +221,14 @@
                     ZIndex: =15
 
                 TextInput2_69 As text:
-                    BorderColor: =RGBA(109, 109, 109, 1)
-                    BorderThickness: =2
-                    Color: =RGBA(255, 255, 255, 1)
                     Default: |-
                         =data2.'Address 1: Name'
-                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
                     DisabledColor: =RGBA(128, 128, 128, 1)
-                    DisabledFill: =RGBA(244, 244, 244, 1)
                     DisplayMode: =DisplayMode.Disabled
-                    Fill: =RGBA(31, 31, 31, 1)
-                    FocusedBorderThickness: =4
                     Font: =Font.Lato
                     FontWeight: =FontWeight.Semibold
                     HintText: =""
-                    HoverBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
-                    HoverColor: =RGBA(255, 255, 255, 1)
-                    HoverFill: =RGBA(31, 31, 31, 1)
-                    PressedBorderColor: =RGBA(255, 200, 61, 1)
-                    PressedColor: =RGBA(255, 255, 255, 1)
-                    PressedFill: =RGBA(31, 31, 31, 1)
-                    RadiusBottomLeft: =0
-                    RadiusBottomRight: =0
-                    RadiusTopLeft: =0
-                    RadiusTopRight: =0
+                    Size: =14
                     Visible: ='Dashboard Toptab_1'.Selected.Title = "Order Info"
                     Width: =582
                     X: =34
@@ -429,13 +243,6 @@
                     ZIndex: =23
 
                     Label5_93 As label:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        Color: =RGBA(255, 255, 255, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Bold
                         Height: =32
@@ -448,29 +255,13 @@
                         ZIndex: =19
 
                     TextInput2_71 As text:
-                        BorderColor: =RGBA(109, 109, 109, 1)
-                        BorderThickness: =2
-                        Color: =RGBA(255, 255, 255, 1)
                         Default: =data2.'First Name'
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledColor: =RGBA(128, 128, 128, 1)
-                        DisabledFill: =RGBA(244, 244, 244, 1)
                         DisplayMode: =DisplayMode.Disabled
-                        Fill: =RGBA(31, 31, 31, 1)
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Semibold
                         HintText: =""
-                        HoverBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
-                        HoverColor: =RGBA(255, 255, 255, 1)
-                        HoverFill: =RGBA(31, 31, 31, 1)
-                        PressedBorderColor: =RGBA(255, 200, 61, 1)
-                        PressedColor: =RGBA(255, 255, 255, 1)
-                        PressedFill: =RGBA(31, 31, 31, 1)
-                        RadiusBottomLeft: =0
-                        RadiusBottomRight: =0
-                        RadiusTopLeft: =0
-                        RadiusTopRight: =0
+                        Size: =14
                         Visible: ='Dashboard Toptab_1'.Selected.Title = "Order Info"
                         Width: =265
                         X: =30
@@ -478,13 +269,6 @@
                         ZIndex: =20
 
                     Label5_94 As label:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        Color: =RGBA(255, 255, 255, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Bold
                         Height: =32
@@ -497,29 +281,13 @@
                         ZIndex: =21
 
                     TextInput2_72 As text:
-                        BorderColor: =RGBA(109, 109, 109, 1)
-                        BorderThickness: =2
-                        Color: =RGBA(255, 255, 255, 1)
                         Default: =data2.'Last Name'
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledColor: =RGBA(128, 128, 128, 1)
-                        DisabledFill: =RGBA(244, 244, 244, 1)
                         DisplayMode: =DisplayMode.Disabled
-                        Fill: =RGBA(31, 31, 31, 1)
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Semibold
                         HintText: =""
-                        HoverBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
-                        HoverColor: =RGBA(255, 255, 255, 1)
-                        HoverFill: =RGBA(31, 31, 31, 1)
-                        PressedBorderColor: =RGBA(255, 200, 61, 1)
-                        PressedColor: =RGBA(255, 255, 255, 1)
-                        PressedFill: =RGBA(31, 31, 31, 1)
-                        RadiusBottomLeft: =0
-                        RadiusBottomRight: =0
-                        RadiusTopLeft: =0
-                        RadiusTopRight: =0
+                        Size: =14
                         Visible: ='Dashboard Toptab_1'.Selected.Title = "Order Info"
                         Width: =265
                         X: =347
@@ -534,13 +302,6 @@
                     ZIndex: =23
 
                     Label5_92 As label:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        Color: =RGBA(255, 255, 255, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Bold
                         Height: =32
@@ -553,30 +314,14 @@
                         ZIndex: =17
 
                     TextInput2_70 As text:
-                        BorderColor: =RGBA(109, 109, 109, 1)
-                        BorderThickness: =2
-                        Color: =RGBA(255, 255, 255, 1)
                         Default: |-
                             =data2.'Address 1: Street 1'
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledColor: =RGBA(128, 128, 128, 1)
-                        DisabledFill: =RGBA(244, 244, 244, 1)
                         DisplayMode: =DisplayMode.Disabled
-                        Fill: =RGBA(31, 31, 31, 1)
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Semibold
                         HintText: =""
-                        HoverBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
-                        HoverColor: =RGBA(255, 255, 255, 1)
-                        HoverFill: =RGBA(31, 31, 31, 1)
-                        PressedBorderColor: =RGBA(255, 200, 61, 1)
-                        PressedColor: =RGBA(255, 255, 255, 1)
-                        PressedFill: =RGBA(31, 31, 31, 1)
-                        RadiusBottomLeft: =0
-                        RadiusBottomRight: =0
-                        RadiusTopLeft: =0
-                        RadiusTopRight: =0
+                        Size: =14
                         Visible: ='Dashboard Toptab_1'.Selected.Title = "Order Info"
                         Width: =582
                         X: =34
@@ -591,13 +336,6 @@
                     ZIndex: =25
 
                     Label5_95 As label:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        Color: =RGBA(255, 255, 255, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Bold
                         Height: =32
@@ -610,30 +348,14 @@
                         ZIndex: =23
 
                     TextInput2_73 As text:
-                        BorderColor: =RGBA(109, 109, 109, 1)
-                        BorderThickness: =2
-                        Color: =RGBA(255, 255, 255, 1)
                         Default: |-
                             =data2.'Address 1: Street 1'
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledColor: =RGBA(128, 128, 128, 1)
-                        DisabledFill: =RGBA(244, 244, 244, 1)
                         DisplayMode: =DisplayMode.Disabled
-                        Fill: =RGBA(31, 31, 31, 1)
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Semibold
                         HintText: =""
-                        HoverBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
-                        HoverColor: =RGBA(255, 255, 255, 1)
-                        HoverFill: =RGBA(31, 31, 31, 1)
-                        PressedBorderColor: =RGBA(255, 200, 61, 1)
-                        PressedColor: =RGBA(255, 255, 255, 1)
-                        PressedFill: =RGBA(31, 31, 31, 1)
-                        RadiusBottomLeft: =0
-                        RadiusBottomRight: =0
-                        RadiusTopLeft: =0
-                        RadiusTopRight: =0
+                        Size: =14
                         Visible: ='Dashboard Toptab_1'.Selected.Title = "Order Info"
                         Width: =582
                         X: =34
@@ -648,13 +370,6 @@
                     ZIndex: =29
 
                     Label5_96 As label:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        Color: =RGBA(255, 255, 255, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Bold
                         Height: =32
@@ -667,29 +382,13 @@
                         ZIndex: =25
 
                     TextInput2_74 As text:
-                        BorderColor: =RGBA(109, 109, 109, 1)
-                        BorderThickness: =2
-                        Color: =RGBA(255, 255, 255, 1)
                         Default: =data2.'First Name'
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledColor: =RGBA(128, 128, 128, 1)
-                        DisabledFill: =RGBA(244, 244, 244, 1)
                         DisplayMode: =DisplayMode.Disabled
-                        Fill: =RGBA(31, 31, 31, 1)
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Semibold
                         HintText: =""
-                        HoverBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
-                        HoverColor: =RGBA(255, 255, 255, 1)
-                        HoverFill: =RGBA(31, 31, 31, 1)
-                        PressedBorderColor: =RGBA(255, 200, 61, 1)
-                        PressedColor: =RGBA(255, 255, 255, 1)
-                        PressedFill: =RGBA(31, 31, 31, 1)
-                        RadiusBottomLeft: =0
-                        RadiusBottomRight: =0
-                        RadiusTopLeft: =0
-                        RadiusTopRight: =0
+                        Size: =14
                         Visible: ='Dashboard Toptab_1'.Selected.Title = "Order Info"
                         Width: =265
                         X: =30
@@ -697,13 +396,6 @@
                         ZIndex: =26
 
                     Label5_97 As label:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        Color: =RGBA(255, 255, 255, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Bold
                         Height: =32
@@ -716,29 +408,13 @@
                         ZIndex: =27
 
                     TextInput2_75 As text:
-                        BorderColor: =RGBA(109, 109, 109, 1)
-                        BorderThickness: =2
-                        Color: =RGBA(255, 255, 255, 1)
                         Default: =data2.'Last Name'
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledColor: =RGBA(128, 128, 128, 1)
-                        DisabledFill: =RGBA(244, 244, 244, 1)
                         DisplayMode: =DisplayMode.Disabled
-                        Fill: =RGBA(31, 31, 31, 1)
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Semibold
                         HintText: =""
-                        HoverBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
-                        HoverColor: =RGBA(255, 255, 255, 1)
-                        HoverFill: =RGBA(31, 31, 31, 1)
-                        PressedBorderColor: =RGBA(255, 200, 61, 1)
-                        PressedColor: =RGBA(255, 255, 255, 1)
-                        PressedFill: =RGBA(31, 31, 31, 1)
-                        RadiusBottomLeft: =0
-                        RadiusBottomRight: =0
-                        RadiusTopLeft: =0
-                        RadiusTopRight: =0
+                        Size: =14
                         Visible: ='Dashboard Toptab_1'.Selected.Title = "Order Info"
                         Width: =265
                         X: =347
@@ -753,13 +429,6 @@
                     ZIndex: =33
 
                     Label5_98 As label:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        Color: =RGBA(255, 255, 255, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Bold
                         Height: =32
@@ -772,29 +441,13 @@
                         ZIndex: =29
 
                     TextInput2_76 As text:
-                        BorderColor: =RGBA(109, 109, 109, 1)
-                        BorderThickness: =2
-                        Color: =RGBA(255, 255, 255, 1)
                         Default: =data2.'First Name'
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledColor: =RGBA(128, 128, 128, 1)
-                        DisabledFill: =RGBA(244, 244, 244, 1)
                         DisplayMode: =DisplayMode.Disabled
-                        Fill: =RGBA(31, 31, 31, 1)
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Semibold
                         HintText: =""
-                        HoverBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
-                        HoverColor: =RGBA(255, 255, 255, 1)
-                        HoverFill: =RGBA(31, 31, 31, 1)
-                        PressedBorderColor: =RGBA(255, 200, 61, 1)
-                        PressedColor: =RGBA(255, 255, 255, 1)
-                        PressedFill: =RGBA(31, 31, 31, 1)
-                        RadiusBottomLeft: =0
-                        RadiusBottomRight: =0
-                        RadiusTopLeft: =0
-                        RadiusTopRight: =0
+                        Size: =14
                         Visible: ='Dashboard Toptab_1'.Selected.Title = "Order Info"
                         Width: =265
                         X: =30
@@ -802,13 +455,6 @@
                         ZIndex: =30
 
                     Label5_99 As label:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        Color: =RGBA(255, 255, 255, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Bold
                         Height: =32
@@ -821,29 +467,13 @@
                         ZIndex: =31
 
                     TextInput2_77 As text:
-                        BorderColor: =RGBA(109, 109, 109, 1)
-                        BorderThickness: =2
-                        Color: =RGBA(255, 255, 255, 1)
                         Default: =data2.'Last Name'
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledColor: =RGBA(128, 128, 128, 1)
-                        DisabledFill: =RGBA(244, 244, 244, 1)
                         DisplayMode: =DisplayMode.Disabled
-                        Fill: =RGBA(31, 31, 31, 1)
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Semibold
                         HintText: =""
-                        HoverBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
-                        HoverColor: =RGBA(255, 255, 255, 1)
-                        HoverFill: =RGBA(31, 31, 31, 1)
-                        PressedBorderColor: =RGBA(255, 200, 61, 1)
-                        PressedColor: =RGBA(255, 255, 255, 1)
-                        PressedFill: =RGBA(31, 31, 31, 1)
-                        RadiusBottomLeft: =0
-                        RadiusBottomRight: =0
-                        RadiusTopLeft: =0
-                        RadiusTopRight: =0
+                        Size: =14
                         Visible: ='Dashboard Toptab_1'.Selected.Title = "Order Info"
                         Width: =265
                         X: =347
@@ -858,13 +488,6 @@
                     ZIndex: =37
 
                     Label5_100 As label:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        Color: =RGBA(255, 255, 255, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Bold
                         Height: =32
@@ -877,29 +500,13 @@
                         ZIndex: =33
 
                     TextInput2_78 As text:
-                        BorderColor: =RGBA(109, 109, 109, 1)
-                        BorderThickness: =2
-                        Color: =RGBA(255, 255, 255, 1)
                         Default: =data2.'First Name'
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledColor: =RGBA(128, 128, 128, 1)
-                        DisabledFill: =RGBA(244, 244, 244, 1)
                         DisplayMode: =DisplayMode.Disabled
-                        Fill: =RGBA(31, 31, 31, 1)
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Semibold
                         HintText: =""
-                        HoverBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
-                        HoverColor: =RGBA(255, 255, 255, 1)
-                        HoverFill: =RGBA(31, 31, 31, 1)
-                        PressedBorderColor: =RGBA(255, 200, 61, 1)
-                        PressedColor: =RGBA(255, 255, 255, 1)
-                        PressedFill: =RGBA(31, 31, 31, 1)
-                        RadiusBottomLeft: =0
-                        RadiusBottomRight: =0
-                        RadiusTopLeft: =0
-                        RadiusTopRight: =0
+                        Size: =14
                         Visible: ='Dashboard Toptab_1'.Selected.Title = "Order Info"
                         Width: =265
                         X: =30
@@ -907,13 +514,6 @@
                         ZIndex: =34
 
                     Label5_101 As label:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        Color: =RGBA(255, 255, 255, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Bold
                         Height: =32
@@ -926,29 +526,13 @@
                         ZIndex: =35
 
                     TextInput2_79 As text:
-                        BorderColor: =RGBA(109, 109, 109, 1)
-                        BorderThickness: =2
-                        Color: =RGBA(255, 255, 255, 1)
                         Default: =data2.'Last Name'
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledColor: =RGBA(128, 128, 128, 1)
-                        DisabledFill: =RGBA(244, 244, 244, 1)
                         DisplayMode: =DisplayMode.Disabled
-                        Fill: =RGBA(31, 31, 31, 1)
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Semibold
                         HintText: =""
-                        HoverBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
-                        HoverColor: =RGBA(255, 255, 255, 1)
-                        HoverFill: =RGBA(31, 31, 31, 1)
-                        PressedBorderColor: =RGBA(255, 200, 61, 1)
-                        PressedColor: =RGBA(255, 255, 255, 1)
-                        PressedFill: =RGBA(31, 31, 31, 1)
-                        RadiusBottomLeft: =0
-                        RadiusBottomRight: =0
-                        RadiusTopLeft: =0
-                        RadiusTopRight: =0
+                        Size: =14
                         Visible: ='Dashboard Toptab_1'.Selected.Title = "Order Info"
                         Width: =265
                         X: =347
@@ -963,13 +547,6 @@
                     ZIndex: =39
 
                     Label5_102 As label:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        Color: =RGBA(255, 255, 255, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Bold
                         Height: =32
@@ -982,30 +559,14 @@
                         ZIndex: =37
 
                     TextInput2_80 As text:
-                        BorderColor: =RGBA(109, 109, 109, 1)
-                        BorderThickness: =2
-                        Color: =RGBA(255, 255, 255, 1)
                         Default: |-
                             =data2.'Address 1: Street 1'
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledColor: =RGBA(128, 128, 128, 1)
-                        DisabledFill: =RGBA(244, 244, 244, 1)
                         DisplayMode: =DisplayMode.Disabled
-                        Fill: =RGBA(31, 31, 31, 1)
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Semibold
                         HintText: =""
-                        HoverBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
-                        HoverColor: =RGBA(255, 255, 255, 1)
-                        HoverFill: =RGBA(31, 31, 31, 1)
-                        PressedBorderColor: =RGBA(255, 200, 61, 1)
-                        PressedColor: =RGBA(255, 255, 255, 1)
-                        PressedFill: =RGBA(31, 31, 31, 1)
-                        RadiusBottomLeft: =0
-                        RadiusBottomRight: =0
-                        RadiusTopLeft: =0
-                        RadiusTopRight: =0
+                        Size: =14
                         Visible: ='Dashboard Toptab_1'.Selected.Title = "Order Info"
                         Width: =582
                         X: =34
@@ -1020,13 +581,6 @@
                     ZIndex: =41
 
                     Label5_103 As label:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        Color: =RGBA(255, 255, 255, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Bold
                         Height: =32
@@ -1039,30 +593,14 @@
                         ZIndex: =39
 
                     TextInput2_81 As text:
-                        BorderColor: =RGBA(109, 109, 109, 1)
-                        BorderThickness: =2
-                        Color: =RGBA(255, 255, 255, 1)
                         Default: |-
                             =data2.'Address 1: Street 1'
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledColor: =RGBA(128, 128, 128, 1)
-                        DisabledFill: =RGBA(244, 244, 244, 1)
                         DisplayMode: =DisplayMode.Disabled
-                        Fill: =RGBA(31, 31, 31, 1)
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Semibold
                         HintText: =""
-                        HoverBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
-                        HoverColor: =RGBA(255, 255, 255, 1)
-                        HoverFill: =RGBA(31, 31, 31, 1)
-                        PressedBorderColor: =RGBA(255, 200, 61, 1)
-                        PressedColor: =RGBA(255, 255, 255, 1)
-                        PressedFill: =RGBA(31, 31, 31, 1)
-                        RadiusBottomLeft: =0
-                        RadiusBottomRight: =0
-                        RadiusTopLeft: =0
-                        RadiusTopRight: =0
+                        Size: =14
                         Visible: ='Dashboard Toptab_1'.Selected.Title = "Order Info"
                         Width: =582
                         X: =34
@@ -1077,13 +615,6 @@
                     ZIndex: =45
 
                     Label5_104 As label:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        Color: =RGBA(255, 255, 255, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Bold
                         Height: =32
@@ -1096,29 +627,13 @@
                         ZIndex: =41
 
                     TextInput2_82 As text:
-                        BorderColor: =RGBA(109, 109, 109, 1)
-                        BorderThickness: =2
-                        Color: =RGBA(255, 255, 255, 1)
                         Default: =data2.'First Name'
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledColor: =RGBA(128, 128, 128, 1)
-                        DisabledFill: =RGBA(244, 244, 244, 1)
                         DisplayMode: =DisplayMode.Disabled
-                        Fill: =RGBA(31, 31, 31, 1)
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Semibold
                         HintText: =""
-                        HoverBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
-                        HoverColor: =RGBA(255, 255, 255, 1)
-                        HoverFill: =RGBA(31, 31, 31, 1)
-                        PressedBorderColor: =RGBA(255, 200, 61, 1)
-                        PressedColor: =RGBA(255, 255, 255, 1)
-                        PressedFill: =RGBA(31, 31, 31, 1)
-                        RadiusBottomLeft: =0
-                        RadiusBottomRight: =0
-                        RadiusTopLeft: =0
-                        RadiusTopRight: =0
+                        Size: =14
                         Visible: ='Dashboard Toptab_1'.Selected.Title = "Order Info"
                         Width: =265
                         X: =30
@@ -1126,13 +641,6 @@
                         ZIndex: =42
 
                     Label5_105 As label:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        Color: =RGBA(255, 255, 255, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Bold
                         Height: =32
@@ -1145,29 +653,13 @@
                         ZIndex: =43
 
                     TextInput2_83 As text:
-                        BorderColor: =RGBA(109, 109, 109, 1)
-                        BorderThickness: =2
-                        Color: =RGBA(255, 255, 255, 1)
                         Default: =data2.'Last Name'
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledColor: =RGBA(128, 128, 128, 1)
-                        DisabledFill: =RGBA(244, 244, 244, 1)
                         DisplayMode: =DisplayMode.Disabled
-                        Fill: =RGBA(31, 31, 31, 1)
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Semibold
                         HintText: =""
-                        HoverBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
-                        HoverColor: =RGBA(255, 255, 255, 1)
-                        HoverFill: =RGBA(31, 31, 31, 1)
-                        PressedBorderColor: =RGBA(255, 200, 61, 1)
-                        PressedColor: =RGBA(255, 255, 255, 1)
-                        PressedFill: =RGBA(31, 31, 31, 1)
-                        RadiusBottomLeft: =0
-                        RadiusBottomRight: =0
-                        RadiusTopLeft: =0
-                        RadiusTopRight: =0
+                        Size: =14
                         Visible: ='Dashboard Toptab_1'.Selected.Title = "Order Info"
                         Width: =265
                         X: =347
@@ -1182,13 +674,6 @@
                     ZIndex: =49
 
                     Label5_106 As label:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        Color: =RGBA(255, 255, 255, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Bold
                         Height: =32
@@ -1201,29 +686,13 @@
                         ZIndex: =45
 
                     TextInput2_84 As text:
-                        BorderColor: =RGBA(109, 109, 109, 1)
-                        BorderThickness: =2
-                        Color: =RGBA(255, 255, 255, 1)
                         Default: =data2.'First Name'
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledColor: =RGBA(128, 128, 128, 1)
-                        DisabledFill: =RGBA(244, 244, 244, 1)
                         DisplayMode: =DisplayMode.Disabled
-                        Fill: =RGBA(31, 31, 31, 1)
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Semibold
                         HintText: =""
-                        HoverBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
-                        HoverColor: =RGBA(255, 255, 255, 1)
-                        HoverFill: =RGBA(31, 31, 31, 1)
-                        PressedBorderColor: =RGBA(255, 200, 61, 1)
-                        PressedColor: =RGBA(255, 255, 255, 1)
-                        PressedFill: =RGBA(31, 31, 31, 1)
-                        RadiusBottomLeft: =0
-                        RadiusBottomRight: =0
-                        RadiusTopLeft: =0
-                        RadiusTopRight: =0
+                        Size: =14
                         Visible: ='Dashboard Toptab_1'.Selected.Title = "Order Info"
                         Width: =265
                         X: =30
@@ -1231,13 +700,6 @@
                         ZIndex: =46
 
                     Label5_107 As label:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        Color: =RGBA(255, 255, 255, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Bold
                         Height: =32
@@ -1250,29 +712,13 @@
                         ZIndex: =47
 
                     TextInput2_85 As text:
-                        BorderColor: =RGBA(109, 109, 109, 1)
-                        BorderThickness: =2
-                        Color: =RGBA(255, 255, 255, 1)
                         Default: =data2.'Last Name'
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledColor: =RGBA(128, 128, 128, 1)
-                        DisabledFill: =RGBA(244, 244, 244, 1)
                         DisplayMode: =DisplayMode.Disabled
-                        Fill: =RGBA(31, 31, 31, 1)
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Semibold
                         HintText: =""
-                        HoverBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
-                        HoverColor: =RGBA(255, 255, 255, 1)
-                        HoverFill: =RGBA(31, 31, 31, 1)
-                        PressedBorderColor: =RGBA(255, 200, 61, 1)
-                        PressedColor: =RGBA(255, 255, 255, 1)
-                        PressedFill: =RGBA(31, 31, 31, 1)
-                        RadiusBottomLeft: =0
-                        RadiusBottomRight: =0
-                        RadiusTopLeft: =0
-                        RadiusTopRight: =0
+                        Size: =14
                         Visible: ='Dashboard Toptab_1'.Selected.Title = "Order Info"
                         Width: =265
                         X: =351
@@ -1287,13 +733,6 @@
                     ZIndex: =53
 
                     Label5_108 As label:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        Color: =RGBA(255, 255, 255, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Bold
                         Height: =32
@@ -1306,29 +745,13 @@
                         ZIndex: =49
 
                     TextInput2_86 As text:
-                        BorderColor: =RGBA(109, 109, 109, 1)
-                        BorderThickness: =2
-                        Color: =RGBA(255, 255, 255, 1)
                         Default: =data2.'First Name'
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledColor: =RGBA(128, 128, 128, 1)
-                        DisabledFill: =RGBA(244, 244, 244, 1)
                         DisplayMode: =DisplayMode.Disabled
-                        Fill: =RGBA(31, 31, 31, 1)
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Semibold
                         HintText: =""
-                        HoverBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
-                        HoverColor: =RGBA(255, 255, 255, 1)
-                        HoverFill: =RGBA(31, 31, 31, 1)
-                        PressedBorderColor: =RGBA(255, 200, 61, 1)
-                        PressedColor: =RGBA(255, 255, 255, 1)
-                        PressedFill: =RGBA(31, 31, 31, 1)
-                        RadiusBottomLeft: =0
-                        RadiusBottomRight: =0
-                        RadiusTopLeft: =0
-                        RadiusTopRight: =0
+                        Size: =14
                         Visible: ='Dashboard Toptab_1'.Selected.Title = "Order Info"
                         Width: =265
                         X: =30
@@ -1336,13 +759,6 @@
                         ZIndex: =50
 
                     Label5_109 As label:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        Color: =RGBA(255, 255, 255, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Bold
                         Height: =32
@@ -1355,29 +771,13 @@
                         ZIndex: =51
 
                     TextInput2_87 As text:
-                        BorderColor: =RGBA(109, 109, 109, 1)
-                        BorderThickness: =2
-                        Color: =RGBA(255, 255, 255, 1)
                         Default: =data2.'Last Name'
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledColor: =RGBA(128, 128, 128, 1)
-                        DisabledFill: =RGBA(244, 244, 244, 1)
                         DisplayMode: =DisplayMode.Disabled
-                        Fill: =RGBA(31, 31, 31, 1)
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Semibold
                         HintText: =""
-                        HoverBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
-                        HoverColor: =RGBA(255, 255, 255, 1)
-                        HoverFill: =RGBA(31, 31, 31, 1)
-                        PressedBorderColor: =RGBA(255, 200, 61, 1)
-                        PressedColor: =RGBA(255, 255, 255, 1)
-                        PressedFill: =RGBA(31, 31, 31, 1)
-                        RadiusBottomLeft: =0
-                        RadiusBottomRight: =0
-                        RadiusTopLeft: =0
-                        RadiusTopRight: =0
+                        Size: =14
                         Visible: ='Dashboard Toptab_1'.Selected.Title = "Order Info"
                         Width: =265
                         X: =346
@@ -1392,13 +792,6 @@
                     ZIndex: =57
 
                     Label5_110 As label:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        Color: =RGBA(255, 255, 255, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Bold
                         Height: =32
@@ -1411,29 +804,13 @@
                         ZIndex: =53
 
                     TextInput2_88 As text:
-                        BorderColor: =RGBA(109, 109, 109, 1)
-                        BorderThickness: =2
-                        Color: =RGBA(255, 255, 255, 1)
                         Default: =data2.'First Name'
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledColor: =RGBA(128, 128, 128, 1)
-                        DisabledFill: =RGBA(244, 244, 244, 1)
                         DisplayMode: =DisplayMode.Disabled
-                        Fill: =RGBA(31, 31, 31, 1)
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Semibold
                         HintText: =""
-                        HoverBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
-                        HoverColor: =RGBA(255, 255, 255, 1)
-                        HoverFill: =RGBA(31, 31, 31, 1)
-                        PressedBorderColor: =RGBA(255, 200, 61, 1)
-                        PressedColor: =RGBA(255, 255, 255, 1)
-                        PressedFill: =RGBA(31, 31, 31, 1)
-                        RadiusBottomLeft: =0
-                        RadiusBottomRight: =0
-                        RadiusTopLeft: =0
-                        RadiusTopRight: =0
+                        Size: =14
                         Visible: ='Dashboard Toptab_1'.Selected.Title = "Order Info"
                         Width: =265
                         X: =30
@@ -1441,13 +818,6 @@
                         ZIndex: =54
 
                     Label5_111 As label:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        Color: =RGBA(255, 255, 255, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Bold
                         Height: =32
@@ -1460,29 +830,13 @@
                         ZIndex: =55
 
                     TextInput2_89 As text:
-                        BorderColor: =RGBA(109, 109, 109, 1)
-                        BorderThickness: =2
-                        Color: =RGBA(255, 255, 255, 1)
                         Default: =data2.'Last Name'
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledColor: =RGBA(128, 128, 128, 1)
-                        DisabledFill: =RGBA(244, 244, 244, 1)
                         DisplayMode: =DisplayMode.Disabled
-                        Fill: =RGBA(31, 31, 31, 1)
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Semibold
                         HintText: =""
-                        HoverBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
-                        HoverColor: =RGBA(255, 255, 255, 1)
-                        HoverFill: =RGBA(31, 31, 31, 1)
-                        PressedBorderColor: =RGBA(255, 200, 61, 1)
-                        PressedColor: =RGBA(255, 255, 255, 1)
-                        PressedFill: =RGBA(31, 31, 31, 1)
-                        RadiusBottomLeft: =0
-                        RadiusBottomRight: =0
-                        RadiusTopLeft: =0
-                        RadiusTopRight: =0
+                        Size: =14
                         Visible: ='Dashboard Toptab_1'.Selected.Title = "Order Info"
                         Width: =265
                         X: =341
@@ -1490,13 +844,6 @@
                         ZIndex: =56
 
                 Label5_114 As label:
-                    BorderColor: =RGBA(0, 0, 0, 0)
-                    BorderStyle: =BorderStyle.None
-                    BorderThickness: =2
-                    Color: =RGBA(255, 255, 255, 1)
-                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    FocusedBorderThickness: =4
                     Font: =Font.Lato
                     FontWeight: =FontWeight.Bold
                     Height: =32
@@ -1516,13 +863,6 @@
                     ZIndex: =61
 
                     Label5_112 As label:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        Color: =RGBA(255, 255, 255, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Bold
                         Height: =32
@@ -1535,29 +875,13 @@
                         ZIndex: =57
 
                     TextInput2_90 As text:
-                        BorderColor: =RGBA(109, 109, 109, 1)
-                        BorderThickness: =2
-                        Color: =RGBA(255, 255, 255, 1)
                         Default: =data2.'First Name'
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledColor: =RGBA(128, 128, 128, 1)
-                        DisabledFill: =RGBA(244, 244, 244, 1)
                         DisplayMode: =DisplayMode.Disabled
-                        Fill: =RGBA(31, 31, 31, 1)
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Semibold
                         HintText: =""
-                        HoverBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
-                        HoverColor: =RGBA(255, 255, 255, 1)
-                        HoverFill: =RGBA(31, 31, 31, 1)
-                        PressedBorderColor: =RGBA(255, 200, 61, 1)
-                        PressedColor: =RGBA(255, 255, 255, 1)
-                        PressedFill: =RGBA(31, 31, 31, 1)
-                        RadiusBottomLeft: =0
-                        RadiusBottomRight: =0
-                        RadiusTopLeft: =0
-                        RadiusTopRight: =0
+                        Size: =14
                         Visible: ='Dashboard Toptab_1'.Selected.Title = "Order Info"
                         Width: =265
                         X: =30
@@ -1565,13 +889,6 @@
                         ZIndex: =58
 
                     Label5_113 As label:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        Color: =RGBA(255, 255, 255, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Bold
                         Height: =32
@@ -1584,29 +901,13 @@
                         ZIndex: =59
 
                     TextInput2_91 As text:
-                        BorderColor: =RGBA(109, 109, 109, 1)
-                        BorderThickness: =2
-                        Color: =RGBA(255, 255, 255, 1)
                         Default: =data2.'Last Name'
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledColor: =RGBA(128, 128, 128, 1)
-                        DisabledFill: =RGBA(244, 244, 244, 1)
                         DisplayMode: =DisplayMode.Disabled
-                        Fill: =RGBA(31, 31, 31, 1)
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Semibold
                         HintText: =""
-                        HoverBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
-                        HoverColor: =RGBA(255, 255, 255, 1)
-                        HoverFill: =RGBA(31, 31, 31, 1)
-                        PressedBorderColor: =RGBA(255, 200, 61, 1)
-                        PressedColor: =RGBA(255, 255, 255, 1)
-                        PressedFill: =RGBA(31, 31, 31, 1)
-                        RadiusBottomLeft: =0
-                        RadiusBottomRight: =0
-                        RadiusTopLeft: =0
-                        RadiusTopRight: =0
+                        Size: =14
                         Visible: ='Dashboard Toptab_1'.Selected.Title = "Order Info"
                         Width: =265
                         X: =337
@@ -1614,29 +915,13 @@
                         ZIndex: =60
 
                 TextInput2_92 As text:
-                    BorderColor: =RGBA(109, 109, 109, 1)
-                    BorderThickness: =2
-                    Color: =RGBA(255, 255, 255, 1)
                     Default: =data2.'First Name'
-                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
                     DisabledColor: =RGBA(128, 128, 128, 1)
-                    DisabledFill: =RGBA(244, 244, 244, 1)
                     DisplayMode: =DisplayMode.Disabled
-                    Fill: =RGBA(31, 31, 31, 1)
-                    FocusedBorderThickness: =4
                     Font: =Font.Lato
                     FontWeight: =FontWeight.Semibold
                     HintText: =""
-                    HoverBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
-                    HoverColor: =RGBA(255, 255, 255, 1)
-                    HoverFill: =RGBA(31, 31, 31, 1)
-                    PressedBorderColor: =RGBA(255, 200, 61, 1)
-                    PressedColor: =RGBA(255, 255, 255, 1)
-                    PressedFill: =RGBA(31, 31, 31, 1)
-                    RadiusBottomLeft: =0
-                    RadiusBottomRight: =0
-                    RadiusTopLeft: =0
-                    RadiusTopRight: =0
+                    Size: =14
                     Visible: ='Dashboard Toptab_1'.Selected.Title = "Order Info"
                     Width: =582
                     X: =24
@@ -1651,13 +936,6 @@
                     ZIndex: =65
 
                     Label5_115 As label:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        Color: =RGBA(255, 255, 255, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Bold
                         Height: =34
@@ -1670,29 +948,13 @@
                         ZIndex: =63
 
                     TextInput2_93 As text:
-                        BorderColor: =RGBA(109, 109, 109, 1)
-                        BorderThickness: =2
-                        Color: =RGBA(255, 255, 255, 1)
                         Default: =data2.'Last Name'
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledColor: =RGBA(128, 128, 128, 1)
-                        DisabledFill: =RGBA(244, 244, 244, 1)
                         DisplayMode: =DisplayMode.Disabled
-                        Fill: =RGBA(31, 31, 31, 1)
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Semibold
                         HintText: =""
-                        HoverBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
-                        HoverColor: =RGBA(255, 255, 255, 1)
-                        HoverFill: =RGBA(31, 31, 31, 1)
-                        PressedBorderColor: =RGBA(255, 200, 61, 1)
-                        PressedColor: =RGBA(255, 255, 255, 1)
-                        PressedFill: =RGBA(31, 31, 31, 1)
-                        RadiusBottomLeft: =0
-                        RadiusBottomRight: =0
-                        RadiusTopLeft: =0
-                        RadiusTopRight: =0
+                        Size: =14
                         Visible: ='Dashboard Toptab_1'.Selected.Title = "Order Info"
                         Width: =582
                         X: =29
@@ -1707,13 +969,6 @@
                     ZIndex: =67
 
                     Label5_116 As label:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        Color: =RGBA(255, 255, 255, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Bold
                         Height: =34
@@ -1726,29 +981,13 @@
                         ZIndex: =65
 
                     TextInput2_94 As text:
-                        BorderColor: =RGBA(109, 109, 109, 1)
-                        BorderThickness: =2
-                        Color: =RGBA(255, 255, 255, 1)
                         Default: =data2.'Last Name'
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledColor: =RGBA(128, 128, 128, 1)
-                        DisabledFill: =RGBA(244, 244, 244, 1)
                         DisplayMode: =DisplayMode.Disabled
-                        Fill: =RGBA(31, 31, 31, 1)
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Semibold
                         HintText: =""
-                        HoverBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
-                        HoverColor: =RGBA(255, 255, 255, 1)
-                        HoverFill: =RGBA(31, 31, 31, 1)
-                        PressedBorderColor: =RGBA(255, 200, 61, 1)
-                        PressedColor: =RGBA(255, 255, 255, 1)
-                        PressedFill: =RGBA(31, 31, 31, 1)
-                        RadiusBottomLeft: =0
-                        RadiusBottomRight: =0
-                        RadiusTopLeft: =0
-                        RadiusTopRight: =0
+                        Size: =14
                         Visible: ='Dashboard Toptab_1'.Selected.Title = "Order Info"
                         Width: =582
                         X: =29
@@ -1763,13 +1002,6 @@
                     ZIndex: =69
 
                     Label5_117 As label:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        Color: =RGBA(255, 255, 255, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Bold
                         Height: =34
@@ -1782,29 +1014,13 @@
                         ZIndex: =67
 
                     TextInput2_95 As text:
-                        BorderColor: =RGBA(109, 109, 109, 1)
-                        BorderThickness: =2
-                        Color: =RGBA(255, 255, 255, 1)
                         Default: =data2.'Last Name'
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledColor: =RGBA(128, 128, 128, 1)
-                        DisabledFill: =RGBA(244, 244, 244, 1)
                         DisplayMode: =DisplayMode.Disabled
-                        Fill: =RGBA(31, 31, 31, 1)
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Semibold
                         HintText: =""
-                        HoverBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
-                        HoverColor: =RGBA(255, 255, 255, 1)
-                        HoverFill: =RGBA(31, 31, 31, 1)
-                        PressedBorderColor: =RGBA(255, 200, 61, 1)
-                        PressedColor: =RGBA(255, 255, 255, 1)
-                        PressedFill: =RGBA(31, 31, 31, 1)
-                        RadiusBottomLeft: =0
-                        RadiusBottomRight: =0
-                        RadiusTopLeft: =0
-                        RadiusTopRight: =0
+                        Size: =14
                         Visible: ='Dashboard Toptab_1'.Selected.Title = "Order Info"
                         Width: =582
                         X: =29
@@ -1819,13 +1035,6 @@
                     ZIndex: =71
 
                     Label5_118 As label:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        Color: =RGBA(255, 255, 255, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Bold
                         Height: =34
@@ -1838,29 +1047,13 @@
                         ZIndex: =69
 
                     TextInput2_96 As text:
-                        BorderColor: =RGBA(109, 109, 109, 1)
-                        BorderThickness: =2
-                        Color: =RGBA(255, 255, 255, 1)
                         Default: =data2.'Last Name'
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledColor: =RGBA(128, 128, 128, 1)
-                        DisabledFill: =RGBA(244, 244, 244, 1)
                         DisplayMode: =DisplayMode.Disabled
-                        Fill: =RGBA(31, 31, 31, 1)
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Semibold
                         HintText: =""
-                        HoverBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
-                        HoverColor: =RGBA(255, 255, 255, 1)
-                        HoverFill: =RGBA(31, 31, 31, 1)
-                        PressedBorderColor: =RGBA(255, 200, 61, 1)
-                        PressedColor: =RGBA(255, 255, 255, 1)
-                        PressedFill: =RGBA(31, 31, 31, 1)
-                        RadiusBottomLeft: =0
-                        RadiusBottomRight: =0
-                        RadiusTopLeft: =0
-                        RadiusTopRight: =0
+                        Size: =14
                         Visible: ='Dashboard Toptab_1'.Selected.Title = "Order Info"
                         Width: =582
                         X: =29
@@ -1875,13 +1068,6 @@
                     ZIndex: =73
 
                     Label5_119 As label:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        Color: =RGBA(255, 255, 255, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Bold
                         Height: =34
@@ -1894,29 +1080,13 @@
                         ZIndex: =71
 
                     TextInput2_97 As text:
-                        BorderColor: =RGBA(109, 109, 109, 1)
-                        BorderThickness: =2
-                        Color: =RGBA(255, 255, 255, 1)
                         Default: =data2.'Last Name'
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledColor: =RGBA(128, 128, 128, 1)
-                        DisabledFill: =RGBA(244, 244, 244, 1)
                         DisplayMode: =DisplayMode.Disabled
-                        Fill: =RGBA(31, 31, 31, 1)
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Semibold
                         HintText: =""
-                        HoverBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
-                        HoverColor: =RGBA(255, 255, 255, 1)
-                        HoverFill: =RGBA(31, 31, 31, 1)
-                        PressedBorderColor: =RGBA(255, 200, 61, 1)
-                        PressedColor: =RGBA(255, 255, 255, 1)
-                        PressedFill: =RGBA(31, 31, 31, 1)
-                        RadiusBottomLeft: =0
-                        RadiusBottomRight: =0
-                        RadiusTopLeft: =0
-                        RadiusTopRight: =0
+                        Size: =14
                         Visible: ='Dashboard Toptab_1'.Selected.Title = "Order Info"
                         Width: =582
                         X: =34
@@ -1931,13 +1101,6 @@
                     ZIndex: =75
 
                     Label5_120 As label:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        Color: =RGBA(255, 255, 255, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Bold
                         Height: =34
@@ -1950,29 +1113,13 @@
                         ZIndex: =73
 
                     TextInput2_98 As text:
-                        BorderColor: =RGBA(109, 109, 109, 1)
-                        BorderThickness: =2
-                        Color: =RGBA(255, 255, 255, 1)
                         Default: =data2.'Last Name'
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledColor: =RGBA(128, 128, 128, 1)
-                        DisabledFill: =RGBA(244, 244, 244, 1)
                         DisplayMode: =DisplayMode.Disabled
-                        Fill: =RGBA(31, 31, 31, 1)
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Semibold
                         HintText: =""
-                        HoverBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
-                        HoverColor: =RGBA(255, 255, 255, 1)
-                        HoverFill: =RGBA(31, 31, 31, 1)
-                        PressedBorderColor: =RGBA(255, 200, 61, 1)
-                        PressedColor: =RGBA(255, 255, 255, 1)
-                        PressedFill: =RGBA(31, 31, 31, 1)
-                        RadiusBottomLeft: =0
-                        RadiusBottomRight: =0
-                        RadiusTopLeft: =0
-                        RadiusTopRight: =0
+                        Size: =14
                         Visible: ='Dashboard Toptab_1'.Selected.Title = "Order Info"
                         Width: =582
                         X: =36
@@ -1987,13 +1134,6 @@
                     ZIndex: =77
 
                     Label5_121 As label:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        Color: =RGBA(255, 255, 255, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Bold
                         Height: =34
@@ -2006,29 +1146,13 @@
                         ZIndex: =75
 
                     TextInput2_99 As text:
-                        BorderColor: =RGBA(109, 109, 109, 1)
-                        BorderThickness: =2
-                        Color: =RGBA(255, 255, 255, 1)
                         Default: =data2.'Last Name'
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledColor: =RGBA(128, 128, 128, 1)
-                        DisabledFill: =RGBA(244, 244, 244, 1)
                         DisplayMode: =DisplayMode.Disabled
-                        Fill: =RGBA(31, 31, 31, 1)
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Semibold
                         HintText: =""
-                        HoverBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
-                        HoverColor: =RGBA(255, 255, 255, 1)
-                        HoverFill: =RGBA(31, 31, 31, 1)
-                        PressedBorderColor: =RGBA(255, 200, 61, 1)
-                        PressedColor: =RGBA(255, 255, 255, 1)
-                        PressedFill: =RGBA(31, 31, 31, 1)
-                        RadiusBottomLeft: =0
-                        RadiusBottomRight: =0
-                        RadiusTopLeft: =0
-                        RadiusTopRight: =0
+                        Size: =14
                         Visible: ='Dashboard Toptab_1'.Selected.Title = "Order Info"
                         Width: =582
                         X: =31
@@ -2043,13 +1167,6 @@
                     ZIndex: =79
 
                     Label5_122 As label:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        Color: =RGBA(255, 255, 255, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Bold
                         Height: =34
@@ -2062,29 +1179,13 @@
                         ZIndex: =77
 
                     TextInput2_100 As text:
-                        BorderColor: =RGBA(109, 109, 109, 1)
-                        BorderThickness: =2
-                        Color: =RGBA(255, 255, 255, 1)
                         Default: =data2.'Last Name'
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledColor: =RGBA(128, 128, 128, 1)
-                        DisabledFill: =RGBA(244, 244, 244, 1)
                         DisplayMode: =DisplayMode.Disabled
-                        Fill: =RGBA(31, 31, 31, 1)
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Semibold
                         HintText: =""
-                        HoverBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
-                        HoverColor: =RGBA(255, 255, 255, 1)
-                        HoverFill: =RGBA(31, 31, 31, 1)
-                        PressedBorderColor: =RGBA(255, 200, 61, 1)
-                        PressedColor: =RGBA(255, 255, 255, 1)
-                        PressedFill: =RGBA(31, 31, 31, 1)
-                        RadiusBottomLeft: =0
-                        RadiusBottomRight: =0
-                        RadiusTopLeft: =0
-                        RadiusTopRight: =0
+                        Size: =14
                         Visible: ='Dashboard Toptab_1'.Selected.Title = "Order Info"
                         Width: =582
                         X: =34
@@ -2099,13 +1200,6 @@
                     ZIndex: =81
 
                     Label5_123 As label:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        Color: =RGBA(255, 255, 255, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Bold
                         Height: =34
@@ -2118,29 +1212,13 @@
                         ZIndex: =79
 
                     TextInput2_101 As text:
-                        BorderColor: =RGBA(109, 109, 109, 1)
-                        BorderThickness: =2
-                        Color: =RGBA(255, 255, 255, 1)
                         Default: =data2.'Last Name'
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledColor: =RGBA(128, 128, 128, 1)
-                        DisabledFill: =RGBA(244, 244, 244, 1)
                         DisplayMode: =DisplayMode.Disabled
-                        Fill: =RGBA(31, 31, 31, 1)
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Semibold
                         HintText: =""
-                        HoverBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
-                        HoverColor: =RGBA(255, 255, 255, 1)
-                        HoverFill: =RGBA(31, 31, 31, 1)
-                        PressedBorderColor: =RGBA(255, 200, 61, 1)
-                        PressedColor: =RGBA(255, 255, 255, 1)
-                        PressedFill: =RGBA(31, 31, 31, 1)
-                        RadiusBottomLeft: =0
-                        RadiusBottomRight: =0
-                        RadiusTopLeft: =0
-                        RadiusTopRight: =0
+                        Size: =14
                         Visible: ='Dashboard Toptab_1'.Selected.Title = "Order Info"
                         Width: =582
                         X: =31
@@ -2155,13 +1233,6 @@
                     ZIndex: =83
 
                     Label5_124 As label:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        Color: =RGBA(255, 255, 255, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Bold
                         Height: =33
@@ -2174,29 +1245,13 @@
                         ZIndex: =81
 
                     TextInput2_102 As text:
-                        BorderColor: =RGBA(109, 109, 109, 1)
-                        BorderThickness: =2
-                        Color: =RGBA(255, 255, 255, 1)
                         Default: =data2.'Last Name'
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledColor: =RGBA(128, 128, 128, 1)
-                        DisabledFill: =RGBA(244, 244, 244, 1)
                         DisplayMode: =DisplayMode.Disabled
-                        Fill: =RGBA(31, 31, 31, 1)
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Semibold
                         HintText: =""
-                        HoverBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
-                        HoverColor: =RGBA(255, 255, 255, 1)
-                        HoverFill: =RGBA(31, 31, 31, 1)
-                        PressedBorderColor: =RGBA(255, 200, 61, 1)
-                        PressedColor: =RGBA(255, 255, 255, 1)
-                        PressedFill: =RGBA(31, 31, 31, 1)
-                        RadiusBottomLeft: =0
-                        RadiusBottomRight: =0
-                        RadiusTopLeft: =0
-                        RadiusTopRight: =0
+                        Size: =14
                         Visible: ='Dashboard Toptab_1'.Selected.Title = "Order Info"
                         Width: =582
                         X: =30
@@ -2211,13 +1266,6 @@
                     ZIndex: =85
 
                     Label5_125 As label:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        Color: =RGBA(255, 255, 255, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Bold
                         Height: =33
@@ -2230,29 +1278,13 @@
                         ZIndex: =83
 
                     TextInput2_103 As text:
-                        BorderColor: =RGBA(109, 109, 109, 1)
-                        BorderThickness: =2
-                        Color: =RGBA(255, 255, 255, 1)
                         Default: =data2.'Last Name'
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledColor: =RGBA(128, 128, 128, 1)
-                        DisabledFill: =RGBA(244, 244, 244, 1)
                         DisplayMode: =DisplayMode.Disabled
-                        Fill: =RGBA(31, 31, 31, 1)
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Semibold
                         HintText: =""
-                        HoverBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
-                        HoverColor: =RGBA(255, 255, 255, 1)
-                        HoverFill: =RGBA(31, 31, 31, 1)
-                        PressedBorderColor: =RGBA(255, 200, 61, 1)
-                        PressedColor: =RGBA(255, 255, 255, 1)
-                        PressedFill: =RGBA(31, 31, 31, 1)
-                        RadiusBottomLeft: =0
-                        RadiusBottomRight: =0
-                        RadiusTopLeft: =0
-                        RadiusTopRight: =0
+                        Size: =14
                         Visible: ='Dashboard Toptab_1'.Selected.Title = "Order Info"
                         Width: =582
                         X: =34
@@ -2267,13 +1299,6 @@
                     ZIndex: =87
 
                     Label5_126 As label:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        Color: =RGBA(255, 255, 255, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Bold
                         Height: =33
@@ -2286,29 +1311,13 @@
                         ZIndex: =85
 
                     TextInput2_104 As text:
-                        BorderColor: =RGBA(109, 109, 109, 1)
-                        BorderThickness: =2
-                        Color: =RGBA(255, 255, 255, 1)
                         Default: =data2.'Last Name'
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledColor: =RGBA(128, 128, 128, 1)
-                        DisabledFill: =RGBA(244, 244, 244, 1)
                         DisplayMode: =DisplayMode.Disabled
-                        Fill: =RGBA(31, 31, 31, 1)
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Semibold
                         HintText: =""
-                        HoverBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
-                        HoverColor: =RGBA(255, 255, 255, 1)
-                        HoverFill: =RGBA(31, 31, 31, 1)
-                        PressedBorderColor: =RGBA(255, 200, 61, 1)
-                        PressedColor: =RGBA(255, 255, 255, 1)
-                        PressedFill: =RGBA(31, 31, 31, 1)
-                        RadiusBottomLeft: =0
-                        RadiusBottomRight: =0
-                        RadiusTopLeft: =0
-                        RadiusTopRight: =0
+                        Size: =14
                         Visible: ='Dashboard Toptab_1'.Selected.Title = "Order Info"
                         Width: =582
                         X: =32
@@ -2323,13 +1332,6 @@
                     ZIndex: =89
 
                     Label5_127 As label:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        Color: =RGBA(255, 255, 255, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Bold
                         Height: =33
@@ -2342,29 +1344,13 @@
                         ZIndex: =87
 
                     TextInput2_105 As text:
-                        BorderColor: =RGBA(109, 109, 109, 1)
-                        BorderThickness: =2
-                        Color: =RGBA(255, 255, 255, 1)
                         Default: =data2.'Last Name'
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledColor: =RGBA(128, 128, 128, 1)
-                        DisabledFill: =RGBA(244, 244, 244, 1)
                         DisplayMode: =DisplayMode.Disabled
-                        Fill: =RGBA(31, 31, 31, 1)
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Semibold
                         HintText: =""
-                        HoverBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
-                        HoverColor: =RGBA(255, 255, 255, 1)
-                        HoverFill: =RGBA(31, 31, 31, 1)
-                        PressedBorderColor: =RGBA(255, 200, 61, 1)
-                        PressedColor: =RGBA(255, 255, 255, 1)
-                        PressedFill: =RGBA(31, 31, 31, 1)
-                        RadiusBottomLeft: =0
-                        RadiusBottomRight: =0
-                        RadiusTopLeft: =0
-                        RadiusTopRight: =0
+                        Size: =14
                         Visible: ='Dashboard Toptab_1'.Selected.Title = "Order Info"
                         Width: =582
                         X: =36
@@ -2379,13 +1365,6 @@
                     ZIndex: =91
 
                     Label5_128 As label:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        Color: =RGBA(255, 255, 255, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Bold
                         Height: =33
@@ -2398,29 +1377,13 @@
                         ZIndex: =89
 
                     TextInput2_106 As text:
-                        BorderColor: =RGBA(109, 109, 109, 1)
-                        BorderThickness: =2
-                        Color: =RGBA(255, 255, 255, 1)
                         Default: =data2.'Last Name'
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledColor: =RGBA(128, 128, 128, 1)
-                        DisabledFill: =RGBA(244, 244, 244, 1)
                         DisplayMode: =DisplayMode.Disabled
-                        Fill: =RGBA(31, 31, 31, 1)
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Semibold
                         HintText: =""
-                        HoverBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
-                        HoverColor: =RGBA(255, 255, 255, 1)
-                        HoverFill: =RGBA(31, 31, 31, 1)
-                        PressedBorderColor: =RGBA(255, 200, 61, 1)
-                        PressedColor: =RGBA(255, 255, 255, 1)
-                        PressedFill: =RGBA(31, 31, 31, 1)
-                        RadiusBottomLeft: =0
-                        RadiusBottomRight: =0
-                        RadiusTopLeft: =0
-                        RadiusTopRight: =0
+                        Size: =14
                         Visible: ='Dashboard Toptab_1'.Selected.Title = "Order Info"
                         Width: =582
                         X: =41
@@ -2435,42 +1398,16 @@
                     ZIndex: =97
 
                     UploadedImage1_4 As image:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledFill: =RGBA(0, 0, 0, 0)
-                        FocusedBorderThickness: =4
                         Height: =AddMediaButton1_4.Height
-                        HoverBorderColor: =RGBA(0, 0, 0, 0)
-                        HoverFill: =RGBA(0, 0, 0, 0)
                         Image: =If(IsBlank(AddMediaButton1_4.Media), SampleImage, AddMediaButton1_4.Media)
                         ImagePosition: =ImagePosition.Fill
-                        PressedBorderColor: =RGBA(0, 0, 0, 0)
-                        PressedFill: =RGBA(0, 0, 0, 0)
                         Width: =AddMediaButton1_4.Width
                         X: =295
                         Y: =3170
                         ZIndex: =91
 
                     AddMediaButton1_4 As addMedia:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        Color: =RGBA(31, 31, 31, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        DisabledFill: =RGBA(244, 244, 244, 1)
-                        Fill: =RGBA(255, 200, 61, 1)
-                        FocusedBorderThickness: =4
-                        Font: =Font.'Segoe UI'
                         Height: =192
-                        HoverBorderColor: =RGBA(0, 0, 0, 0)
-                        HoverColor: =RGBA(31, 31, 31, 1)
-                        HoverFill: =ColorFade(RGBA(255, 200, 61, 1), 10%)
-                        PressedBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 50%)
-                        PressedColor: =RGBA(31, 31, 31, 1)
-                        PressedFill: =ColorFade(RGBA(255, 200, 61, 1), 30%)
                         Size: =15
                         Text: ="Take Picture"
                         Width: =315
@@ -2479,14 +1416,6 @@
                         ZIndex: =92
 
                     Label35_65 As label:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        Color: =RGBA(0, 0, 0, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        FocusedBorderThickness: =4
-                        Font: =Font.'Segoe UI'
                         FontWeight: =FontWeight.Semibold
                         Height: =51
                         Size: =15
@@ -2504,14 +1433,6 @@
                     ZIndex: =98
 
                     Label35_66 As label:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        Color: =RGBA(0, 0, 0, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        FocusedBorderThickness: =4
-                        Font: =Font.'Segoe UI'
                         FontWeight: =FontWeight.Semibold
                         Height: =51
                         Size: =15
@@ -2522,42 +1443,16 @@
                         ZIndex: =94
 
                     UploadedImage1_5 As image:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledFill: =RGBA(0, 0, 0, 0)
-                        FocusedBorderThickness: =4
                         Height: =AddMediaButton1_4.Height
-                        HoverBorderColor: =RGBA(0, 0, 0, 0)
-                        HoverFill: =RGBA(0, 0, 0, 0)
                         Image: =If(IsBlank(AddMediaButton1_4.Media), SampleImage, AddMediaButton1_4.Media)
                         ImagePosition: =ImagePosition.Fill
-                        PressedBorderColor: =RGBA(0, 0, 0, 0)
-                        PressedFill: =RGBA(0, 0, 0, 0)
                         Width: =AddMediaButton1_4.Width
                         X: =296
                         Y: =3422
                         ZIndex: =95
 
                     AddMediaButton1_5 As addMedia:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        Color: =RGBA(31, 31, 31, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        DisabledFill: =RGBA(244, 244, 244, 1)
-                        Fill: =RGBA(255, 200, 61, 1)
-                        FocusedBorderThickness: =4
-                        Font: =Font.'Segoe UI'
                         Height: =192
-                        HoverBorderColor: =RGBA(0, 0, 0, 0)
-                        HoverColor: =RGBA(31, 31, 31, 1)
-                        HoverFill: =ColorFade(RGBA(255, 200, 61, 1), 10%)
-                        PressedBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 50%)
-                        PressedColor: =RGBA(31, 31, 31, 1)
-                        PressedFill: =ColorFade(RGBA(255, 200, 61, 1), 30%)
                         Size: =15
                         Text: ="Take Picture"
                         Width: =315
@@ -2573,42 +1468,16 @@
                     ZIndex: =100
 
                     UploadedImage1_6 As image:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledFill: =RGBA(0, 0, 0, 0)
-                        FocusedBorderThickness: =4
                         Height: =AddMediaButton1_6.Height
-                        HoverBorderColor: =RGBA(0, 0, 0, 0)
-                        HoverFill: =RGBA(0, 0, 0, 0)
                         Image: =If(IsBlank(AddMediaButton1_6.Media), SampleImage, AddMediaButton1_6.Media)
                         ImagePosition: =ImagePosition.Fill
-                        PressedBorderColor: =RGBA(0, 0, 0, 0)
-                        PressedFill: =RGBA(0, 0, 0, 0)
                         Width: =AddMediaButton1_6.Width
                         X: =297
                         Y: =3658
                         ZIndex: =97
 
                     AddMediaButton1_6 As addMedia:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        Color: =RGBA(31, 31, 31, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        DisabledFill: =RGBA(244, 244, 244, 1)
-                        Fill: =RGBA(255, 200, 61, 1)
-                        FocusedBorderThickness: =4
-                        Font: =Font.'Segoe UI'
                         Height: =192
-                        HoverBorderColor: =RGBA(0, 0, 0, 0)
-                        HoverColor: =RGBA(31, 31, 31, 1)
-                        HoverFill: =ColorFade(RGBA(255, 200, 61, 1), 10%)
-                        PressedBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 50%)
-                        PressedColor: =RGBA(31, 31, 31, 1)
-                        PressedFill: =ColorFade(RGBA(255, 200, 61, 1), 30%)
                         Size: =15
                         Text: ="Take Picture"
                         Width: =315
@@ -2617,14 +1486,6 @@
                         ZIndex: =98
 
                     Label35_67 As label:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        Color: =RGBA(0, 0, 0, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        FocusedBorderThickness: =4
-                        Font: =Font.'Segoe UI'
                         FontWeight: =FontWeight.Semibold
                         Height: =51
                         Size: =15
@@ -2641,7 +1502,6 @@
                 ZIndex: =2
 
                 customerinfo_3 As gallery.galleryHorizontal:
-                    BorderColor: =RGBA(109, 109, 109, 1)
                     Height: =65
                     Items: =['Order Status (Sales Order)'.Open, 'Order Status (Sales Order)'.Accepted, 'Order Status (Sales Order)'.'Partially Shipped', 'Order Status (Sales Order)'.Shipped]
                     OnSelect: =
@@ -2655,14 +1515,10 @@
                     Button4_15 As button:
                         BorderColor: =RGBA(53, 166, 57, 1)
                         Color: =If(ThisItem.IsSelected, RGBA(255, 255, 255, 1), RGBA(53, 166,57,1))
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        DisabledFill: =RGBA(244, 244, 244, 1)
                         Fill: =If(ThisItem.IsSelected, RGBA(53, 166, 57, 1), White)
                         FocusedBorderColor: =
                         FocusedBorderThickness: =2
                         Font: =Font.Lato
-                        FontWeight: =FontWeight.Semibold
                         Height: =46
                         HoverBorderColor: =RGBA(53, 166, 57, 1)
                         HoverColor: =If(ThisItem.IsSelected, RGBA(255, 255, 255, 1), RGBA(53, 166,57,1))
@@ -2678,7 +1534,6 @@
                         ZIndex: =1
 
                 Gallery1 As gallery.galleryVertical:
-                    BorderColor: =RGBA(109, 109, 109, 1)
                     Height: =607
                     Items: =Filter('Sales Order','Order Status'=customerinfo_3.Selected.Value && 'Order From'.Account = data2.Account )
                     Layout: =Layout.Vertical
@@ -2688,14 +1543,6 @@
                     ZIndex: =2
 
                     Label15 As label:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        Color: =RGBA(255, 255, 255, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        FocusedBorderThickness: =4
-                        Font: =Font.'Segoe UI'
                         Height: =70
                         OnSelect: =Select(Parent)
                         Size: =21
@@ -2706,14 +1553,7 @@
                         ZIndex: =1
 
     Label63_3 As label:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =2
         Color: =RGBA(128, 128, 128, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        FocusedBorderThickness: =4
-        Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Semibold
         Height: =62
         Size: =21
@@ -2725,20 +1565,10 @@
         ZIndex: =4
 
     Button9_3 As button:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        Color: =RGBA(31, 31, 31, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
         Fill: =RGBA(103, 204, 107, 1)
         FocusedBorderColor: =ColorFade(Self.Fill, 75%)
-        Font: =Font.'Segoe UI'
-        FontWeight: =FontWeight.Semibold
         Height: =67
-        HoverBorderColor: =RGBA(0, 0, 0, 0)
-        HoverColor: =RGBA(31, 31, 31, 1)
         HoverFill: =RGBA(103, 204, 107, 1)
-        PressedBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 50%)
         PressedColor: =RGBA(255, 255, 255, 1)
         PressedFill: =RGBA(103, 204, 107, 1)
         RadiusBottomLeft: =40
@@ -2753,14 +1583,7 @@
         ZIndex: =5
 
     Label65_3 As label:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =2
         Color: =RGBA(128, 128, 128, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        FocusedBorderThickness: =4
-        Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Semibold
         Height: =52
         Size: =21
@@ -2771,14 +1594,7 @@
         ZIndex: =6
 
     Label66_5 As label:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =2
         Color: =RGBA(128, 128, 128, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        FocusedBorderThickness: =4
-        Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Semibold
         Height: =62
         Size: =21
@@ -2789,14 +1605,7 @@
         ZIndex: =7
 
     Label15_2 As label:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =2
         Color: =RGBA(103, 204, 107, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        FocusedBorderThickness: =4
-        Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Semibold
         Height: =70
         Size: =30
@@ -2807,14 +1616,7 @@
         ZIndex: =8
 
     Label66_6 As label:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =2
         Color: =RGBA(103, 204, 107, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        FocusedBorderThickness: =4
-        Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Semibold
         Height: =69
         Size: =21
@@ -2837,14 +1639,7 @@
         ZIndex: =10
 
     Label17_2 As label:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =2
         Color: =RGBA(255, 255, 255, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        FocusedBorderThickness: =4
-        Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Bold
         Height: =70
         Size: =34
@@ -2854,27 +1649,15 @@
         ZIndex: =11
 
     Icon14_12 As icon.BackArrow:
-        BorderColor: =RGBA(109, 109, 109, 1)
         Color: =RGBA(255, 255, 255, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(220, 220, 220, 1)
-        DisabledFill: =RGBA(0, 0, 0, 0)
-        FocusedBorderThickness: =4
         Height: =70
-        HoverBorderColor: =RGBA(0, 0, 0, 0)
-        HoverColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
-        HoverFill: =RGBA(0, 0, 0, 0)
         Icon: =Icon.BackArrow
         OnSelect: =Back()
-        PressedBorderColor: =RGBA(0, 0, 0, 0)
-        PressedColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
-        PressedFill: =RGBA(0, 0, 0, 0)
         Width: =43
         X: =18
         ZIndex: =12
 
     customerinfo_1 As gallery.galleryHorizontal:
-        BorderColor: =RGBA(109, 109, 109, 1)
         Height: =65
         Items: |-
             =Table( 
@@ -2928,14 +1711,10 @@
         Button4_13 As button:
             BorderColor: =RGBA(53, 166, 57, 1)
             Color: =If(ThisItem.IsSelected, RGBA(255, 255, 255, 1), RGBA(53, 166,57,1))
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            DisabledFill: =RGBA(244, 244, 244, 1)
             Fill: =If(ThisItem.IsSelected, RGBA(53, 166, 57, 1), White)
             FocusedBorderColor: =
             FocusedBorderThickness: =2
             Font: =Font.Lato
-            FontWeight: =FontWeight.Semibold
             Height: =46
             HoverBorderColor: =RGBA(53, 166, 57, 1)
             HoverColor: =If(ThisItem.IsSelected, RGBA(255, 255, 255, 1), RGBA(53, 166,57,1))

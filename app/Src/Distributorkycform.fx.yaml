@@ -1,18 +1,11 @@
 Distributorkycform As screen:
     Fill: =RGBA(31, 31, 31, 1)
-    LoadingSpinnerColor: =RGBA(255, 200, 61, 1)
 
     Button21 As button:
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(237, 27, 36, 1)
         DisplayMode: =DisplayMode.Disabled
-        Fill: =RGBA(164, 38, 44, 1)
         FocusedBorderColor: =ColorFade(Self.Fill, -75%)
-        FontWeight: =FontWeight.Semibold
         Height: =160
-        HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =ColorFade(RGBA(164, 38, 44, 1), -20%)
         RadiusBottomLeft: |
             =90
         RadiusBottomRight: |
@@ -25,8 +18,6 @@ Distributorkycform As screen:
 
     LblAppName1 As label:
         Align: =Align.Center
-        Color: =RGBA(255, 255, 255, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
         Height: =86
         Size: =27
         Text: ="KYC Form"
@@ -65,9 +56,7 @@ Distributorkycform As screen:
                 ZIndex: =1
 
                 Label52 As label:
-                    BorderColor: =RGBA(89, 0, 0, 1)
                     Color: =RGBA(255, 255, 255, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
                     FontWeight: =FontWeight.Semibold
                     Height: =50
                     Size: =19
@@ -78,17 +67,10 @@ Distributorkycform As screen:
                     ZIndex: =1
 
                 TextInput3_2 As text:
-                    BorderColor: =RGBA(89, 0, 0, 1)
-                    Color: =RGBA(0, 0, 0, 1)
+                    BorderThickness: =1
                     Default: =datadis.'Name of the Firm'
-                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    DisabledFill: =RGBA(244, 244, 244, 1)
-                    FocusedBorderThickness: =4
                     Height: =50
                     HintText: ="Enter Firm Name"
-                    HoverBorderColor: =RGBA(89, 0, 0, 1)
-                    HoverColor: =RGBA(0, 0, 0, 1)
                     HoverFill: =RGBA(0, 0, 0, 0)
                     OnSelect: =Set(ClearFieldsForDO, false);
                     Reset: |+
@@ -101,9 +83,7 @@ Distributorkycform As screen:
                     ZIndex: =2
 
                 Label52_21 As label:
-                    BorderColor: =RGBA(89, 0, 0, 1)
                     Color: =RGBA(255, 255, 255, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
                     FontWeight: =FontWeight.Semibold
                     Height: =55
                     Size: =19
@@ -114,10 +94,10 @@ Distributorkycform As screen:
                     ZIndex: =3
 
                 Radio1_2 As radio:
+                    BorderColor: =RGBA(0, 0, 0, 1)
                     Color: =RGBA(255, 255, 255, 1)
                     Default: =datadis.'Constitution of the firm'
                     Height: =121
-                    HoverColor: =RGBA(89, 0, 0, 1)
                     Items: =['Constitution of the firm (Distributor Onboarding)'.Private, 'Constitution of the firm (Distributor Onboarding)'.Partner, 'Constitution of the firm (Distributor Onboarding)'.Proprietor, 'Constitution of the firm (Distributor Onboarding)'.Public, 'Constitution of the firm (Distributor Onboarding)'.Others]
                     Layout: =Layout.Horizontal
                     OnSelect: =Set(ClearFieldsForDO, false)
@@ -133,9 +113,7 @@ Distributorkycform As screen:
                     ZIndex: =4
 
                 Label52_16 As label:
-                    BorderColor: =RGBA(89, 0, 0, 1)
                     Color: =RGBA(255, 255, 255, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
                     FontWeight: =FontWeight.Semibold
                     Height: =70
                     Size: =19
@@ -146,17 +124,11 @@ Distributorkycform As screen:
                     ZIndex: =5
 
                 TextInput3_23 As text:
-                    Color: =RGBA(0, 0, 0, 1)
+                    BorderColor: =RGBA(0, 0, 0, 1)
+                    BorderThickness: =1
                     Default: =datadis.'First Name'
-                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    DisabledFill: =RGBA(244, 244, 244, 1)
-                    FocusedBorderThickness: =4
                     Height: =50
                     HintText: ="Enter Name"
-                    HoverBorderColor: =RGBA(89, 0, 0, 1)
-                    HoverColor: =RGBA(0, 0, 0, 1)
-                    HoverFill: =RGBA(222, 179, 184, 1)
                     OnChange: =Set(ClearFieldsForDO,false);
                     OnSelect: =Set(ClearFieldsForDO, false)
                     Reset: =ClearFieldsForDO
@@ -167,9 +139,7 @@ Distributorkycform As screen:
                     ZIndex: =6
 
                 Label52_3 As label:
-                    BorderColor: =RGBA(89, 0, 0, 1)
                     Color: =RGBA(255, 255, 255, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
                     FontWeight: =FontWeight.Semibold
                     Height: =55
                     Size: =19
@@ -180,9 +150,7 @@ Distributorkycform As screen:
                     ZIndex: =7
 
                 Label52_17 As label:
-                    BorderColor: =RGBA(89, 0, 0, 1)
                     Color: =RGBA(255, 255, 255, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
                     FontWeight: =FontWeight.Semibold
                     Height: =59
                     Size: =19
@@ -193,9 +161,7 @@ Distributorkycform As screen:
                     ZIndex: =8
 
                 Label52_18 As label:
-                    BorderColor: =RGBA(89, 0, 0, 1)
                     Color: =RGBA(255, 255, 255, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
                     FontWeight: =FontWeight.Semibold
                     Height: =55
                     Size: =19
@@ -206,17 +172,11 @@ Distributorkycform As screen:
                     ZIndex: =9
 
                 TextInput3_26 As text:
-                    Color: =RGBA(0, 0, 0, 1)
+                    BorderColor: =RGBA(0, 0, 0, 1)
+                    BorderThickness: =1
                     Default: =datadis.'Mobile No.'
-                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    DisabledFill: =RGBA(244, 244, 244, 1)
-                    FocusedBorderThickness: =4
                     Height: =50
                     HintText: ="Enter Mobile"
-                    HoverBorderColor: =RGBA(89, 0, 0, 1)
-                    HoverColor: =RGBA(0, 0, 0, 1)
-                    HoverFill: =RGBA(222, 179, 184, 1)
                     OnSelect: =Set(ClearFieldsForDO, false)
                     Reset: =ClearFieldsForDO
                     Size: =19
@@ -226,9 +186,7 @@ Distributorkycform As screen:
                     ZIndex: =10
 
                 Label52_19 As label:
-                    BorderColor: =RGBA(89, 0, 0, 1)
                     Color: =RGBA(255, 255, 255, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
                     FontWeight: =FontWeight.Semibold
                     Height: =55
                     Size: =19
@@ -239,17 +197,11 @@ Distributorkycform As screen:
                     ZIndex: =11
 
                 TextInput3_29 As text:
-                    Color: =RGBA(0, 0, 0, 1)
+                    BorderColor: =RGBA(0, 0, 0, 1)
+                    BorderThickness: =1
                     Default: =datadis.'Telephone No.'
-                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    DisabledFill: =RGBA(244, 244, 244, 1)
-                    FocusedBorderThickness: =4
                     Height: =50
                     HintText: ="Enter Telephone No."
-                    HoverBorderColor: =RGBA(89, 0, 0, 1)
-                    HoverColor: =RGBA(0, 0, 0, 1)
-                    HoverFill: =RGBA(222, 179, 184, 1)
                     OnSelect: =Set(ClearFieldsForDO, false)
                     Reset: =ClearFieldsForDO
                     Size: =19
@@ -259,22 +211,13 @@ Distributorkycform As screen:
                     ZIndex: =12
 
                 DatePicker2 As datepicker:
-                    BorderColor: =RGBA(89, 0, 0, 1)
-                    CalendarHeaderFill: =RGBA(164, 38, 44, 1)
-                    Color: =RGBA(0, 0, 0, 1)
                     DefaultDate: =datadis.'Date of Birth'
-                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    DisabledFill: =RGBA(244, 244, 244, 1)
                     Height: =50
-                    HoverDateFill: =RGBA(222, 179, 184, 1)
-                    IconBackground: =RGBA(164, 38, 44, 1)
                     InputTextPlaceholder: |-
                         =//If(IsBlank(Self.SelectedDate), Text(Date(2001,12,31), Self.Format, Self.Language))
                         "Select Date"
                     OnSelect: =Set(ClearFieldsForDO, false)
                     Reset: =ClearFieldsForDO
-                    SelectedDateFill: =RGBA(164, 38, 44, 1)
                     Size: =18
                     Width: =235
                     X: =20
@@ -282,19 +225,10 @@ Distributorkycform As screen:
                     ZIndex: =13
 
                 DatePicker2_1 As datepicker:
-                    BorderColor: =RGBA(89, 0, 0, 1)
-                    CalendarHeaderFill: =RGBA(164, 38, 44, 1)
-                    Color: =RGBA(0, 0, 0, 1)
                     DefaultDate: =datadis.'Year of Establishment'
-                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    DisabledFill: =RGBA(244, 244, 244, 1)
                     Height: =50
-                    HoverDateFill: =RGBA(222, 179, 184, 1)
-                    IconBackground: =RGBA(164, 38, 44, 1)
                     OnSelect: =Set(ClearFieldsForDO, false)
                     Reset: =ClearFieldsForDO
-                    SelectedDateFill: =RGBA(164, 38, 44, 1)
                     Size: =17
                     Width: =260
                     X: =300
@@ -302,9 +236,7 @@ Distributorkycform As screen:
                     ZIndex: =14
 
                 Label52_48 As label:
-                    BorderColor: =RGBA(0, 18, 107, 1)
                     Color: =RGBA(255, 255, 255, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
                     FontWeight: =FontWeight.Semibold
                     Height: =56
                     Size: =19
@@ -315,17 +247,11 @@ Distributorkycform As screen:
                     ZIndex: =15
 
                 TextInput3_62 As text:
-                    Color: =RGBA(0, 0, 0, 1)
+                    BorderColor: =RGBA(0, 0, 0, 1)
+                    BorderThickness: =1
                     Default: =datadis.'Fax No.'
-                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    DisabledFill: =RGBA(244, 244, 244, 1)
-                    FocusedBorderThickness: =4
                     Height: =50
                     HintText: ="Enter Fax No."
-                    HoverBorderColor: =RGBA(0, 18, 107, 1)
-                    HoverColor: =RGBA(0, 0, 0, 1)
-                    HoverFill: =RGBA(186, 202, 226, 1)
                     OnSelect: =Set(ClearFieldsForDO, false)
                     Reset: =ClearFieldsForDO
                     Size: =18
@@ -335,9 +261,7 @@ Distributorkycform As screen:
                     ZIndex: =16
 
                 Label52_49 As label:
-                    BorderColor: =RGBA(0, 18, 107, 1)
                     Color: =RGBA(255, 255, 255, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
                     FontWeight: =FontWeight.Semibold
                     Height: =56
                     Size: =19
@@ -348,17 +272,11 @@ Distributorkycform As screen:
                     ZIndex: =17
 
                 TextInput3_63 As text:
-                    Color: =RGBA(0, 0, 0, 1)
+                    BorderColor: =RGBA(0, 0, 0, 1)
+                    BorderThickness: =1
                     Default: =datadis.'Alternate Mobile No.'
-                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    DisabledFill: =RGBA(244, 244, 244, 1)
-                    FocusedBorderThickness: =4
                     Height: =50
                     HintText: ="Enter Mobile No."
-                    HoverBorderColor: =RGBA(0, 18, 107, 1)
-                    HoverColor: =RGBA(0, 0, 0, 1)
-                    HoverFill: =RGBA(186, 202, 226, 1)
                     OnSelect: =Set(ClearFieldsForDO, false)
                     Reset: =ClearFieldsForDO
                     Size: =19
@@ -368,9 +286,7 @@ Distributorkycform As screen:
                     ZIndex: =18
 
                 Label52_50 As label:
-                    BorderColor: =RGBA(0, 18, 107, 1)
                     Color: =RGBA(238, 49, 55, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
                     FontWeight: =FontWeight.Bold
                     Height: =56
                     Size: =21
@@ -381,9 +297,7 @@ Distributorkycform As screen:
                     ZIndex: =19
 
                 Label52_51 As label:
-                    BorderColor: =RGBA(0, 18, 107, 1)
                     Color: =RGBA(255, 255, 255, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
                     FontWeight: =FontWeight.Semibold
                     Height: =56
                     Size: =19
@@ -394,18 +308,10 @@ Distributorkycform As screen:
                     ZIndex: =20
 
                 TextInput3_3 As text:
-                    BorderColor: =RGBA(0, 18, 107, 1)
-                    Color: =RGBA(0, 0, 0, 1)
+                    BorderThickness: =1
                     Default: =datadis.'Billing Address 1'
-                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    DisabledFill: =RGBA(244, 244, 244, 1)
-                    FocusedBorderThickness: =4
                     Height: =50
                     HintText: ="Enter Address"
-                    HoverBorderColor: =RGBA(0, 18, 107, 1)
-                    HoverColor: =RGBA(0, 0, 0, 1)
-                    HoverFill: =RGBA(186, 202, 226, 1)
                     OnSelect: =Set(ClearFieldsForDO, false)
                     Reset: =ClearFieldsForDO
                     Size: =19
@@ -415,9 +321,7 @@ Distributorkycform As screen:
                     ZIndex: =21
 
                 Label52_52 As label:
-                    BorderColor: =RGBA(0, 18, 107, 1)
                     Color: =RGBA(255, 255, 255, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
                     FontWeight: =FontWeight.Semibold
                     Height: =56
                     Size: =19
@@ -428,18 +332,10 @@ Distributorkycform As screen:
                     ZIndex: =22
 
                 TextInput3_64 As text:
-                    BorderColor: =RGBA(0, 18, 107, 1)
-                    Color: =RGBA(0, 0, 0, 1)
+                    BorderThickness: =1
                     Default: =datadis.'Billing Address 2'
-                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    DisabledFill: =RGBA(244, 244, 244, 1)
-                    FocusedBorderThickness: =4
                     Height: =50
                     HintText: =" Enter Address"
-                    HoverBorderColor: =RGBA(0, 18, 107, 1)
-                    HoverColor: =RGBA(0, 0, 0, 1)
-                    HoverFill: =RGBA(186, 202, 226, 1)
                     OnSelect: =Set(ClearFieldsForDO, false)
                     PaddingLeft: =0
                     Reset: =ClearFieldsForDO
@@ -450,9 +346,7 @@ Distributorkycform As screen:
                     ZIndex: =23
 
                 Label52_53 As label:
-                    BorderColor: =RGBA(0, 18, 107, 1)
                     Color: =RGBA(255, 255, 255, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
                     FontWeight: =FontWeight.Semibold
                     Height: =56
                     Size: =19
@@ -463,20 +357,12 @@ Distributorkycform As screen:
                     ZIndex: =24
 
                 TextInput3_65 As text:
-                    BorderColor: =RGBA(0, 18, 107, 1)
-                    Color: =RGBA(0, 0, 0, 1)
+                    BorderThickness: =1
                     Default: |-
                         =datadis.'Billing Post Code'
                         //Filter('Sales Territory', Pare
-                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    DisabledFill: =RGBA(244, 244, 244, 1)
-                    FocusedBorderThickness: =4
                     Height: =50
                     HintText: ="Enter Post Code"
-                    HoverBorderColor: =RGBA(0, 18, 107, 1)
-                    HoverColor: =RGBA(0, 0, 0, 1)
-                    HoverFill: =RGBA(186, 202, 226, 1)
                     OnChange: |
                         =/*ClearCollect(
                             MyZone,
@@ -528,9 +414,7 @@ Distributorkycform As screen:
                     ZIndex: =25
 
                 Label52_54 As label:
-                    BorderColor: =RGBA(0, 18, 107, 1)
                     Color: =RGBA(255, 255, 255, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
                     FontWeight: =FontWeight.Semibold
                     Height: =56
                     Size: =19
@@ -541,9 +425,7 @@ Distributorkycform As screen:
                     ZIndex: =26
 
                 Label52_55 As label:
-                    BorderColor: =RGBA(0, 18, 107, 1)
                     Color: =RGBA(255, 255, 255, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
                     FontWeight: =FontWeight.Semibold
                     Height: =56
                     Size: =19
@@ -554,9 +436,7 @@ Distributorkycform As screen:
                     ZIndex: =28
 
                 Label52_56 As label:
-                    BorderColor: =RGBA(0, 18, 107, 1)
                     Color: =RGBA(255, 255, 255, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
                     FontWeight: =FontWeight.Semibold
                     Height: =56
                     Size: =19
@@ -567,9 +447,7 @@ Distributorkycform As screen:
                     ZIndex: =30
 
                 Label52_57 As label:
-                    BorderColor: =RGBA(0, 18, 107, 1)
                     Color: =RGBA(255, 255, 255, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
                     FontWeight: =FontWeight.Semibold
                     Height: =56
                     Size: =19
@@ -580,9 +458,7 @@ Distributorkycform As screen:
                     ZIndex: =34
 
                 Label52_58 As label:
-                    BorderColor: =RGBA(0, 18, 107, 1)
                     Color: =RGBA(255, 255, 255, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
                     FontWeight: =FontWeight.Semibold
                     Height: =56
                     Size: =19
@@ -593,9 +469,7 @@ Distributorkycform As screen:
                     ZIndex: =36
 
                 Label52_59 As label:
-                    BorderColor: =RGBA(0, 18, 107, 1)
                     Color: =RGBA(255, 255, 255, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
                     FontWeight: =FontWeight.Semibold
                     Height: =56
                     Size: =19
@@ -606,13 +480,10 @@ Distributorkycform As screen:
                     ZIndex: =38
 
                 Checkbox2_1 As checkbox:
-                    BorderColor: =RGBA(89, 0, 0, 1)
                     CheckboxBorderColor: =RGBA(238, 49, 55, 1)
                     CheckboxSize: =40
                     CheckmarkFill: =RGBA(238, 49, 55, 1)
-                    Color: =RGBA(0, 0, 0, 1)
                     Height: =74
-                    HoverColor: =RGBA(89, 0, 0, 1)
                     OnCheck: |-
                         =ClearCollect(
                             MyAddress,
@@ -638,9 +509,7 @@ Distributorkycform As screen:
                     ZIndex: =40
 
                 Label52_60 As label:
-                    BorderColor: =RGBA(0, 18, 107, 1)
                     Color: =RGBA(238, 49, 55, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
                     FontWeight: =FontWeight.Bold
                     Height: =56
                     Size: =21
@@ -651,9 +520,7 @@ Distributorkycform As screen:
                     ZIndex: =41
 
                 Label52_61 As label:
-                    BorderColor: =RGBA(0, 18, 107, 1)
                     Color: =RGBA(255, 255, 255, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
                     FontWeight: =FontWeight.Semibold
                     Height: =56
                     Size: =19
@@ -664,9 +531,7 @@ Distributorkycform As screen:
                     ZIndex: =42
 
                 Label52_79 As label:
-                    BorderColor: =RGBA(0, 18, 107, 1)
                     Color: =RGBA(255, 255, 255, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
                     FontWeight: =FontWeight.Semibold
                     Height: =56
                     Size: =19
@@ -677,18 +542,10 @@ Distributorkycform As screen:
                     ZIndex: =44
 
                 TextInput3_66 As text:
-                    BorderColor: =RGBA(0, 18, 107, 1)
-                    Color: =RGBA(0, 0, 0, 1)
+                    BorderThickness: =1
                     Default: =If(Checkbox2_1.Value, datadis.'Billing Address 2' )
-                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    DisabledFill: =RGBA(244, 244, 244, 1)
-                    FocusedBorderThickness: =4
                     Height: =45
                     HintText: =" Enter Address"
-                    HoverBorderColor: =RGBA(0, 18, 107, 1)
-                    HoverColor: =RGBA(0, 0, 0, 1)
-                    HoverFill: =RGBA(186, 202, 226, 1)
                     PaddingLeft: =0
                     Size: =18
                     Width: =250
@@ -697,9 +554,7 @@ Distributorkycform As screen:
                     ZIndex: =45
 
                 Label52_80 As label:
-                    BorderColor: =RGBA(0, 18, 107, 1)
                     Color: =RGBA(255, 255, 255, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
                     FontWeight: =FontWeight.Semibold
                     Height: =56
                     Size: =19
@@ -710,18 +565,10 @@ Distributorkycform As screen:
                     ZIndex: =46
 
                 TextInput3_67 As text:
-                    BorderColor: =RGBA(0, 18, 107, 1)
-                    Color: =RGBA(0, 0, 0, 1)
+                    BorderThickness: =1
                     Default: =If(Checkbox2_1.Value, TextInput3_65.Text)
-                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    DisabledFill: =RGBA(244, 244, 244, 1)
-                    FocusedBorderThickness: =4
                     Height: =50
                     HintText: ="Enter Post Code"
-                    HoverBorderColor: =RGBA(0, 18, 107, 1)
-                    HoverColor: =RGBA(0, 0, 0, 1)
-                    HoverFill: =RGBA(186, 202, 226, 1)
                     Size: =18
                     Width: =250
                     X: =310
@@ -729,9 +576,7 @@ Distributorkycform As screen:
                     ZIndex: =47
 
                 Label52_81 As label:
-                    BorderColor: =RGBA(0, 18, 107, 1)
                     Color: =RGBA(255, 255, 255, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
                     FontWeight: =FontWeight.Semibold
                     Height: =56
                     Size: =19
@@ -742,9 +587,7 @@ Distributorkycform As screen:
                     ZIndex: =48
 
                 Label52_82 As label:
-                    BorderColor: =RGBA(0, 18, 107, 1)
                     Color: =RGBA(255, 255, 255, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
                     FontWeight: =FontWeight.Semibold
                     Height: =50
                     Size: =19
@@ -755,9 +598,7 @@ Distributorkycform As screen:
                     ZIndex: =49
 
                 Label52_83 As label:
-                    BorderColor: =RGBA(0, 18, 107, 1)
                     Color: =RGBA(255, 255, 255, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
                     FontWeight: =FontWeight.Semibold
                     Height: =50
                     Size: =19
@@ -768,9 +609,7 @@ Distributorkycform As screen:
                     ZIndex: =50
 
                 Label52_84 As label:
-                    BorderColor: =RGBA(0, 18, 107, 1)
                     Color: =RGBA(255, 255, 255, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
                     FontWeight: =FontWeight.Semibold
                     Height: =50
                     Size: =19
@@ -781,9 +620,7 @@ Distributorkycform As screen:
                     ZIndex: =54
 
                 Label52_85 As label:
-                    BorderColor: =RGBA(0, 18, 107, 1)
                     Color: =RGBA(255, 255, 255, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
                     FontWeight: =FontWeight.Semibold
                     Height: =50
                     Size: =19
@@ -794,9 +631,7 @@ Distributorkycform As screen:
                     ZIndex: =56
 
                 Label52_86 As label:
-                    BorderColor: =RGBA(0, 18, 107, 1)
                     Color: =RGBA(255, 255, 255, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
                     FontWeight: =FontWeight.Semibold
                     Height: =50
                     Size: =19
@@ -807,19 +642,11 @@ Distributorkycform As screen:
                     ZIndex: =58
 
                 TextInput3_4 As text:
-                    BorderColor: =RGBA(0, 18, 107, 1)
-                    Color: =RGBA(0, 0, 0, 1)
+                    BorderThickness: =1
                     Default: =If(Checkbox2_1.Value, datadis.'Billing Address 1' )
-                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    DisabledFill: =RGBA(244, 244, 244, 1)
                     DisplayMode: =If(IsBlank(MyAddress.address1), DisplayMode.Edit, DisplayMode.View)
-                    FocusedBorderThickness: =4
                     Height: =50
                     HintText: ="Enter Address"
-                    HoverBorderColor: =RGBA(0, 18, 107, 1)
-                    HoverColor: =RGBA(0, 0, 0, 1)
-                    HoverFill: =RGBA(186, 202, 226, 1)
                     Size: =19
                     Width: =515
                     X: =24
@@ -827,23 +654,15 @@ Distributorkycform As screen:
                     ZIndex: =60
 
                 TextInput3_92 As text:
-                    BorderColor: =RGBA(0, 18, 107, 1)
-                    Color: =RGBA(0, 0, 0, 1)
+                    BorderThickness: =1
                     Default: |-
                         =//First(Distinct('Sales Territory', 'Parent Zone'))
                         //First(Distinct('Sales Territory', 'Zones'))
                         
                         //First(Zones).zx_territoryname
                         Last(FirstN(Zones,2)).zx_territoryname
-                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    DisabledFill: =RGBA(244, 244, 244, 1)
-                    FocusedBorderThickness: =4
                     Height: =50
                     HintText: =" "
-                    HoverBorderColor: =RGBA(0, 18, 107, 1)
-                    HoverColor: =RGBA(0, 0, 0, 1)
-                    HoverFill: =RGBA(186, 202, 226, 1)
                     OnSelect: =Set(ClearFieldsForDO, false)
                     PaddingLeft: =0
                     Reset: =ClearFieldsForDO
@@ -854,18 +673,10 @@ Distributorkycform As screen:
                     ZIndex: =61
 
                 TextInput3_93 As text:
-                    BorderColor: =RGBA(0, 18, 107, 1)
-                    Color: =RGBA(0, 0, 0, 1)
+                    BorderThickness: =1
                     Default: =Last(FirstN(States,2)).zx_territoryname
-                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    DisabledFill: =RGBA(244, 244, 244, 1)
-                    FocusedBorderThickness: =4
                     Height: =50
                     HintText: =""
-                    HoverBorderColor: =RGBA(0, 18, 107, 1)
-                    HoverColor: =RGBA(0, 0, 0, 1)
-                    HoverFill: =RGBA(186, 202, 226, 1)
                     OnSelect: =Set(ClearFieldsForDO, false)
                     PaddingLeft: =0
                     Reset: =ClearFieldsForDO
@@ -876,18 +687,10 @@ Distributorkycform As screen:
                     ZIndex: =62
 
                 TextInput3_94 As text:
-                    BorderColor: =RGBA(0, 18, 107, 1)
-                    Color: =RGBA(0, 0, 0, 1)
+                    BorderThickness: =1
                     Default: =Last(FirstN(SubStates,2)).zx_territoryname
-                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    DisabledFill: =RGBA(244, 244, 244, 1)
-                    FocusedBorderThickness: =4
                     Height: =50
                     HintText: =""
-                    HoverBorderColor: =RGBA(0, 18, 107, 1)
-                    HoverColor: =RGBA(0, 0, 0, 1)
-                    HoverFill: =RGBA(186, 202, 226, 1)
                     OnSelect: =Set(ClearFieldsForDO, false)
                     PaddingLeft: =0
                     Reset: =ClearFieldsForDO
@@ -898,18 +701,10 @@ Distributorkycform As screen:
                     ZIndex: =63
 
                 TextInput3_95 As text:
-                    BorderColor: =RGBA(0, 18, 107, 1)
-                    Color: =RGBA(0, 0, 0, 1)
+                    BorderThickness: =1
                     Default: =Last(FirstN(Districts,2)).zx_territoryname
-                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    DisabledFill: =RGBA(244, 244, 244, 1)
-                    FocusedBorderThickness: =4
                     Height: =50
                     HintText: =""
-                    HoverBorderColor: =RGBA(0, 18, 107, 1)
-                    HoverColor: =RGBA(0, 0, 0, 1)
-                    HoverFill: =RGBA(186, 202, 226, 1)
                     OnSelect: =Set(ClearFieldsForDO, false)
                     PaddingLeft: =0
                     Reset: =ClearFieldsForDO
@@ -920,25 +715,11 @@ Distributorkycform As screen:
                     ZIndex: =64
 
                 Dropdown3 As dropdown:
-                    BorderColor: =RGBA(89, 0, 0, 1)
-                    ChevronBackground: =RGBA(164, 38, 44, 1)
-                    ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
-                    ChevronDisabledFill: =RGBA(244, 244, 244, 1)
-                    ChevronHoverBackground: =ColorFade(RGBA(164, 38, 44, 1), -20%)
-                    ChevronHoverFill: =RGBA(255, 255, 255, 1)
-                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    DisabledFill: =RGBA(244, 244, 244, 1)
                     Height: =50
-                    HoverColor: =RGBA(0, 0, 0, 1)
-                    HoverFill: =RGBA(222, 179, 184, 1)
                     Items: |
                         =Cities
                     OnSelect: =Set(ClearFieldsForDO, false)
-                    PressedColor: =RGBA(255, 255, 255, 1)
-                    PressedFill: =RGBA(89, 0, 0, 1)
                     Reset: =ClearFieldsForDO
-                    SelectionFill: =RGBA(164, 38, 44, 1)
                     Size: =18
                     Width: =215
                     X: =26
@@ -946,19 +727,8 @@ Distributorkycform As screen:
                     ZIndex: =65
 
                 Dropdown3_1 As dropdown:
-                    BorderColor: =RGBA(89, 0, 0, 1)
-                    ChevronBackground: =RGBA(164, 38, 44, 1)
-                    ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
-                    ChevronDisabledFill: =RGBA(244, 244, 244, 1)
-                    ChevronHoverBackground: =ColorFade(RGBA(164, 38, 44, 1), -20%)
-                    ChevronHoverFill: =RGBA(255, 255, 255, 1)
                     Default: =""
-                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    DisabledFill: =RGBA(244, 244, 244, 1)
                     Height: =50
-                    HoverColor: =RGBA(0, 0, 0, 1)
-                    HoverFill: =RGBA(222, 179, 184, 1)
                     Items: |-
                         =Filter(
                             'Sales Territory',
@@ -972,10 +742,7 @@ Distributorkycform As screen:
                         )
                         */
                     OnSelect: =Set(ClearFieldsForDO, false)
-                    PressedColor: =RGBA(255, 255, 255, 1)
-                    PressedFill: =RGBA(89, 0, 0, 1)
                     Reset: =ClearFieldsForDO
-                    SelectionFill: =RGBA(164, 38, 44, 1)
                     Size: =21
                     Width: =215
                     X: =310
@@ -983,8 +750,7 @@ Distributorkycform As screen:
                     ZIndex: =66
 
                 TextInput3_96 As text:
-                    BorderColor: =RGBA(0, 18, 107, 1)
-                    Color: =RGBA(0, 0, 0, 1)
+                    BorderThickness: =1
                     Default: |-
                         =//First(Distinct('Sales Territory', 'Parent Zone'))
                         //First(Distinct('Sales Territory', 'Zones'))
@@ -992,15 +758,8 @@ Distributorkycform As screen:
                         //First(Zones).zx_territoryname
                         If(Checkbox2_1.Value, TextInput3_92.Text)
                         //Last(FirstN(Zones,2)).zx_territoryname
-                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    DisabledFill: =RGBA(244, 244, 244, 1)
-                    FocusedBorderThickness: =4
                     Height: =44
                     HintText: =" "
-                    HoverBorderColor: =RGBA(0, 18, 107, 1)
-                    HoverColor: =RGBA(0, 0, 0, 1)
-                    HoverFill: =RGBA(186, 202, 226, 1)
                     PaddingLeft: =0
                     Size: =18
                     Width: =250
@@ -1009,8 +768,7 @@ Distributorkycform As screen:
                     ZIndex: =67
 
                 TextInput3_97 As text:
-                    BorderColor: =RGBA(0, 18, 107, 1)
-                    Color: =RGBA(0, 0, 0, 1)
+                    BorderThickness: =1
                     Default: |-
                         =//First(Distinct('Sales Territory', 'Parent Zone'))
                         //First(Distinct('Sales Territory', 'Zones'))
@@ -1018,15 +776,8 @@ Distributorkycform As screen:
                         //First(Zones).zx_territoryname
                         //Last(FirstN(Zones,2)).zx_territoryname
                         If(Checkbox2_1.Value, TextInput3_93.Text)
-                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    DisabledFill: =RGBA(244, 244, 244, 1)
-                    FocusedBorderThickness: =4
                     Height: =45
                     HintText: =" "
-                    HoverBorderColor: =RGBA(0, 18, 107, 1)
-                    HoverColor: =RGBA(0, 0, 0, 1)
-                    HoverFill: =RGBA(186, 202, 226, 1)
                     PaddingLeft: =0
                     Size: =18
                     Width: =250
@@ -1035,8 +786,7 @@ Distributorkycform As screen:
                     ZIndex: =68
 
                 TextInput3_98 As text:
-                    BorderColor: =RGBA(0, 18, 107, 1)
-                    Color: =RGBA(0, 0, 0, 1)
+                    BorderThickness: =1
                     Default: |-
                         =//First(Distinct('Sales Territory', 'Parent Zone'))
                         //First(Distinct('Sales Territory', 'Zones'))
@@ -1045,15 +795,8 @@ Distributorkycform As screen:
                         //Last(FirstN(Zones,2)).zx_territoryname
                         
                         If(Checkbox2_1.Value, TextInput3_94.Text)
-                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    DisabledFill: =RGBA(244, 244, 244, 1)
-                    FocusedBorderThickness: =4
                     Height: =50
                     HintText: =" "
-                    HoverBorderColor: =RGBA(0, 18, 107, 1)
-                    HoverColor: =RGBA(0, 0, 0, 1)
-                    HoverFill: =RGBA(186, 202, 226, 1)
                     PaddingLeft: =0
                     Size: =18
                     Width: =250
@@ -1062,8 +805,7 @@ Distributorkycform As screen:
                     ZIndex: =69
 
                 TextInput3_99 As text:
-                    BorderColor: =RGBA(0, 18, 107, 1)
-                    Color: =RGBA(0, 0, 0, 1)
+                    BorderThickness: =1
                     Default: |-
                         =//First(Distinct('Sales Territory', 'Parent Zone'))
                         //First(Distinct('Sales Territory', 'Zones'))
@@ -1072,15 +814,8 @@ Distributorkycform As screen:
                         //Last(FirstN(Zones,2)).zx_territoryname
                         
                         If(Checkbox2_1.Value, TextInput3_95.Text)
-                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    DisabledFill: =RGBA(244, 244, 244, 1)
-                    FocusedBorderThickness: =4
                     Height: =50
                     HintText: =" "
-                    HoverBorderColor: =RGBA(0, 18, 107, 1)
-                    HoverColor: =RGBA(0, 0, 0, 1)
-                    HoverFill: =RGBA(186, 202, 226, 1)
                     PaddingLeft: =0
                     Size: =18
                     Width: =250
@@ -1089,22 +824,8 @@ Distributorkycform As screen:
                     ZIndex: =70
 
                 Dropdown5 As dropdown:
-                    BorderColor: =RGBA(89, 0, 0, 1)
-                    ChevronBackground: =RGBA(164, 38, 44, 1)
-                    ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
-                    ChevronDisabledFill: =RGBA(244, 244, 244, 1)
-                    ChevronHoverBackground: =ColorFade(RGBA(164, 38, 44, 1), -20%)
-                    ChevronHoverFill: =RGBA(255, 255, 255, 1)
-                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    DisabledFill: =RGBA(244, 244, 244, 1)
                     Height: =50
-                    HoverColor: =RGBA(0, 0, 0, 1)
-                    HoverFill: =RGBA(222, 179, 184, 1)
                     Items: =If(Checkbox2_1.Value, Dropdown3_1.SelectedText)
-                    PressedColor: =RGBA(255, 255, 255, 1)
-                    PressedFill: =RGBA(89, 0, 0, 1)
-                    SelectionFill: =RGBA(164, 38, 44, 1)
                     Size: =21
                     Width: =250
                     X: =313
@@ -1112,22 +833,8 @@ Distributorkycform As screen:
                     ZIndex: =71
 
                 Dropdown5_1 As dropdown:
-                    BorderColor: =RGBA(89, 0, 0, 1)
-                    ChevronBackground: =RGBA(164, 38, 44, 1)
-                    ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
-                    ChevronDisabledFill: =RGBA(244, 244, 244, 1)
-                    ChevronHoverBackground: =ColorFade(RGBA(164, 38, 44, 1), -20%)
-                    ChevronHoverFill: =RGBA(255, 255, 255, 1)
-                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    DisabledFill: =RGBA(244, 244, 244, 1)
                     Height: =50
-                    HoverColor: =RGBA(0, 0, 0, 1)
-                    HoverFill: =RGBA(222, 179, 184, 1)
                     Items: =If(Checkbox2_1.Value, Dropdown3.SelectedText)
-                    PressedColor: =RGBA(255, 255, 255, 1)
-                    PressedFill: =RGBA(89, 0, 0, 1)
-                    SelectionFill: =RGBA(164, 38, 44, 1)
                     Size: =18
                     Width: =250
                     X: =24
@@ -1143,9 +850,7 @@ Distributorkycform As screen:
                 ZIndex: =2
 
                 Label52_20 As label:
-                    BorderColor: =RGBA(0, 18, 107, 1)
                     Color: =RGBA(255, 255, 255, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
                     FontWeight: =FontWeight.Semibold
                     Height: =50
                     Size: =19
@@ -1155,10 +860,10 @@ Distributorkycform As screen:
                     ZIndex: =1
 
                 Radio1_3 As radio:
+                    BorderColor: =RGBA(0, 0, 0, 1)
                     Color: =RGBA(164, 164, 164, 1)
                     Default: =datadis.'Gross Turnover(Per Annum)'
                     Height: =106
-                    HoverColor: =RGBA(0, 18, 107, 1)
                     Items: =['Gross Turnover(Per Annum) (Distributor Onboarding)'.'<2 CR', 'Gross Turnover(Per Annum) (Distributor Onboarding)'.'2-3 CR', 'Gross Turnover(Per Annum) (Distributor Onboarding)'.'3-5 CR','Gross Turnover(Per Annum) (Distributor Onboarding)'.'5-8  CR', 'Gross Turnover(Per Annum) (Distributor Onboarding)'.'>8 CR']
                     Layout: =Layout.Horizontal
                     OnSelect: =Set(ClearFieldsForDO, false)
@@ -1173,9 +878,7 @@ Distributorkycform As screen:
                     ZIndex: =2
 
                 Label52_26 As label:
-                    BorderColor: =RGBA(0, 18, 107, 1)
                     Color: =RGBA(255, 255, 255, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
                     FontWeight: =FontWeight.Semibold
                     Height: =50
                     Size: =19
@@ -1186,18 +889,10 @@ Distributorkycform As screen:
                     ZIndex: =3
 
                 TextInput3_30 As text:
-                    BorderColor: =RGBA(0, 18, 107, 1)
-                    Color: =RGBA(0, 0, 0, 1)
+                    BorderThickness: =1
                     Default: =datadis.'Cibil Score'
-                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    DisabledFill: =RGBA(244, 244, 244, 1)
-                    FocusedBorderThickness: =4
                     Height: =50
                     HintText: ="Enter Cibil Score"
-                    HoverBorderColor: =RGBA(0, 18, 107, 1)
-                    HoverColor: =RGBA(0, 0, 0, 1)
-                    HoverFill: =RGBA(186, 202, 226, 1)
                     OnSelect: =Set(ClearFieldsForDO, false)
                     Reset: =ClearFieldsForDO
                     Size: =18
@@ -1207,9 +902,7 @@ Distributorkycform As screen:
                     ZIndex: =4
 
                 Label52_38 As label:
-                    BorderColor: =RGBA(0, 18, 107, 1)
                     Color: =RGBA(255, 255, 255, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
                     FontWeight: =FontWeight.Semibold
                     Height: =50
                     Size: =19
@@ -1220,18 +913,10 @@ Distributorkycform As screen:
                     ZIndex: =5
 
                 TextInput3_33 As text:
-                    BorderColor: =RGBA(0, 18, 107, 1)
-                    Color: =RGBA(0, 0, 0, 1)
+                    BorderThickness: =1
                     Default: =datadis.Remarks
-                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    DisabledFill: =RGBA(244, 244, 244, 1)
-                    FocusedBorderThickness: =4
                     Height: =50
                     HintText: ="Enter Remarks"
-                    HoverBorderColor: =RGBA(0, 18, 107, 1)
-                    HoverColor: =RGBA(0, 0, 0, 1)
-                    HoverFill: =RGBA(186, 202, 226, 1)
                     OnSelect: =Set(ClearFieldsForDO, false)
                     Reset: =ClearFieldsForDO
                     Size: =18
@@ -1241,9 +926,7 @@ Distributorkycform As screen:
                     ZIndex: =6
 
                 Label52_22 As label:
-                    BorderColor: =RGBA(0, 18, 107, 1)
                     Color: =RGBA(255, 255, 255, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
                     FontWeight: =FontWeight.Semibold
                     Height: =50
                     Size: =19
@@ -1254,10 +937,10 @@ Distributorkycform As screen:
                     ZIndex: =8
 
                 Radio1_4 As radio:
+                    BorderColor: =RGBA(0, 0, 0, 1)
                     Color: =RGBA(164, 164, 164, 1)
                     Default: =datadis.'Dealing with PVC'
                     Height: =65
-                    HoverColor: =RGBA(0, 18, 107, 1)
                     Items: =['Dealing with PVC (Distributor Onboarding)'.Yes, 'Dealing with PVC (Distributor Onboarding)'.No]
                     Layout: =Layout.Horizontal
                     OnSelect: =Set(ClearFieldsForDO, false)
@@ -1304,9 +987,7 @@ Distributorkycform As screen:
                                 ZIndex: =4
 
                                 Label47_5 As label:
-                                    BorderColor: =RGBA(89, 0, 0, 1)
                                     Color: =RGBA(242, 75, 75, 1)
-                                    DisabledColor: =RGBA(166, 166, 166, 1)
                                     FontWeight: =FontWeight.Semibold
                                     Height: =50
                                     Size: =18
@@ -1316,7 +997,6 @@ Distributorkycform As screen:
                                     ZIndex: =1
 
                                 Circle2_15 As circle:
-                                    BorderColor: =RGBA(0, 18, 107, 1)
                                     Fill: =RGBA(237, 57, 57, 1)
                                     Height: =50
                                     OnSelect: =
@@ -1326,10 +1006,7 @@ Distributorkycform As screen:
                                     ZIndex: =2
 
                                 Icon13_14 As icon.Add:
-                                    BorderColor: =RGBA(0, 18, 107, 1)
                                     Color: =RGBA(255, 255, 255, 1)
-                                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                                    DisabledColor: =RGBA(244, 244, 244, 1)
                                     Height: =31
                                     Icon: =Icon.Add
                                     OnSelect: |-
@@ -1349,9 +1026,7 @@ Distributorkycform As screen:
 
                                 Label48_1 As label:
                                     Align: =Align.Center
-                                    BorderColor: =RGBA(89, 0, 0, 1)
                                     Color: =RGBA(255, 255, 255, 1)
-                                    DisabledColor: =RGBA(166, 166, 166, 1)
                                     Fill: =RGBA(237, 57, 57, 1)
                                     Height: =72
                                     Size: =17
@@ -1362,7 +1037,6 @@ Distributorkycform As screen:
                                     ZIndex: =4
 
                                 Rectangle21_1 As rectangle:
-                                    BorderColor: =RGBA(89, 0, 0, 1)
                                     Fill: =RGBA(237, 57, 57, 1)
                                     Height: =72
                                     Width: =342
@@ -1375,7 +1049,6 @@ Distributorkycform As screen:
                                     BorderColor: =RGBA(255, 255, 255, 1)
                                     BorderThickness: =1
                                     Color: =RGBA(255, 255, 255, 1)
-                                    DisabledColor: =RGBA(166, 166, 166, 1)
                                     Height: =30
                                     Size: =16
                                     Text: ="Sales(Rs. in Lacs)"
@@ -1386,9 +1059,7 @@ Distributorkycform As screen:
 
                                 Label50_3 As label:
                                     Align: =Align.Center
-                                    BorderColor: =RGBA(89, 0, 0, 1)
                                     Color: =RGBA(255, 255, 255, 1)
-                                    DisabledColor: =RGBA(166, 166, 166, 1)
                                     Height: =42
                                     Size: =16
                                     Text: ="LY"
@@ -1399,9 +1070,7 @@ Distributorkycform As screen:
 
                                 Label50_4 As label:
                                     Align: =Align.Center
-                                    BorderColor: =RGBA(89, 0, 0, 1)
                                     Color: =RGBA(255, 255, 255, 1)
-                                    DisabledColor: =RGBA(166, 166, 166, 1)
                                     Height: =42
                                     Size: =16
                                     Text: ="CY"
@@ -1412,9 +1081,7 @@ Distributorkycform As screen:
 
                             Label50_5 As label:
                                 Align: =Align.Center
-                                BorderColor: =RGBA(89, 0, 0, 1)
                                 Color: =RGBA(255, 255, 255, 1)
-                                DisabledColor: =RGBA(166, 166, 166, 1)
                                 Height: =35
                                 Size: =16
                                 Text: ="L2LY"
@@ -1424,7 +1091,6 @@ Distributorkycform As screen:
                                 ZIndex: =10
 
                         Gallery17_1 As gallery.variableTemplateHeightGallery:
-                            BorderColor: =RGBA(89, 0, 0, 1)
                             Height: =If(CountRows(totalsalerenders)>0,330+(90*(CountRows(totalsalerenders))),0)
                             Items: =totalsalerenders
                             Layout: =Layout.Vertical
@@ -1435,10 +1101,7 @@ Distributorkycform As screen:
                             ZIndex: =6
 
                             Icon22_27 As icon.Trash:
-                                BorderColor: =RGBA(89, 0, 0, 1)
                                 Color: =RGBA(230, 76, 76, 1)
-                                DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                                DisabledColor: =RGBA(244, 244, 244, 1)
                                 Height: =30
                                 Icon: =Icon.Trash
                                 OnSelect: |-
@@ -1457,7 +1120,6 @@ Distributorkycform As screen:
                                 ZIndex: =7
 
                                 Rectangle22_15 As rectangle:
-                                    BorderColor: =RGBA(89, 0, 0, 1)
                                     Fill: =RGBA(204, 240, 235, 1)
                                     Height: =88
                                     Width: =537
@@ -1466,29 +1128,16 @@ Distributorkycform As screen:
                                     ZIndex: =1
 
                                 ComboBox4_24 As combobox:
-                                    BorderColor: =RGBA(89, 0, 0, 1)
                                     ChevronBackground: =RGBA(164, 164, 164, 1)
-                                    ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
-                                    ChevronDisabledFill: =RGBA(244, 244, 244, 1)
-                                    ChevronHoverBackground: =ColorFade(RGBA(164, 38, 44, 1), -20%)
-                                    ChevronHoverFill: =RGBA(255, 255, 255, 1)
-                                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                                    DisabledColor: =RGBA(166, 166, 166, 1)
-                                    DisabledFill: =RGBA(244, 244, 244, 1)
                                     DisplayFields: =["zx_categorycode"]
                                     Height: =51
-                                    HoverColor: =RGBA(0, 0, 0, 1)
-                                    HoverFill: =RGBA(222, 179, 184, 1)
                                     IsSearchable: =false
                                     Items: |-
                                         =//['Item Subcategory'., "Agri Pipes", "Borewell Systems", "Compact Ball Vavles", "Cablefit Ball Vavles", "Burafit Manhole Covers"]
                                         
                                         'Item Subcategory'
-                                    PressedColor: =RGBA(255, 255, 255, 1)
-                                    PressedFill: =RGBA(89, 0, 0, 1)
                                     SearchFields: =["zx_categorycode"]
                                     SearchItems: =[]
-                                    SelectionFill: =RGBA(164, 38, 44, 1)
                                     Size: =16
                                     Width: =181
                                     X: =26
@@ -1496,18 +1145,10 @@ Distributorkycform As screen:
                                     ZIndex: =2
 
                                 TextInput6_43 As text:
-                                    BorderColor: =RGBA(89, 0, 0, 1)
                                     BorderThickness: =0
                                     Color: =RGBA(164, 164, 164, 1)
                                     Default: =""
-                                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                                    DisabledColor: =RGBA(166, 166, 166, 1)
-                                    DisabledFill: =RGBA(244, 244, 244, 1)
-                                    FocusedBorderThickness: =4
                                     Height: =51
-                                    HoverBorderColor: =RGBA(89, 0, 0, 1)
-                                    HoverColor: =RGBA(0, 0, 0, 1)
-                                    HoverFill: =RGBA(222, 179, 184, 1)
                                     Size: =16
                                     Width: =88
                                     X: =334
@@ -1515,18 +1156,10 @@ Distributorkycform As screen:
                                     ZIndex: =3
 
                                 TextInput6_44 As text:
-                                    BorderColor: =RGBA(89, 0, 0, 1)
                                     BorderThickness: =0
                                     Color: =RGBA(164, 164, 164, 1)
                                     Default: =""
-                                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                                    DisabledColor: =RGBA(166, 166, 166, 1)
-                                    DisabledFill: =RGBA(244, 244, 244, 1)
-                                    FocusedBorderThickness: =4
                                     Height: =51
-                                    HoverBorderColor: =RGBA(89, 0, 0, 1)
-                                    HoverColor: =RGBA(0, 0, 0, 1)
-                                    HoverFill: =RGBA(222, 179, 184, 1)
                                     Size: =16
                                     Width: =88
                                     X: =437
@@ -1534,18 +1167,10 @@ Distributorkycform As screen:
                                     ZIndex: =4
 
                                 TextInput6_45 As text:
-                                    BorderColor: =RGBA(89, 0, 0, 1)
                                     BorderThickness: =0
                                     Color: =RGBA(164, 164, 164, 1)
                                     Default: =""
-                                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                                    DisabledColor: =RGBA(166, 166, 166, 1)
-                                    DisabledFill: =RGBA(244, 244, 244, 1)
-                                    FocusedBorderThickness: =4
                                     Height: =51
-                                    HoverBorderColor: =RGBA(89, 0, 0, 1)
-                                    HoverColor: =RGBA(0, 0, 0, 1)
-                                    HoverFill: =RGBA(222, 179, 184, 1)
                                     Size: =16
                                     Width: =88
                                     X: =226
@@ -1563,7 +1188,6 @@ Distributorkycform As screen:
                         ZIndex: =2
 
                         Gallery19 As gallery.variableTemplateHeightGallery:
-                            BorderColor: =RGBA(89, 0, 0, 1)
                             Height: =If(CountRows(DetailsCustomer)>0,330+(270*(CountRows(DetailsCustomer))),0)
                             Items: =DetailsCustomer
                             Layout: =Layout.Vertical
@@ -1574,9 +1198,6 @@ Distributorkycform As screen:
                             ZIndex: =19
 
                             Label51_2 As label:
-                                BorderColor: =RGBA(89, 0, 0, 1)
-                                Color: =RGBA(0, 0, 0, 1)
-                                DisabledColor: =RGBA(166, 166, 166, 1)
                                 Height: =62
                                 Size: =18
                                 Text: ="Category Sold(Rs. In Lakhs)"
@@ -1593,7 +1214,6 @@ Distributorkycform As screen:
                                 ZIndex: =5
 
                                 Rectangle23_2 As rectangle:
-                                    BorderColor: =RGBA(89, 0, 0, 1)
                                     Fill: =RGBA(237, 57, 57, 1)
                                     Width: =555
                                     X: =7
@@ -1601,9 +1221,7 @@ Distributorkycform As screen:
                                     ZIndex: =1
 
                                 Label50_2 As label:
-                                    BorderColor: =RGBA(89, 0, 0, 1)
                                     Color: =RGBA(255, 255, 255, 1)
-                                    DisabledColor: =RGBA(166, 166, 166, 1)
                                     Height: =48
                                     Size: =18
                                     Text: =" Name of customer"
@@ -1613,18 +1231,10 @@ Distributorkycform As screen:
                                     ZIndex: =2
 
                                 TextInput9_4 As text:
-                                    BorderColor: =RGBA(89, 0, 0, 1)
                                     BorderThickness: =0
                                     Color: =RGBA(164, 164, 164, 1)
                                     Default: =""
-                                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                                    DisabledColor: =RGBA(166, 166, 166, 1)
-                                    DisabledFill: =RGBA(244, 244, 244, 1)
-                                    FocusedBorderThickness: =4
                                     Height: =56
-                                    HoverBorderColor: =RGBA(89, 0, 0, 1)
-                                    HoverColor: =RGBA(0, 0, 0, 1)
-                                    HoverFill: =RGBA(222, 179, 184, 1)
                                     Size: =17
                                     Width: =297
                                     X: =252
@@ -1632,10 +1242,7 @@ Distributorkycform As screen:
                                     ZIndex: =3
 
                             Icon22_19 As icon.Trash:
-                                BorderColor: =RGBA(89, 0, 0, 1)
                                 Color: =RGBA(230, 76, 76, 1)
-                                DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                                DisabledColor: =RGBA(244, 244, 244, 1)
                                 Height: =30
                                 Icon: =Icon.Trash
                                 OnSelect: |+
@@ -1648,7 +1255,6 @@ Distributorkycform As screen:
                                 ZIndex: =6
 
                             Rectangle24_2 As rectangle:
-                                BorderColor: =RGBA(89, 0, 0, 1)
                                 Fill: =RGBA(204, 240, 235, 1)
                                 Height: =82
                                 Width: =549
@@ -1657,29 +1263,16 @@ Distributorkycform As screen:
                                 ZIndex: =7
 
                             ComboBox4_16 As combobox:
-                                BorderColor: =RGBA(89, 0, 0, 1)
                                 ChevronBackground: =RGBA(164, 164, 164, 1)
-                                ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
-                                ChevronDisabledFill: =RGBA(244, 244, 244, 1)
-                                ChevronHoverBackground: =ColorFade(RGBA(164, 38, 44, 1), -20%)
-                                ChevronHoverFill: =RGBA(255, 255, 255, 1)
-                                DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                                DisabledColor: =RGBA(166, 166, 166, 1)
-                                DisabledFill: =RGBA(244, 244, 244, 1)
                                 DisplayFields: =["zx_categorycode"]
                                 Height: =51
-                                HoverColor: =RGBA(0, 0, 0, 1)
-                                HoverFill: =RGBA(222, 179, 184, 1)
                                 IsSearchable: =false
                                 Items: |-
                                     =//["Agri Fittings", "Agri Pipes", "Borewell Systems", "Compact Ball Vavles", "Cablefit Ball Vavles", "Burafit Manhole Covers"]
                                     
                                     'Item Subcategory'.'Category Code'
-                                PressedColor: =RGBA(255, 255, 255, 1)
-                                PressedFill: =RGBA(89, 0, 0, 1)
                                 SearchFields: =["zx_categorycode"]
                                 SearchItems: =[]
-                                SelectionFill: =RGBA(164, 38, 44, 1)
                                 Size: =16
                                 Width: =181
                                 X: =37
@@ -1687,18 +1280,10 @@ Distributorkycform As screen:
                                 ZIndex: =8
 
                             TextInput9_5 As text:
-                                BorderColor: =RGBA(89, 0, 0, 1)
                                 BorderThickness: =0
                                 Color: =RGBA(164, 164, 164, 1)
                                 Default: =""
-                                DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                                DisabledColor: =RGBA(166, 166, 166, 1)
-                                DisabledFill: =RGBA(244, 244, 244, 1)
-                                FocusedBorderThickness: =4
                                 Height: =56
-                                HoverBorderColor: =RGBA(89, 0, 0, 1)
-                                HoverColor: =RGBA(0, 0, 0, 1)
-                                HoverFill: =RGBA(222, 179, 184, 1)
                                 Size: =17
                                 Width: =297
                                 X: =242
@@ -1713,9 +1298,7 @@ Distributorkycform As screen:
                             ZIndex: =19
 
                             Label47_9 As label:
-                                BorderColor: =RGBA(89, 0, 0, 1)
                                 Color: =RGBA(242, 75, 75, 1)
-                                DisabledColor: =RGBA(166, 166, 166, 1)
                                 FontWeight: =FontWeight.Semibold
                                 Height: =50
                                 Size: =18
@@ -1726,7 +1309,6 @@ Distributorkycform As screen:
                                 ZIndex: =16
 
                             Circle2_17 As circle:
-                                BorderColor: =RGBA(0, 18, 107, 1)
                                 Fill: =RGBA(237, 57, 57, 1)
                                 Height: =50
                                 Width: =50
@@ -1735,10 +1317,7 @@ Distributorkycform As screen:
                                 ZIndex: =17
 
                             Icon13_16 As icon.Add:
-                                BorderColor: =RGBA(0, 18, 107, 1)
                                 Color: =RGBA(255, 255, 255, 1)
-                                DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                                DisabledColor: =RGBA(244, 244, 244, 1)
                                 Height: =31
                                 Icon: =Icon.Add
                                 OnSelect: |-
@@ -1767,9 +1346,7 @@ Distributorkycform As screen:
                             ZIndex: =14
 
                             Label47_8 As label:
-                                BorderColor: =RGBA(89, 0, 0, 1)
                                 Color: =RGBA(242, 75, 75, 1)
-                                DisabledColor: =RGBA(166, 166, 166, 1)
                                 FontWeight: =FontWeight.Semibold
                                 Height: =50
                                 Size: =18
@@ -1779,7 +1356,6 @@ Distributorkycform As screen:
                                 ZIndex: =11
 
                             Circle2_16 As circle:
-                                BorderColor: =RGBA(0, 18, 107, 1)
                                 Fill: =RGBA(237, 57, 57, 1)
                                 Height: =50
                                 Width: =50
@@ -1788,10 +1364,7 @@ Distributorkycform As screen:
                                 ZIndex: =12
 
                             Icon13_15 As icon.Add:
-                                BorderColor: =RGBA(0, 18, 107, 1)
                                 Color: =RGBA(255, 255, 255, 1)
-                                DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                                DisabledColor: =RGBA(244, 244, 244, 1)
                                 Height: =31
                                 Icon: =Icon.Add
                                 OnSelect: |-
@@ -1803,7 +1376,6 @@ Distributorkycform As screen:
                                 ZIndex: =13
 
                         Gallery20 As gallery.variableTemplateHeightGallery:
-                            BorderColor: =RGBA(89, 0, 0, 1)
                             Height: =If(CountRows(SalesFirm)>0,430+(372*(CountRows(SalesFirm))),0)
                             Items: =SalesFirm
                             Layout: =Layout.Vertical
@@ -1817,9 +1389,7 @@ Distributorkycform As screen:
 
                             Label50_11 As label:
                                 Align: =Align.Center
-                                BorderColor: =RGBA(89, 0, 0, 1)
                                 Color: =RGBA(255, 255, 255, 1)
-                                DisabledColor: =RGBA(166, 166, 166, 1)
                                 Height: =91
                                 Size: =18
                                 Text: ="Town"
@@ -1829,29 +1399,16 @@ Distributorkycform As screen:
                                 ZIndex: =3
 
                             ComboBox3_30 As combobox:
-                                BorderColor: =RGBA(89, 0, 0, 1)
                                 BorderThickness: =1
                                 ChevronBackground: =RGBA(164, 164, 164, 1)
-                                ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
-                                ChevronDisabledFill: =RGBA(244, 244, 244, 1)
-                                ChevronHoverBackground: =ColorFade(RGBA(164, 38, 44, 1), -20%)
-                                ChevronHoverFill: =RGBA(255, 255, 255, 1)
                                 Color: =RGBA(164, 164, 164, 1)
                                 Default: =datadis.District
-                                DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                                DisabledColor: =RGBA(166, 166, 166, 1)
-                                DisabledFill: =RGBA(244, 244, 244, 1)
                                 DisplayFields: =["Value"]
                                 Height: =50
-                                HoverColor: =RGBA(0, 0, 0, 1)
-                                HoverFill: =RGBA(222, 179, 184, 1)
                                 IsSearchable: =false
                                 Items: =["Punjab"]
-                                PressedColor: =RGBA(255, 255, 255, 1)
-                                PressedFill: =RGBA(89, 0, 0, 1)
                                 SearchFields: =["Value"]
                                 SearchItems: =[]
-                                SelectionFill: =RGBA(164, 38, 44, 1)
                                 Size: =18
                                 Width: =250
                                 X: =244
@@ -1866,7 +1423,6 @@ Distributorkycform As screen:
                                 ZIndex: =5
 
                                 Rectangle23_4 As rectangle:
-                                    BorderColor: =RGBA(89, 0, 0, 1)
                                     Fill: =RGBA(237, 57, 57, 1)
                                     Height: =192
                                     Visible: |-
@@ -1877,9 +1433,7 @@ Distributorkycform As screen:
 
                                 Label50_10 As label:
                                     Align: =Align.Center
-                                    BorderColor: =RGBA(89, 0, 0, 1)
                                     Color: =RGBA(255, 255, 255, 1)
-                                    DisabledColor: =RGBA(166, 166, 166, 1)
                                     Height: =91
                                     Size: =18
                                     Text: ="District"
@@ -1891,29 +1445,16 @@ Distributorkycform As screen:
                                     ZIndex: =2
 
                             ComboBox3_31 As combobox:
-                                BorderColor: =RGBA(89, 0, 0, 1)
                                 BorderThickness: =1
                                 ChevronBackground: =RGBA(164, 164, 164, 1)
-                                ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
-                                ChevronDisabledFill: =RGBA(244, 244, 244, 1)
-                                ChevronHoverBackground: =ColorFade(RGBA(164, 38, 44, 1), -20%)
-                                ChevronHoverFill: =RGBA(255, 255, 255, 1)
                                 Color: =RGBA(164, 164, 164, 1)
                                 Default: =datadis.District
-                                DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                                DisabledColor: =RGBA(166, 166, 166, 1)
-                                DisabledFill: =RGBA(244, 244, 244, 1)
                                 DisplayFields: =["Value"]
                                 Height: =50
-                                HoverColor: =RGBA(0, 0, 0, 1)
-                                HoverFill: =RGBA(222, 179, 184, 1)
                                 IsSearchable: =false
                                 Items: =["Patiala"]
-                                PressedColor: =RGBA(255, 255, 255, 1)
-                                PressedFill: =RGBA(89, 0, 0, 1)
                                 SearchFields: =["Value"]
                                 SearchItems: =[]
-                                SelectionFill: =RGBA(164, 38, 44, 1)
                                 Size: =18
                                 Width: =250
                                 X: =244
@@ -1921,9 +1462,6 @@ Distributorkycform As screen:
                                 ZIndex: =6
 
                             Label51_4 As label:
-                                BorderColor: =RGBA(89, 0, 0, 1)
-                                Color: =RGBA(0, 0, 0, 1)
-                                DisabledColor: =RGBA(166, 166, 166, 1)
                                 FontWeight: =FontWeight.Semibold
                                 Size: =18
                                 Text: ="Estimated business in 1st year(Rs. In lakhs)"
@@ -1933,7 +1471,6 @@ Distributorkycform As screen:
                                 ZIndex: =7
 
                             Rectangle24_4 As rectangle:
-                                BorderColor: =RGBA(89, 0, 0, 1)
                                 Fill: =RGBA(204, 240, 235, 1)
                                 Height: =104
                                 Width: =549
@@ -1942,29 +1479,16 @@ Distributorkycform As screen:
                                 ZIndex: =9
 
                             ComboBox4_18 As combobox:
-                                BorderColor: =RGBA(89, 0, 0, 1)
                                 ChevronBackground: =RGBA(164, 164, 164, 1)
-                                ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
-                                ChevronDisabledFill: =RGBA(244, 244, 244, 1)
-                                ChevronHoverBackground: =ColorFade(RGBA(164, 38, 44, 1), -20%)
-                                ChevronHoverFill: =RGBA(255, 255, 255, 1)
-                                DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                                DisabledColor: =RGBA(166, 166, 166, 1)
-                                DisabledFill: =RGBA(244, 244, 244, 1)
                                 DisplayFields: =["zx_categorycode"]
                                 Height: =51
-                                HoverColor: =RGBA(0, 0, 0, 1)
-                                HoverFill: =RGBA(222, 179, 184, 1)
                                 IsSearchable: =false
                                 Items: |-
                                     =//["Agri Fittings", "Agri Pipes", "Borewell Systems", "Compact Ball Vavles", "Cablefit Ball Vavles", "Burafit Manhole Covers"]
                                     
                                     'Item Subcategory'.'Category Code'
-                                PressedColor: =RGBA(255, 255, 255, 1)
-                                PressedFill: =RGBA(89, 0, 0, 1)
                                 SearchFields: =["zx_categorycode"]
                                 SearchItems: =[]
-                                SelectionFill: =RGBA(164, 38, 44, 1)
                                 Size: =16
                                 Width: =181
                                 X: =43
@@ -1972,18 +1496,10 @@ Distributorkycform As screen:
                                 ZIndex: =10
 
                             TextInput9_8 As text:
-                                BorderColor: =RGBA(89, 0, 0, 1)
                                 BorderThickness: =0
                                 Color: =RGBA(164, 164, 164, 1)
                                 Default: =""
-                                DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                                DisabledColor: =RGBA(166, 166, 166, 1)
-                                DisabledFill: =RGBA(244, 244, 244, 1)
-                                FocusedBorderThickness: =4
                                 Height: =56
-                                HoverBorderColor: =RGBA(89, 0, 0, 1)
-                                HoverColor: =RGBA(0, 0, 0, 1)
-                                HoverFill: =RGBA(222, 179, 184, 1)
                                 Size: =17
                                 Width: =297
                                 X: =248
@@ -1991,10 +1507,7 @@ Distributorkycform As screen:
                                 ZIndex: =11
 
                             Icon22_20 As icon.Trash:
-                                BorderColor: =RGBA(89, 0, 0, 1)
                                 Color: =RGBA(230, 76, 76, 1)
-                                DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                                DisabledColor: =RGBA(244, 244, 244, 1)
                                 Height: =30
                                 Icon: =Icon.Trash
                                 OnSelect: |+
@@ -2015,9 +1528,6 @@ Distributorkycform As screen:
                 ZIndex: =3
 
                 Label52_23 As label:
-                    BorderColor: =RGBA(0, 18, 107, 1)
-                    Color: =RGBA(0, 0, 0, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
                     FontWeight: =FontWeight.Semibold
                     Height: =50
                     Size: =19
@@ -2028,18 +1538,10 @@ Distributorkycform As screen:
                     ZIndex: =1
 
                 TextInput3_34 As text:
-                    BorderColor: =RGBA(0, 18, 107, 1)
-                    Color: =RGBA(0, 0, 0, 1)
+                    BorderThickness: =1
                     Default: =datadis.'PAN No.'
-                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    DisabledFill: =RGBA(244, 244, 244, 1)
-                    FocusedBorderThickness: =4
                     Height: =50
                     HintText: ="Enter PAN No."
-                    HoverBorderColor: =RGBA(0, 18, 107, 1)
-                    HoverColor: =RGBA(0, 0, 0, 1)
-                    HoverFill: =RGBA(186, 202, 226, 1)
                     OnSelect: =Set(ClearFieldsForDO, false)
                     Reset: =ClearFieldsForDO
                     Size: =18
@@ -2049,9 +1551,6 @@ Distributorkycform As screen:
                     ZIndex: =2
 
                 Label52_24 As label:
-                    BorderColor: =RGBA(0, 18, 107, 1)
-                    Color: =RGBA(0, 0, 0, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
                     FontWeight: =FontWeight.Semibold
                     Height: =50
                     Size: =19
@@ -2062,18 +1561,10 @@ Distributorkycform As screen:
                     ZIndex: =3
 
                 TextInput3_50 As text:
-                    BorderColor: =RGBA(0, 18, 107, 1)
-                    Color: =RGBA(0, 0, 0, 1)
+                    BorderThickness: =1
                     Default: =datadis.'Aadhar No.'
-                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    DisabledFill: =RGBA(244, 244, 244, 1)
-                    FocusedBorderThickness: =4
                     Height: =50
                     HintText: ="Enter Aadhar No."
-                    HoverBorderColor: =RGBA(0, 18, 107, 1)
-                    HoverColor: =RGBA(0, 0, 0, 1)
-                    HoverFill: =RGBA(186, 202, 226, 1)
                     OnSelect: =Set(ClearFieldsForDO, false)
                     Reset: =ClearFieldsForDO
                     Size: =18
@@ -2083,9 +1574,6 @@ Distributorkycform As screen:
                     ZIndex: =4
 
                 Label52_30 As label:
-                    BorderColor: =RGBA(0, 18, 107, 1)
-                    Color: =RGBA(0, 0, 0, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
                     FontWeight: =FontWeight.Semibold
                     Height: =50
                     Size: =19
@@ -2096,18 +1584,10 @@ Distributorkycform As screen:
                     ZIndex: =6
 
                 TextInput3_51 As text:
-                    BorderColor: =RGBA(0, 18, 107, 1)
-                    Color: =RGBA(0, 0, 0, 1)
+                    BorderThickness: =1
                     Default: =datadis.'GST No.'
-                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    DisabledFill: =RGBA(244, 244, 244, 1)
-                    FocusedBorderThickness: =4
                     Height: =50
                     HintText: ="Enter GST No."
-                    HoverBorderColor: =RGBA(0, 18, 107, 1)
-                    HoverColor: =RGBA(0, 0, 0, 1)
-                    HoverFill: =RGBA(186, 202, 226, 1)
                     OnSelect: =Set(ClearFieldsForDO, false)
                     Reset: =ClearFieldsForDO
                     Size: =18
@@ -2117,9 +1597,6 @@ Distributorkycform As screen:
                     ZIndex: =7
 
                 Label52_31 As label:
-                    BorderColor: =RGBA(0, 18, 107, 1)
-                    Color: =RGBA(0, 0, 0, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
                     FontWeight: =FontWeight.Semibold
                     Height: =50
                     Size: =19
@@ -2130,24 +1607,12 @@ Distributorkycform As screen:
                     ZIndex: =8
 
                 Dropdown2 As dropdown:
-                    BorderColor: =RGBA(0, 18, 107, 1)
                     BorderThickness: =1
                     ChevronBackground: =RGBA(238, 49, 55, 1)
-                    ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
-                    ChevronDisabledFill: =RGBA(244, 244, 244, 1)
-                    ChevronHoverBackground: =ColorFade(RGBA(56, 96, 178, 1), -20%)
-                    ChevronHoverFill: =RGBA(255, 255, 255, 1)
                     Default: =datadis.'GST Reg Type'
-                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    DisabledFill: =RGBA(244, 244, 244, 1)
                     Height: =50
-                    HoverColor: =RGBA(0, 0, 0, 1)
-                    HoverFill: =RGBA(186, 202, 226, 1)
                     Items: =['GST Reg Type (Distributor Onboarding)'.Registered, 'GST Reg Type (Distributor Onboarding)'.'Not Registered']
                     OnSelect: =Set(ClearFieldsForDO, false)
-                    PressedColor: =RGBA(255, 255, 255, 1)
-                    PressedFill: =RGBA(0, 18, 107, 1)
                     Reset: =ClearFieldsForDO
                     SelectionFill: =RGBA(39, 67, 125, 1)
                     Size: =18
@@ -2165,9 +1630,6 @@ Distributorkycform As screen:
                 ZIndex: =4
 
                 Label52_25 As label:
-                    BorderColor: =RGBA(0, 18, 107, 1)
-                    Color: =RGBA(0, 0, 0, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
                     FontWeight: =FontWeight.Semibold
                     Height: =50
                     Size: =19
@@ -2178,18 +1640,10 @@ Distributorkycform As screen:
                     ZIndex: =1
 
                 TextInput3_52 As text:
-                    BorderColor: =RGBA(0, 18, 107, 1)
-                    Color: =RGBA(0, 0, 0, 1)
+                    BorderThickness: =1
                     Default: =datadis.'Account No.'
-                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    DisabledFill: =RGBA(244, 244, 244, 1)
-                    FocusedBorderThickness: =4
                     Height: =50
                     HintText: ="Enter Account"
-                    HoverBorderColor: =RGBA(0, 18, 107, 1)
-                    HoverColor: =RGBA(0, 0, 0, 1)
-                    HoverFill: =RGBA(186, 202, 226, 1)
                     OnSelect: =Set(ClearFieldsForDO, false)
                     Reset: =ClearFieldsForDO
                     Size: =18
@@ -2199,9 +1653,6 @@ Distributorkycform As screen:
                     ZIndex: =2
 
                 Label52_27 As label:
-                    BorderColor: =RGBA(0, 18, 107, 1)
-                    Color: =RGBA(0, 0, 0, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
                     FontWeight: =FontWeight.Semibold
                     Height: =50
                     Size: =19
@@ -2212,18 +1663,10 @@ Distributorkycform As screen:
                     ZIndex: =3
 
                 TextInput3_53 As text:
-                    BorderColor: =RGBA(0, 18, 107, 1)
-                    Color: =RGBA(0, 0, 0, 1)
+                    BorderThickness: =1
                     Default: =datadis.'IFSC Code'
-                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    DisabledFill: =RGBA(244, 244, 244, 1)
-                    FocusedBorderThickness: =4
                     Height: =50
                     HintText: ="Enter IFSC Code"
-                    HoverBorderColor: =RGBA(0, 18, 107, 1)
-                    HoverColor: =RGBA(0, 0, 0, 1)
-                    HoverFill: =RGBA(186, 202, 226, 1)
                     OnSelect: =Set(ClearFieldsForDO, false)
                     Reset: =ClearFieldsForDO
                     Size: =18
@@ -2233,9 +1676,6 @@ Distributorkycform As screen:
                     ZIndex: =4
 
                 Label52_28 As label:
-                    BorderColor: =RGBA(0, 18, 107, 1)
-                    Color: =RGBA(0, 0, 0, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
                     FontWeight: =FontWeight.Semibold
                     Height: =50
                     Size: =19
@@ -2246,18 +1686,10 @@ Distributorkycform As screen:
                     ZIndex: =5
 
                 TextInput3_54 As text:
-                    BorderColor: =RGBA(0, 18, 107, 1)
-                    Color: =RGBA(0, 0, 0, 1)
+                    BorderThickness: =1
                     Default: =datadis.'Bank Name'
-                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    DisabledFill: =RGBA(244, 244, 244, 1)
-                    FocusedBorderThickness: =4
                     Height: =50
                     HintText: ="Enter Name"
-                    HoverBorderColor: =RGBA(0, 18, 107, 1)
-                    HoverColor: =RGBA(0, 0, 0, 1)
-                    HoverFill: =RGBA(186, 202, 226, 1)
                     OnSelect: =Set(ClearFieldsForDO, false)
                     Reset: =ClearFieldsForDO
                     Size: =18
@@ -2267,9 +1699,6 @@ Distributorkycform As screen:
                     ZIndex: =6
 
                 Label52_29 As label:
-                    BorderColor: =RGBA(0, 18, 107, 1)
-                    Color: =RGBA(0, 0, 0, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
                     FontWeight: =FontWeight.Semibold
                     Height: =50
                     Size: =19
@@ -2280,18 +1709,10 @@ Distributorkycform As screen:
                     ZIndex: =7
 
                 TextInput3_55 As text:
-                    BorderColor: =RGBA(0, 18, 107, 1)
-                    Color: =RGBA(0, 0, 0, 1)
+                    BorderThickness: =1
                     Default: =datadis.'Bank Address'
-                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    DisabledFill: =RGBA(244, 244, 244, 1)
-                    FocusedBorderThickness: =4
                     Height: =50
                     HintText: ="Enter Address"
-                    HoverBorderColor: =RGBA(0, 18, 107, 1)
-                    HoverColor: =RGBA(0, 0, 0, 1)
-                    HoverFill: =RGBA(186, 202, 226, 1)
                     OnSelect: =Set(ClearFieldsForDO, false)
                     Reset: =ClearFieldsForDO
                     Size: =21
@@ -2301,9 +1722,6 @@ Distributorkycform As screen:
                     ZIndex: =8
 
                 Label52_34 As label:
-                    BorderColor: =RGBA(0, 18, 107, 1)
-                    Color: =RGBA(0, 0, 0, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
                     FontWeight: =FontWeight.Semibold
                     Height: =50
                     Size: =19
@@ -2314,18 +1732,10 @@ Distributorkycform As screen:
                     ZIndex: =9
 
                 TextInput3_56 As text:
-                    BorderColor: =RGBA(0, 18, 107, 1)
-                    Color: =RGBA(0, 0, 0, 1)
+                    BorderThickness: =1
                     Default: =datadis.'Branch code'
-                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    DisabledFill: =RGBA(244, 244, 244, 1)
-                    FocusedBorderThickness: =4
                     Height: =50
                     HintText: ="Enter Code"
-                    HoverBorderColor: =RGBA(0, 18, 107, 1)
-                    HoverColor: =RGBA(0, 0, 0, 1)
-                    HoverFill: =RGBA(186, 202, 226, 1)
                     OnSelect: =Set(ClearFieldsForDO, false)
                     Reset: =ClearFieldsForDO
                     Size: =18
@@ -2335,9 +1745,6 @@ Distributorkycform As screen:
                     ZIndex: =10
 
                 Label52_35 As label:
-                    BorderColor: =RGBA(0, 18, 107, 1)
-                    Color: =RGBA(0, 0, 0, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
                     FontWeight: =FontWeight.Semibold
                     Height: =50
                     Size: =19
@@ -2347,18 +1754,10 @@ Distributorkycform As screen:
                     ZIndex: =11
 
                 TextInput3_57 As text:
-                    BorderColor: =RGBA(0, 18, 107, 1)
-                    Color: =RGBA(0, 0, 0, 1)
+                    BorderThickness: =1
                     Default: =datadis.'Name of nearest Distributor with distance'
-                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    DisabledFill: =RGBA(244, 244, 244, 1)
-                    FocusedBorderThickness: =4
                     Height: =50
                     HintText: ="Enter Details"
-                    HoverBorderColor: =RGBA(0, 18, 107, 1)
-                    HoverColor: =RGBA(0, 0, 0, 1)
-                    HoverFill: =RGBA(186, 202, 226, 1)
                     OnSelect: =Set(ClearFieldsForDO, false)
                     Reset: =ClearFieldsForDO
                     Size: =18
@@ -2368,9 +1767,6 @@ Distributorkycform As screen:
                     ZIndex: =12
 
                 Label52_39 As label:
-                    BorderColor: =RGBA(0, 18, 107, 1)
-                    Color: =RGBA(0, 0, 0, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
                     FontWeight: =FontWeight.Semibold
                     Height: =50
                     Size: =19
@@ -2381,18 +1777,10 @@ Distributorkycform As screen:
                     ZIndex: =14
 
                 TextInput3_58 As text:
-                    BorderColor: =RGBA(0, 18, 107, 1)
-                    Color: =RGBA(0, 0, 0, 1)
+                    BorderThickness: =1
                     Default: =datadis.'Deposit Amount'
-                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    DisabledFill: =RGBA(244, 244, 244, 1)
-                    FocusedBorderThickness: =4
                     Height: =50
                     HintText: ="Enter Amount"
-                    HoverBorderColor: =RGBA(0, 18, 107, 1)
-                    HoverColor: =RGBA(0, 0, 0, 1)
-                    HoverFill: =RGBA(186, 202, 226, 1)
                     OnSelect: =Set(ClearFieldsForDO, false)
                     Reset: =ClearFieldsForDO
                     Size: =18
@@ -2402,9 +1790,6 @@ Distributorkycform As screen:
                     ZIndex: =15
 
                 Label52_40 As label:
-                    BorderColor: =RGBA(0, 18, 107, 1)
-                    Color: =RGBA(0, 0, 0, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
                     FontWeight: =FontWeight.Semibold
                     Height: =50
                     Size: =18
@@ -2415,18 +1800,10 @@ Distributorkycform As screen:
                     ZIndex: =16
 
                 TextInput3_59 As text:
-                    BorderColor: =RGBA(0, 18, 107, 1)
-                    Color: =RGBA(0, 0, 0, 1)
+                    BorderThickness: =1
                     Default: =datadis.'Credit term pipes'
-                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    DisabledFill: =RGBA(244, 244, 244, 1)
-                    FocusedBorderThickness: =4
                     Height: =50
                     HintText: ="Enter Term Pipes"
-                    HoverBorderColor: =RGBA(0, 18, 107, 1)
-                    HoverColor: =RGBA(0, 0, 0, 1)
-                    HoverFill: =RGBA(186, 202, 226, 1)
                     OnSelect: =Set(ClearFieldsForDO, false)
                     Reset: =ClearFieldsForDO
                     Size: =18
@@ -2436,9 +1813,6 @@ Distributorkycform As screen:
                     ZIndex: =17
 
                 Label52_45 As label:
-                    BorderColor: =RGBA(0, 18, 107, 1)
-                    Color: =RGBA(0, 0, 0, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
                     FontWeight: =FontWeight.Semibold
                     Height: =50
                     Size: =19
@@ -2449,19 +1823,11 @@ Distributorkycform As screen:
                     ZIndex: =18
 
                 TextInput3_60 As text:
-                    BorderColor: =RGBA(0, 18, 107, 1)
-                    Color: =RGBA(0, 0, 0, 1)
+                    BorderThickness: =1
                     Default: =datadis.'Credit Limit'
-                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    DisabledFill: =RGBA(244, 244, 244, 1)
-                    FocusedBorderThickness: =4
                     Format: =TextFormat.Number
                     Height: =50
                     HintText: ="Enter Credit Limit(In Rs.)"
-                    HoverBorderColor: =RGBA(0, 18, 107, 1)
-                    HoverColor: =RGBA(0, 0, 0, 1)
-                    HoverFill: =RGBA(186, 202, 226, 1)
                     OnSelect: =Set(ClearFieldsForDO, false)
                     Reset: =ClearFieldsForDO
                     Size: =18
@@ -2471,9 +1837,6 @@ Distributorkycform As screen:
                     ZIndex: =19
 
                 Label52_46 As label:
-                    BorderColor: =RGBA(0, 18, 107, 1)
-                    Color: =RGBA(0, 0, 0, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
                     FontWeight: =FontWeight.Semibold
                     Height: =56
                     Size: =19
@@ -2483,42 +1846,26 @@ Distributorkycform As screen:
                     ZIndex: =20
 
                 ComboBox2 As combobox:
-                    BorderColor: =RGBA(89, 0, 0, 1)
                     BorderThickness: =1
                     ChevronBackground: =RGBA(238, 49, 55, 1)
-                    ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
-                    ChevronDisabledFill: =RGBA(244, 244, 244, 1)
-                    ChevronHoverBackground: =ColorFade(RGBA(164, 38, 44, 1), -20%)
-                    ChevronHoverFill: =RGBA(255, 255, 255, 1)
                     Default: =datadis
-                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    DisabledFill: =RGBA(244, 244, 244, 1)
                     DisplayFields: =["Value"]
                     Height: =50
                     HoverBorderColor: =
-                    HoverColor: =RGBA(0, 0, 0, 1)
-                    HoverFill: =RGBA(222, 179, 184, 1)
                     InputTextPlaceholder: ="Select Declaration Type"
                     IsSearchable: =false
                     Items: =['Declaration (Distributor Onboarding)'.Yes, 'Declaration (Distributor Onboarding)'.No]
                     OnSelect: =Set(ClearFieldsForDO, false)
-                    PressedColor: =RGBA(255, 255, 255, 1)
-                    PressedFill: =RGBA(89, 0, 0, 1)
                     Reset: =ClearFieldsForDO
                     SearchFields: =["Value"]
                     SearchItems: =[]
-                    SelectionFill: =RGBA(164, 38, 44, 1)
-                    Size: =18
+                    Size: =21
                     Width: =481
                     X: =22
                     Y: =56
                     ZIndex: =21
 
                 Label52_47 As label:
-                    BorderColor: =RGBA(0, 18, 107, 1)
-                    Color: =RGBA(0, 0, 0, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
                     FontWeight: =FontWeight.Semibold
                     Height: =50
                     Size: =19
@@ -2529,19 +1876,11 @@ Distributorkycform As screen:
                     ZIndex: =22
 
                 TextInput3_61 As text:
-                    BorderColor: =RGBA(0, 18, 107, 1)
-                    Color: =RGBA(0, 0, 0, 1)
+                    BorderThickness: =1
                     Default: =datadis.'Credit Term Fittings'
-                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    DisabledFill: =RGBA(244, 244, 244, 1)
-                    FocusedBorderThickness: =4
                     Format: =TextFormat.Number
                     Height: =50
                     HintText: ="Enter Credit Term"
-                    HoverBorderColor: =RGBA(0, 18, 107, 1)
-                    HoverColor: =RGBA(0, 0, 0, 1)
-                    HoverFill: =RGBA(186, 202, 226, 1)
                     OnSelect: =Set(ClearFieldsForDO, false)
                     Reset: =ClearFieldsForDO
                     Size: =18
@@ -2551,10 +1890,7 @@ Distributorkycform As screen:
                     ZIndex: =23
 
     Icon18 As icon.ArrowLeft:
-        BorderColor: =RGBA(89, 0, 0, 1)
         Color: =RGBA(255, 255, 255, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(244, 244, 244, 1)
         Height: =52
         Icon: =Icon.ArrowLeft
         OnSelect: |-
@@ -2569,7 +1905,6 @@ Distributorkycform As screen:
         ZIndex: =4
 
     Gallery15 As gallery.galleryHorizontal:
-        BorderColor: =RGBA(89, 0, 0, 1)
         Height: =55
         Items: |-
             =Table( 
@@ -2598,9 +1933,7 @@ Distributorkycform As screen:
 
         Label44 As label:
             Align: =Align.Center
-            BorderColor: =RGBA(89, 0, 0, 1)
             Color: =RGBA(255, 255, 255, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
             Height: =45
             OnSelect: =Select(Parent)
             Size: =17
@@ -2609,7 +1942,6 @@ Distributorkycform As screen:
             ZIndex: =1
 
         Rectangle20 As rectangle:
-            BorderColor: =RGBA(89, 0, 0, 1)
             Fill: =RGBA(237, 27, 36, 1)
             Height: =4
             OnSelect: =Select(Parent)
@@ -2623,13 +1955,8 @@ Distributorkycform As screen:
         BorderColor: =RGBA(0, 0, 0, 1)
         BorderThickness: =0
         Color: =RGBA(164, 164, 164, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
         Fill: =RGBA(255, 255, 255, 1)
-        FontWeight: =FontWeight.Semibold
         Height: =42
-        HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =RGBA(230, 71, 71, 1)
         OnSelect: |
             =If(Create,Patch(

@@ -1,12 +1,9 @@
 "'Customer (Dist) Plan Visit' As screen":
-    Fill: =RGBA(31, 31, 31, 1)
-    LoadingSpinnerColor: =RGBA(255, 200, 61, 1)
     OnVisible: |-
         =Set(VarDialogOpen, false);
         Set(varOpen, false)
 
     Gallery3_3 As gallery.galleryVertical:
-        BorderColor: =RGBA(109, 109, 109, 1)
         Height: =824
         Items: =Filter(Filter(Accounts, 'Account Type' = Gallery4_2.Selected.Value), 'Customer Search_1'.Text in 'Account Name (name)')
         Layout: =Layout.Vertical
@@ -16,13 +13,7 @@
         ZIndex: =1
 
         Label1_9 As label:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
             Color: =RGBA(53, 166, 57, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FocusedBorderThickness: =4
             Font: =Font.Lato
             FontWeight: =FontWeight.Semibold
             Height: =51
@@ -60,9 +51,6 @@
 
         Label2_111 As label:
             Align: =Align.Center
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
             Color: |-
                 =If(
                    ThisItem.'Account Type' = 'Account Type (Accounts)'.Distributer,
@@ -75,13 +63,9 @@
                     RGBA(209,180,50,1)
                 
                 )
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FocusedBorderThickness: =4
             Font: =Font.Lato
             FontWeight: =FontWeight.Semibold
             Height: =27
-            Size: =13
             Text: =ThisItem.'Account Type'
             Width: =160
             X: =430
@@ -89,13 +73,7 @@
             ZIndex: =9
 
         Label2_112 As label:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
             Color: =RGBA(51, 51, 51, 0.83)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FocusedBorderThickness: =4
             Font: =Font.Lato
             FontWeight: =FontWeight.Semibold
             Height: =52
@@ -108,21 +86,9 @@
             ZIndex: =10
 
         Icon11_1 As icon.Waypoint:
-            BorderColor: =RGBA(109, 109, 109, 1)
-            Color: =RGBA(255, 200, 61, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(220, 220, 220, 1)
-            DisabledFill: =RGBA(0, 0, 0, 0)
-            FocusedBorderThickness: =4
             Height: =25
-            HoverBorderColor: =RGBA(0, 0, 0, 0)
-            HoverColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
-            HoverFill: =RGBA(0, 0, 0, 0)
             Icon: =Icon.Waypoint
             OnSelect: =Select(Parent)
-            PressedBorderColor: =RGBA(0, 0, 0, 0)
-            PressedColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
-            PressedFill: =RGBA(0, 0, 0, 0)
             Width: =25
             X: =405
             Y: =21
@@ -160,13 +126,7 @@
 
             Label2_114 As label:
                 Align: =Align.Center
-                BorderColor: =RGBA(0, 0, 0, 0)
-                BorderStyle: =BorderStyle.None
-                BorderThickness: =2
                 Color: =RGBA(53, 166, 57, 1)
-                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                FocusedBorderThickness: =4
                 Font: =Font.Lato
                 FontWeight: =FontWeight.Semibold
                 Height: =23
@@ -179,17 +139,10 @@
 
             Label2_116 As label:
                 Align: =Align.Center
-                BorderColor: =RGBA(0, 0, 0, 0)
-                BorderStyle: =BorderStyle.None
-                BorderThickness: =2
                 Color: =RGBA(51, 51, 51, 0.83)
-                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                FocusedBorderThickness: =4
                 Font: =Font.Lato
                 FontWeight: =FontWeight.Semibold
                 Height: =32
-                Size: =13
                 Text: ="12-04-2022"
                 Width: =127
                 X: =273
@@ -216,13 +169,7 @@
 
             Label2_113 As label:
                 Align: =Align.Center
-                BorderColor: =RGBA(0, 0, 0, 0)
-                BorderStyle: =BorderStyle.None
-                BorderThickness: =2
                 Color: =RGBA(53, 166, 57, 1)
-                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                FocusedBorderThickness: =4
                 Font: =Font.Lato
                 FontWeight: =FontWeight.Semibold
                 Height: =23
@@ -235,17 +182,10 @@
 
             Label2_115 As label:
                 Align: =Align.Center
-                BorderColor: =RGBA(0, 0, 0, 0)
-                BorderStyle: =BorderStyle.None
-                BorderThickness: =2
                 Color: =RGBA(51, 51, 51, 0.83)
-                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                FocusedBorderThickness: =4
                 Font: =Font.Lato
                 FontWeight: =FontWeight.Semibold
                 Height: =32
-                Size: =13
                 Text: =ThisItem.'Account Number'
                 Width: =116
                 X: =85
@@ -261,19 +201,10 @@
 
             Button2_3 As button:
                 Align: =Align.Left
-                BorderColor: =RGBA(0, 0, 0, 0)
-                Color: =RGBA(31, 31, 31, 1)
-                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                DisabledFill: =RGBA(244, 244, 244, 1)
-                Fill: =RGBA(255, 200, 61, 1)
                 FocusedBorderColor: =ColorFade(Self.Fill, 75%)
                 Font: =Font.Lato
                 FontWeight: =FontWeight.Bold
                 Height: =39
-                HoverBorderColor: =RGBA(0, 0, 0, 0)
-                HoverColor: =RGBA(31, 31, 31, 1)
-                HoverFill: =ColorFade(RGBA(255, 200, 61, 1), 10%)
                 OnSelect: |
                     =Set(
                         VarDialogOpen,
@@ -287,9 +218,6 @@
                         }
                     );
                 PaddingLeft: =45
-                PressedBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 50%)
-                PressedColor: =RGBA(31, 31, 31, 1)
-                PressedFill: =ColorFade(RGBA(255, 200, 61, 1), 30%)
                 Size: =14
                 Text: ="ADD"
                 Width: =106
@@ -298,16 +226,8 @@
                 ZIndex: =12
 
             Icon13_1 As icon.Add:
-                BorderColor: =RGBA(109, 109, 109, 1)
                 Color: =RGBA(255, 255, 255, 1)
-                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                DisabledColor: =RGBA(220, 220, 220, 1)
-                DisabledFill: =RGBA(0, 0, 0, 0)
-                FocusedBorderThickness: =4
                 Height: =23
-                HoverBorderColor: =RGBA(0, 0, 0, 0)
-                HoverColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
-                HoverFill: =RGBA(0, 0, 0, 0)
                 Icon: =Icon.Add
                 OnSelect: |
                     =Set(
@@ -321,9 +241,6 @@
                             'Visit Type': 'Visit Type (Visits_1)'.Planned
                         }
                     );
-                PressedBorderColor: =RGBA(0, 0, 0, 0)
-                PressedColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
-                PressedFill: =RGBA(0, 0, 0, 0)
                 Width: =20
                 X: =486
                 Y: =122
@@ -342,13 +259,7 @@
         ZIndex: =2
 
     Label11_3 As label:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =2
         Color: =RGBA(255, 255, 255, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        FocusedBorderThickness: =4
         Font: =Font.Lato
         FontWeight: =FontWeight.Semibold
         Height: =46
@@ -360,34 +271,23 @@
         ZIndex: =3
 
     "'Customer Search_1' As text":
-        BorderColor: =RGBA(109, 109, 109, 1)
-        Color: =RGBA(255, 255, 255, 1)
+        BorderThickness: =1
         Default: =""
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(31, 31, 31, 1)
         FocusedBorderThickness: =2
         Font: =Font.Lato
         Height: =35
         HintText: ="Search Customers"
-        HoverBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
-        HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =RGBA(31, 31, 31, 1)
-        PressedBorderColor: =RGBA(255, 200, 61, 1)
-        PressedColor: =RGBA(255, 255, 255, 1)
-        PressedFill: =RGBA(31, 31, 31, 1)
         RadiusBottomLeft: =10
         RadiusBottomRight: =10
         RadiusTopLeft: =10
         RadiusTopRight: =10
+        Size: =14
         Width: =327
         X: =295
         Y: =21
         ZIndex: =4
 
     Gallery4_2 As gallery.galleryHorizontal:
-        BorderColor: =RGBA(109, 109, 109, 1)
         Height: =64
         Items: =['Account Type (Accounts)'.Distributer, 'Account Type (Accounts)'.Retailer, 'Account Type (Accounts)'.Wholesaler, 'Account Type (Accounts)'.Constructor, 'Account Type (Accounts)'.Plumber]
         OnSelect: =
@@ -401,21 +301,14 @@
         Button4_2 As button:
             BorderColor: =RGBA(53, 166, 57, 1)
             Color: =If(ThisItem.IsSelected, RGBA(255, 255, 255, 1), RGBA(53, 166,57,1))
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            DisabledFill: =RGBA(244, 244, 244, 1)
             Fill: =If(ThisItem.IsSelected, RGBA(53, 166, 57, 1), White)
             FocusedBorderColor: =
             FocusedBorderThickness: =2
             Font: =Font.Lato
-            FontWeight: =FontWeight.Semibold
             Height: =36
             HoverBorderColor: =RGBA(53, 166, 57, 1)
-            HoverColor: =RGBA(31, 31, 31, 1)
-            HoverFill: =ColorFade(RGBA(255, 200, 61, 1), 10%)
             OnSelect: =Select(Parent)
             PressedBorderColor: =
-            PressedColor: =RGBA(31, 31, 31, 1)
             PressedFill: =
             Size: =14
             Text: =ThisItem.Value
@@ -425,45 +318,31 @@
             ZIndex: =1
 
     Rectangle5_2 As rectangle:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =2
-        DisabledFill: =RGBA(166, 166, 166, 1)
         Fill: =RGBA(230, 230, 230, 0.5)
-        FocusedBorderThickness: =4
         Height: =1136
         HoverFill: =
-        PressedFill: =RGBA(255, 200, 61, 1)
         Visible: =VarDialogOpen
         Width: =640
         ZIndex: =6
 
     DatePicker3_1 As datepicker:
         BorderColor: =RGBA(103, 204, 107, 1)
-        CalendarHeaderFill: =ColorFade(RGBA(255, 200, 61, 1), 30%)
-        Color: =RGBA(0, 0, 0, 1)
         DefaultDate: =
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
         Fill: =RGBA(103, 204, 107, 0.02)
         FocusedBorderThickness: =2
         Font: =Font.Lato
         FontWeight: =FontWeight.Semibold
         Height: =41
-        HoverDateFill: =RGBA(144, 144, 144, 1)
         IconBackground: =RGBA(103, 204, 107, 1)
         IconFill: =RGBA(255,255,255,1)
         InputTextPlaceholder: ="Select Date"
         PaddingTop: =5
-        SelectedDateFill: =RGBA(255, 200, 61, 1)
         Width: =233
         X: =389
         Y: =149
         ZIndex: =11
 
     "'Date Gallery' As gallery.galleryHorizontal":
-        BorderColor: =RGBA(109, 109, 109, 1)
         Height: =64
         Items: =[Today()+1, Today()+2, Today()+3, Today()+4]
         OnSelect: =
@@ -477,21 +356,14 @@
         Button4_3 As button:
             BorderColor: =RGBA(53, 166, 57, 1)
             Color: =If(ThisItem.IsSelected, RGBA(255, 255, 255, 1), RGBA(53, 166,57,1))
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            DisabledFill: =RGBA(244, 244, 244, 1)
             Fill: =If(ThisItem.IsSelected, RGBA(53, 166, 57, 1), White)
             FocusedBorderColor: =
             FocusedBorderThickness: =2
             Font: =Font.Lato
-            FontWeight: =FontWeight.Semibold
             Height: =50
             HoverBorderColor: =RGBA(53, 166, 57, 1)
-            HoverColor: =RGBA(31, 31, 31, 1)
-            HoverFill: =ColorFade(RGBA(255, 200, 61, 1), 10%)
             OnSelect: =Select(Parent)
             PressedBorderColor: =
-            PressedColor: =RGBA(31, 31, 31, 1)
             PressedFill: =
             RadiusBottomLeft: =50
             RadiusBottomRight: =50
@@ -544,10 +416,7 @@
 
         Rectangle7_2 As rectangle:
             BorderColor: =RGBA(219, 219, 219, 1)
-            BorderThickness: =2
-            DisabledFill: =RGBA(166, 166, 166, 1)
             Fill: =RGBA(237, 237, 237, 1)
-            FocusedBorderThickness: =4
             Height: =395
             HoverFill: =RGBA(237, 237, 237, 1)
             OnSelect: =
@@ -559,21 +428,9 @@
             ZIndex: =7
 
         Icon10_2 As icon.Cancel:
-            BorderColor: =RGBA(109, 109, 109, 1)
-            Color: =RGBA(255, 200, 61, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(220, 220, 220, 1)
-            DisabledFill: =RGBA(0, 0, 0, 0)
-            FocusedBorderThickness: =4
             Height: =37
-            HoverBorderColor: =RGBA(0, 0, 0, 0)
-            HoverColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
-            HoverFill: =RGBA(0, 0, 0, 0)
             Icon: =Icon.Cancel
             OnSelect: =
-            PressedBorderColor: =RGBA(0, 0, 0, 0)
-            PressedColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
-            PressedFill: =RGBA(0, 0, 0, 0)
             Visible: =VarDialogOpen
             Width: =37
             X: =543
@@ -582,13 +439,6 @@
 
         Label7_2 As label:
             Align: =Align.Center
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
-            Color: =RGBA(255, 255, 255, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FocusedBorderThickness: =4
             Font: =Font.Lato
             FontWeight: =FontWeight.Semibold
             Height: =119
@@ -602,23 +452,11 @@
             ZIndex: =9
 
         Button2_4 As button:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            Color: =RGBA(31, 31, 31, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            DisabledFill: =RGBA(244, 244, 244, 1)
-            Fill: =RGBA(255, 200, 61, 1)
             FocusedBorderColor: =ColorFade(Self.Fill, 75%)
             Font: =Font.Lato
             FontWeight: =FontWeight.Bold
             Height: =45
-            HoverBorderColor: =RGBA(0, 0, 0, 0)
-            HoverColor: =RGBA(31, 31, 31, 1)
-            HoverFill: =ColorFade(RGBA(255, 200, 61, 1), 10%)
             OnSelect: =
-            PressedBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 50%)
-            PressedColor: =RGBA(31, 31, 31, 1)
-            PressedFill: =ColorFade(RGBA(255, 200, 61, 1), 30%)
             Size: =14
             Text: ="CONFIRM"
             Visible: =VarDialogOpen

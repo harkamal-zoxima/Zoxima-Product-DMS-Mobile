@@ -1,6 +1,4 @@
 StartDay As screen:
-    Fill: =RGBA(31, 31, 31, 1)
-    LoadingSpinnerColor: =RGBA(255, 200, 61, 1)
     OnVisible: =Set(varOpen, false)
 
     HtmlText1_45 As htmlViewer:
@@ -63,17 +61,9 @@ StartDay As screen:
 
     Image1_6 As image:
         BorderColor: =RGBA(204, 204, 204, 1)
-        BorderStyle: =BorderStyle.None
         BorderThickness: =1
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledFill: =RGBA(0, 0, 0, 0)
-        FocusedBorderThickness: =4
         Height: =123
-        HoverBorderColor: =RGBA(0, 0, 0, 0)
-        HoverFill: =RGBA(0, 0, 0, 0)
         Image: =User().Image
-        PressedBorderColor: =RGBA(0, 0, 0, 0)
-        PressedFill: =RGBA(0, 0, 0, 0)
         RadiusBottomLeft: =100
         RadiusBottomRight: =100
         RadiusTopLeft: =100
@@ -85,13 +75,7 @@ StartDay As screen:
 
     Label3_11 As label:
         Align: =Align.Center
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =2
         Color: =RGBA(65, 76, 96, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        FocusedBorderThickness: =4
         Font: =Font.Lato
         FontWeight: =FontWeight.Semibold
         Height: =44
@@ -103,17 +87,10 @@ StartDay As screen:
         ZIndex: =5
 
     Label3_12 As label:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =2
         Color: =RGBA(242, 123, 68, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        FocusedBorderThickness: =4
         Font: =Font.Lato
         FontWeight: =FontWeight.Semibold
         Height: =20
-        Size: =13
         Text: ="Salesperson"
         Width: =110
         X: =265
@@ -122,13 +99,7 @@ StartDay As screen:
 
     Label3_13 As label:
         Align: =Align.Center
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =2
         Color: =RGBA(116, 116, 116, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        FocusedBorderThickness: =4
         Font: =Font.Lato
         FontWeight: =FontWeight.Semibold
         Height: =44
@@ -140,59 +111,29 @@ StartDay As screen:
         ZIndex: =7
 
     Image5 As image:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =2
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledFill: =RGBA(0, 0, 0, 0)
         Fill: =RGBA(65, 76, 96, 1)
-        FocusedBorderThickness: =4
         Height: =570
-        HoverBorderColor: =RGBA(0, 0, 0, 0)
-        HoverFill: =RGBA(0, 0, 0, 0)
         Image: ='WhatsApp Image 2022-05-13 at 1.06.35 PM'
         ImagePosition: =ImagePosition.Fill
-        PressedBorderColor: =RGBA(0, 0, 0, 0)
-        PressedFill: =RGBA(0, 0, 0, 0)
         Width: =640
         Y: =486
         ZIndex: =8
 
     Icon2_4 As icon.Bell:
-        BorderColor: =RGBA(109, 109, 109, 1)
         Color: =RGBA(255, 255, 255, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(220, 220, 220, 1)
-        DisabledFill: =RGBA(0, 0, 0, 0)
-        FocusedBorderThickness: =4
         Height: =35
-        HoverBorderColor: =RGBA(0, 0, 0, 0)
-        HoverColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
-        HoverFill: =RGBA(0, 0, 0, 0)
         Icon: =Icon.Bell
-        PressedBorderColor: =RGBA(0, 0, 0, 0)
-        PressedColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
-        PressedFill: =RGBA(0, 0, 0, 0)
         Width: =33
         X: =592
         Y: =25
         ZIndex: =13
 
     Image1_11 As image:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =2
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledFill: =RGBA(0, 0, 0, 0)
         Fill: =RGBA(255, 255, 255, 1)
-        FocusedBorderThickness: =4
         Height: =38
-        HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverFill: =RGBA(255, 255, 255, 1)
         Image: ='zoxima logo only'
         PaddingTop: =2
-        PressedBorderColor: =RGBA(0, 0, 0, 0)
-        PressedFill: =RGBA(0, 0, 0, 0)
         RadiusBottomLeft: =10
         RadiusBottomRight: =10
         RadiusTopLeft: =10
@@ -237,13 +178,7 @@ StartDay As screen:
 
         Label3_14 As label:
             Align: =Align.Center
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
             Color: =RGBA(83, 173, 88, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FocusedBorderThickness: =4
             Font: =Font.Lato
             FontWeight: =FontWeight.Semibold
             Height: =70
@@ -285,13 +220,7 @@ StartDay As screen:
 
         Label3_15 As label:
             Align: =Align.Center
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
             Color: =RGBA(83, 173, 88, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FocusedBorderThickness: =4
             Font: =Font.Lato
             FontWeight: =FontWeight.Semibold
             Height: =65

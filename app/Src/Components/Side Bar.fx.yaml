@@ -30,10 +30,7 @@
         ZIndex: =1
 
     Icon1 As icon.Hamburger:
-        BorderColor: =RGBA(0, 18, 107, 1)
-        Color: = If(varOpen, RGBA(103,204,107,1), RGBA(255, 255, 255, 1))
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(244, 244, 244, 1)
+        Color: = If(varOpen, RGBA(70,74,103,1), RGBA(255, 255, 255, 1))
         Height: =39
         Icon: =Icon.Hamburger
         OnSelect: =Set(varOpen, !varOpen)
@@ -43,7 +40,6 @@
         ZIndex: =2
 
     Gallery1_1 As gallery.galleryVertical:
-        BorderColor: =RGBA(0, 18, 107, 1)
         Height: =982
         Items: ='Side Bar'.NavItems
         Layout: =Layout.Vertical
@@ -54,8 +50,6 @@
         ZIndex: =3
 
         Label5 As label:
-            BorderColor: =RGBA(0, 18, 107, 1)
-            Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(237, 237, 237, 1)
             Font: =Font.Lato
             FontWeight: =FontWeight.Semibold

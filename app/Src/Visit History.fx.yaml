@@ -1,6 +1,5 @@
 "'Visit History' As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
     Fill: =RGBA(59, 59, 59, 1)
-    LoadingSpinnerColor: =RGBA(255, 200, 61, 1)
     OnVisible: =Set(varOpen, false)
 
     VisitsInfoTopTab_5 As VisitsInfoTopTab:
@@ -88,28 +87,16 @@
         ZIndex: =27
 
     Icon14_3 As icon.BackArrow:
-        BorderColor: =RGBA(109, 109, 109, 1)
         Color: =RGBA(255, 255, 255, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(220, 220, 220, 1)
-        DisabledFill: =RGBA(0, 0, 0, 0)
-        FocusedBorderThickness: =4
         Height: =43
-        HoverBorderColor: =RGBA(0, 0, 0, 0)
-        HoverColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
-        HoverFill: =RGBA(0, 0, 0, 0)
         Icon: =Icon.BackArrow
         OnSelect: =Back()
-        PressedBorderColor: =RGBA(0, 0, 0, 0)
-        PressedColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
-        PressedFill: =RGBA(0, 0, 0, 0)
         Width: =43
         X: =18
         Y: =15
         ZIndex: =28
 
     Gallery3_5 As gallery.galleryVertical:
-        BorderColor: =RGBA(109, 109, 109, 1)
         Height: =897
         Items: =Filter(Visits_1, Customer.Account = ClickedVisit.Customer.Account)
         Layout: =Layout.Vertical
@@ -129,13 +116,7 @@
             ZIndex: =1
 
         Label1_8 As label:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
             Color: =RGBA(255, 191, 0, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FocusedBorderThickness: =4
             Font: =Font.Lato
             FontWeight: =FontWeight.Semibold
             Height: =51
@@ -166,16 +147,11 @@
 
             Label2_39 As label:
                 Align: =Align.Center
-                BorderColor: =RGBA(0, 0, 0, 0)
-                BorderStyle: =BorderStyle.None
-                BorderThickness: =2
                 Color: =RGBA(237, 237, 237, 1)
-                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                FocusedBorderThickness: =4
                 Font: =Font.Lato
                 FontWeight: =FontWeight.Semibold
                 Height: =23
+                Size: =14
                 Text: ="Visit ID"
                 Width: =116
                 X: =58
@@ -184,13 +160,7 @@
 
             Label2_42 As label:
                 Align: =Align.Center
-                BorderColor: =RGBA(0, 0, 0, 0)
-                BorderStyle: =BorderStyle.None
-                BorderThickness: =2
                 Color: =RGBA(255, 255, 255, 1)
-                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                FocusedBorderThickness: =4
                 Font: =Font.Lato
                 FontWeight: =FontWeight.Semibold
                 Height: =32
@@ -221,16 +191,11 @@
 
             Label2_40 As label:
                 Align: =Align.Center
-                BorderColor: =RGBA(0, 0, 0, 0)
-                BorderStyle: =BorderStyle.None
-                BorderThickness: =2
                 Color: =RGBA(237, 237, 237, 1)
-                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                FocusedBorderThickness: =4
                 Font: =Font.Lato
                 FontWeight: =FontWeight.Semibold
                 Height: =23
+                Size: =14
                 Text: ="Type"
                 Width: =116
                 X: =249
@@ -239,13 +204,7 @@
 
             Label2_43 As label:
                 Align: =Align.Center
-                BorderColor: =RGBA(0, 0, 0, 0)
-                BorderStyle: =BorderStyle.None
-                BorderThickness: =2
                 Color: =RGBA(255, 255, 255, 1)
-                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                FocusedBorderThickness: =4
                 Font: =Font.Lato
                 FontWeight: =FontWeight.Semibold
                 Height: =32
@@ -276,16 +235,11 @@
 
             Label2_41 As label:
                 Align: =Align.Center
-                BorderColor: =RGBA(0, 0, 0, 0)
-                BorderStyle: =BorderStyle.None
-                BorderThickness: =2
                 Color: =RGBA(237, 237, 237, 1)
-                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                FocusedBorderThickness: =4
                 Font: =Font.Lato
                 FontWeight: =FontWeight.Semibold
                 Height: =23
+                Size: =14
                 Text: ="Visit Status"
                 Width: =116
                 X: =438
@@ -294,13 +248,7 @@
 
             Label2_44 As label:
                 Align: =Align.Center
-                BorderColor: =RGBA(0, 0, 0, 0)
-                BorderStyle: =BorderStyle.None
-                BorderThickness: =2
                 Color: =RGBA(255, 255, 255, 1)
-                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                FocusedBorderThickness: =4
                 Font: =Font.Lato
                 FontWeight: =FontWeight.Semibold
                 Height: =32

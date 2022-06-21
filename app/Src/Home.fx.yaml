@@ -1,6 +1,4 @@
 "Home As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
-    Fill: =RGBA(31, 31, 31, 1)
-    LoadingSpinnerColor: =RGBA(255, 200, 61, 1)
     OnVisible: |-
         =Set(
             varOpen,
@@ -125,7 +123,7 @@
                 Color: =RGBA(103, 204, 107, 1)
                 Height: =334
                 HtmlText: |-
-                    ="<div style='border-radius:0; background-color:#414C60; width:640px; height:330px'></div>"
+                    ="<div style='border-radius:0; background-color:#464A67; width:640px; height:330px'></div>"
                 PaddingBottom: =0
                 PaddingLeft: =0
                 PaddingRight: =0
@@ -134,40 +132,20 @@
                 ZIndex: =7
 
             Icon2_1 As icon.Bell:
-                BorderColor: =RGBA(109, 109, 109, 1)
                 Color: =RGBA(255, 255, 255, 1)
-                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                DisabledColor: =RGBA(220, 220, 220, 1)
-                DisabledFill: =RGBA(0, 0, 0, 0)
-                FocusedBorderThickness: =4
                 Height: =35
-                HoverBorderColor: =RGBA(0, 0, 0, 0)
-                HoverColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
-                HoverFill: =RGBA(0, 0, 0, 0)
                 Icon: =Icon.Bell
-                PressedBorderColor: =RGBA(0, 0, 0, 0)
-                PressedColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
-                PressedFill: =RGBA(0, 0, 0, 0)
                 Width: =33
                 X: =586
                 Y: =26
                 ZIndex: =20
 
             Image1 As image:
-                BorderColor: =RGBA(0, 0, 0, 0)
-                BorderStyle: =BorderStyle.None
-                BorderThickness: =2
-                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                DisabledFill: =RGBA(0, 0, 0, 0)
                 Fill: =RGBA(255, 255, 255, 1)
-                FocusedBorderThickness: =4
                 Height: =38
-                HoverBorderColor: =RGBA(0, 0, 0, 0)
                 HoverFill: =RGBA(255, 255, 255, 1)
                 Image: ='zoxima logo only'
                 PaddingTop: =2
-                PressedBorderColor: =RGBA(0, 0, 0, 0)
-                PressedFill: =RGBA(0, 0, 0, 0)
                 RadiusBottomLeft: =10
                 RadiusBottomRight: =10
                 RadiusTopLeft: =10
@@ -217,13 +195,7 @@
 
                 Label2_24 As label:
                     Align: =Align.Center
-                    BorderColor: =RGBA(0, 0, 0, 0)
-                    BorderStyle: =BorderStyle.None
-                    BorderThickness: =2
                     Color: =RGBA(107, 179, 194, 1)
-                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    FocusedBorderThickness: =4
                     Font: =Font.Lato
                     FontWeight: =FontWeight.Bold
                     Height: =44
@@ -250,13 +222,7 @@
 
                 Label2_25 As label:
                     Align: =Align.Center
-                    BorderColor: =RGBA(0, 0, 0, 0)
-                    BorderStyle: =BorderStyle.None
-                    BorderThickness: =2
                     Color: =RGBA(107, 179, 194, 1)
-                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    FocusedBorderThickness: =4
                     Font: =Font.Lato
                     FontWeight: =FontWeight.Semibold
                     Height: =44
@@ -269,13 +235,7 @@
 
                 Label2_26 As label:
                     Align: =Align.Center
-                    BorderColor: =RGBA(0, 0, 0, 0)
-                    BorderStyle: =BorderStyle.None
-                    BorderThickness: =2
                     Color: =RGBA(26, 159, 228, 1)
-                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    FocusedBorderThickness: =4
                     Font: =Font.Lato
                     FontWeight: =FontWeight.Bold
                     Height: =44
@@ -302,13 +262,7 @@
 
                 Label2_27 As label:
                     Align: =Align.Center
-                    BorderColor: =RGBA(0, 0, 0, 0)
-                    BorderStyle: =BorderStyle.None
-                    BorderThickness: =2
                     Color: =RGBA(26, 159, 228, 1)
-                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    FocusedBorderThickness: =4
                     Font: =Font.Lato
                     FontWeight: =FontWeight.Semibold
                     Height: =44
@@ -324,13 +278,7 @@
 
                 Label2_28 As label:
                     Align: =Align.Center
-                    BorderColor: =RGBA(0, 0, 0, 0)
-                    BorderStyle: =BorderStyle.None
-                    BorderThickness: =2
                     Color: =RGBA(209, 180, 50, 1)
-                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    FocusedBorderThickness: =4
                     Font: =Font.Lato
                     FontWeight: =FontWeight.Bold
                     Height: =44
@@ -357,13 +305,7 @@
 
                 Label2_29 As label:
                     Align: =Align.Center
-                    BorderColor: =RGBA(0, 0, 0, 0)
-                    BorderStyle: =BorderStyle.None
-                    BorderThickness: =2
                     Color: =RGBA(209, 180, 50, 1)
-                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    FocusedBorderThickness: =4
                     Font: =Font.Lato
                     FontWeight: =FontWeight.Semibold
                     Height: =44
@@ -375,13 +317,7 @@
                     ZIndex: =18
 
                 Label1_4 As label:
-                    BorderColor: =RGBA(0, 0, 0, 0)
-                    BorderStyle: =BorderStyle.None
-                    BorderThickness: =2
                     Color: =RGBA(0, 0, 0, 0.6)
-                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    FocusedBorderThickness: =4
                     Font: =Font.Lato
                     FontWeight: =FontWeight.Semibold
                     Height: =70
@@ -393,7 +329,6 @@
                     ZIndex: =19
 
                 PowerBI3 As powerbi:
-                    BorderColor: =RGBA(109, 109, 109, 1)
                     BorderThickness: =0
                     DashboardId: ="ca49dd05-569e-416d-922a-3be48ca09ded"
                     Height: =353
@@ -423,14 +358,8 @@
 
                     Label2_18 As label:
                         Align: =Align.Center
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
                         Color: =RGBA(26, 159, 228, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
                         DisplayMode: =DisplayMode.View
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Bold
                         Height: =44
@@ -457,14 +386,8 @@
 
                     Label2_19 As label:
                         Align: =Align.Center
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
                         Color: =RGBA(26, 159, 228, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
                         DisplayMode: =DisplayMode.View
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Semibold
                         Height: =44
@@ -494,14 +417,8 @@
 
                     Label2_20 As label:
                         Align: =Align.Center
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
                         Color: =RGBA(88, 173, 91, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
                         DisplayMode: =DisplayMode.View
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Bold
                         Height: =44
@@ -528,14 +445,8 @@
 
                     Label2_21 As label:
                         Align: =Align.Center
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
                         Color: =RGBA(88, 173, 91, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
                         DisplayMode: =DisplayMode.View
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Semibold
                         Height: =44
@@ -565,14 +476,8 @@
 
                     Label2_22 As label:
                         Align: =Align.Center
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
                         Color: =RGBA(107, 179, 194, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
                         DisplayMode: =DisplayMode.View
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Bold
                         Height: =44
@@ -599,14 +504,8 @@
 
                     Label2_23 As label:
                         Align: =Align.Center
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
                         Color: =RGBA(107, 179, 194, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
                         DisplayMode: =DisplayMode.View
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Semibold
                         Height: =44
@@ -636,14 +535,8 @@
 
                     Label2_32 As label:
                         Align: =Align.Center
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
                         Color: =RGBA(209, 180, 50, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
                         DisplayMode: =DisplayMode.View
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Bold
                         Height: =44
@@ -661,14 +554,8 @@
 
                     Label2_31 As label:
                         Align: =Align.Center
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
                         Color: =RGBA(209, 180, 50, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
                         DisplayMode: =DisplayMode.View
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Semibold
                         Height: =44
@@ -698,14 +585,8 @@
 
                     Label2_33 As label:
                         Align: =Align.Center
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
                         Color: =RGBA(88, 173, 91, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
                         DisplayMode: =DisplayMode.View
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Bold
                         Height: =44
@@ -723,14 +604,8 @@
 
                     Label2_34 As label:
                         Align: =Align.Center
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
                         Color: =RGBA(88, 173, 91, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
                         DisplayMode: =DisplayMode.View
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Semibold
                         Height: =44
@@ -760,14 +635,8 @@
 
                     Label2_36 As label:
                         Align: =Align.Center
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
                         Color: =RGBA(107, 179, 194, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
                         DisplayMode: =DisplayMode.View
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Bold
                         Height: =44
@@ -785,14 +654,8 @@
 
                     Label2_35 As label:
                         Align: =Align.Center
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
                         Color: =RGBA(107, 179, 194, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
                         DisplayMode: =DisplayMode.View
-                        FocusedBorderThickness: =4
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Semibold
                         Height: =44
@@ -826,18 +689,10 @@
 
                 Image1_1 As image:
                     BorderColor: =RGBA(204, 204, 204, 1)
-                    BorderStyle: =BorderStyle.None
                     BorderThickness: =1
-                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                    DisabledFill: =RGBA(0, 0, 0, 0)
-                    FocusedBorderThickness: =4
                     Height: =59
-                    HoverBorderColor: =RGBA(0, 0, 0, 0)
-                    HoverFill: =RGBA(0, 0, 0, 0)
                     Image: =User().Image
                     ImagePosition: =ImagePosition.Fill
-                    PressedBorderColor: =RGBA(0, 0, 0, 0)
-                    PressedFill: =RGBA(0, 0, 0, 0)
                     RadiusBottomLeft: =50
                     RadiusBottomRight: =50
                     RadiusTopLeft: =50
@@ -848,13 +703,7 @@
                     ZIndex: =23
 
                 Label3_2 As label:
-                    BorderColor: =RGBA(0, 0, 0, 0)
-                    BorderStyle: =BorderStyle.None
-                    BorderThickness: =2
                     Color: =RGBA(116, 116, 116, 1)
-                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    FocusedBorderThickness: =4
                     Font: =Font.Lato
                     FontWeight: =FontWeight.Semibold
                     Height: =49
@@ -866,17 +715,10 @@
                     ZIndex: =24
 
                 Label3_3 As label:
-                    BorderColor: =RGBA(0, 0, 0, 0)
-                    BorderStyle: =BorderStyle.None
-                    BorderThickness: =2
                     Color: =RGBA(242, 123, 68, 1)
-                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    FocusedBorderThickness: =4
                     Font: =Font.Lato
                     FontWeight: =FontWeight.Semibold
                     Height: =25
-                    Size: =13
                     Text: ="Sales Person"
                     Width: =278
                     X: =182
@@ -884,32 +726,16 @@
                     ZIndex: =25
 
                 Label4_8 As label:
-                    BorderColor: =RGBA(0, 0, 0, 0)
-                    BorderStyle: =BorderStyle.None
-                    BorderThickness: =2
-                    Color: =RGBA(255, 255, 255, 1)
-                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    FocusedBorderThickness: =4
                     Font: =Font.Lato
                     Height: =36
-                    Size: =13
                     Text: ="Attendance Type"
                     X: =119
                     Y: =188
                     ZIndex: =26
 
                 Label4_10 As label:
-                    BorderColor: =RGBA(0, 0, 0, 0)
-                    BorderStyle: =BorderStyle.None
-                    BorderThickness: =2
-                    Color: =RGBA(255, 255, 255, 1)
-                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    FocusedBorderThickness: =4
                     Font: =Font.Lato
                     Height: =36
-                    Size: =13
                     Text: ="Total Hours Worked"
                     Width: =180
                     X: =369
@@ -917,13 +743,7 @@
                     ZIndex: =27
 
                 "'total hours' As label":
-                    BorderColor: =RGBA(0, 0, 0, 0)
-                    BorderStyle: =BorderStyle.None
-                    BorderThickness: =2
                     Color: =RGBA(65, 76, 96, 1)
-                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    FocusedBorderThickness: =4
                     Font: =Font.Lato
                     FontWeight: =FontWeight.Semibold
                     Height: =36
@@ -954,16 +774,8 @@
                     ZIndex: =28
 
                 Label4_12 As label:
-                    BorderColor: =RGBA(0, 0, 0, 0)
-                    BorderStyle: =BorderStyle.None
-                    BorderThickness: =2
-                    Color: =RGBA(255, 255, 255, 1)
-                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    FocusedBorderThickness: =4
                     Font: =Font.Lato
                     Height: =36
-                    Size: =13
                     Text: ="Day Started At"
                     X: =119
                     Y: =272
@@ -971,13 +783,7 @@
 
                 "'day started' As label":
                     Align: =Align.Center
-                    BorderColor: =RGBA(0, 0, 0, 0)
-                    BorderStyle: =BorderStyle.None
-                    BorderThickness: =2
                     Color: =RGBA(65, 76, 96, 1)
-                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    FocusedBorderThickness: =4
                     Font: =Font.Lato
                     FontWeight: =FontWeight.Semibold
                     Height: =36
@@ -1011,16 +817,8 @@
                     ZIndex: =30
 
                 Label4_14 As label:
-                    BorderColor: =RGBA(0, 0, 0, 0)
-                    BorderStyle: =BorderStyle.None
-                    BorderThickness: =2
-                    Color: =RGBA(255, 255, 255, 1)
-                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    FocusedBorderThickness: =4
                     Font: =Font.Lato
                     Height: =36
-                    Size: =13
                     Text: ="Day Ended At"
                     X: =369
                     Y: =272
@@ -1028,13 +826,7 @@
 
                 "'day ended' As label":
                     Align: =Align.Center
-                    BorderColor: =RGBA(0, 0, 0, 0)
-                    BorderStyle: =BorderStyle.None
-                    BorderThickness: =2
                     Color: =RGBA(65, 76, 96, 1)
-                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    FocusedBorderThickness: =4
                     Font: =Font.Lato
                     FontWeight: =FontWeight.Semibold
                     Height: =32
@@ -1065,17 +857,10 @@
 
                 Label3_4 As label:
                     Align: =Align.Center
-                    BorderColor: =RGBA(0, 0, 0, 0)
-                    BorderStyle: =BorderStyle.None
-                    BorderThickness: =2
                     Color: =RGBA(242, 123, 68, 1)
-                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    FocusedBorderThickness: =4
                     Font: =Font.Lato
                     FontWeight: =FontWeight.Bold
                     Height: =25
-                    Size: =13
                     Text: =Text(Today(), "dd mmm yyyy")
                     Width: =143
                     X: =408
@@ -1093,13 +878,7 @@
                     ZIndex: =46
 
                 Type As label:
-                    BorderColor: =RGBA(0, 0, 0, 0)
-                    BorderStyle: =BorderStyle.None
-                    BorderThickness: =2
                     Color: =RGBA(65, 76, 96, 1)
-                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    FocusedBorderThickness: =4
                     Font: =Font.Lato
                     FontWeight: =FontWeight.Semibold
                     Height: =36
@@ -1146,7 +925,6 @@
                 ZIndex: =53
 
                 PowerBI3_2 As powerbi:
-                    BorderColor: =RGBA(109, 109, 109, 1)
                     BorderThickness: =0
                     DashboardId: ="bd1c9d9b-b8fb-4677-bde5-33da4b1af069"
                     Height: =387
@@ -1157,7 +935,6 @@
                     ZIndex: =1
 
                 PowerBI1_2 As powerbi:
-                    BorderColor: =RGBA(109, 109, 109, 1)
                     BorderThickness: =0
                     DashboardId: ="987c3cd0-0395-498f-bec3-262a13366bb2"
                     Height: =976
@@ -1169,7 +946,6 @@
                     ZIndex: =2
 
             "'Dashboard Toptab' As gallery.galleryHorizontal":
-                BorderColor: =RGBA(109, 109, 109, 1)
                 Height: =56
                 Items: |-
                     =Table(
@@ -1192,11 +968,7 @@
                 ZIndex: =54
 
                 Rectangle3_2 As rectangle:
-                    BorderColor: =RGBA(0, 0, 0, 0)
-                    BorderStyle: =BorderStyle.None
-                    DisabledFill: =RGBA(166, 166, 166, 1)
                     Fill: =If(ThisItem.IsSelected, RGBA(103, 204, 107, 0.26), RGBA(103, 204, 107, 0.1))
-                    FocusedBorderThickness: =4
                     Height: =46
                     HoverFill: =RGBA(103, 204, 107, 0.28)
                     OnSelect: =Select(Parent)
@@ -1206,13 +978,7 @@
 
                 Label2_48 As label:
                     Align: =Align.Center
-                    BorderColor: =RGBA(0, 0, 0, 0)
-                    BorderStyle: =BorderStyle.None
-                    BorderThickness: =2
                     Color: =If(ThisItem.IsSelected, RGBA(103, 204, 107, 100), RGBA(154, 154, 154, 1))
-                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    FocusedBorderThickness: =4
                     Font: =Font.Lato
                     FontWeight: =FontWeight.Semibold
                     Height: =46

@@ -49,7 +49,6 @@
     ZIndex: =1
 
     Gallery2_1 As gallery.galleryHorizontal:
-        BorderColor: =RGBA(0, 18, 107, 1)
         Height: =80
         Items: ='Bottom Navigation'.NavItems
         OnSelect: =Navigate(ThisItem.Screen)
@@ -61,7 +60,7 @@
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             DisabledFill: =RGBA(166, 166, 166, 1)
-            Fill: =If(ThisItem.Active, RGBA(0,0,0,0.6), Transparent)
+            Fill: =If(ThisItem.Active, RGBA(70,74,106,100), Transparent)
             FocusedBorderThickness: =4
             Height: =70
             HoverFill: =RGBA(103, 204, 107, 0.28)
@@ -72,10 +71,7 @@
             ZIndex: =1
 
         Icon1_2 As icon.Add:
-            BorderColor: =RGBA(0, 18, 107, 1)
-            Color: =If(ThisItem.Active, White, RGBA(154, 154, 154, 1))
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledColor: =RGBA(244, 244, 244, 1)
+            Color: =If(ThisItem.Active, White, RGBA(70,74,103, 1))
             Height: =35
             Icon: =ThisItem.Icon
             OnSelect: =Navigate(ThisItem.Screen)
@@ -86,9 +82,7 @@
 
         Label2_30 As label:
             Align: =Align.Center
-            BorderColor: =RGBA(0, 18, 107, 1)
-            Color: =If(ThisItem.Active, White, RGBA(154, 154, 154, 1))
-            DisabledColor: =RGBA(166, 166, 166, 1)
+            Color: =If(ThisItem.Active, White, RGBA(70,74,103, 1))
             FontWeight: =FontWeight.Semibold
             Height: =26
             OnSelect: =Navigate(ThisItem.Screen)

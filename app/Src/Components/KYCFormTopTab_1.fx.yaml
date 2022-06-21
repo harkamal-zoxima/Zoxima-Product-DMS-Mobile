@@ -46,7 +46,6 @@ KYCFormTopTab_1 As CanvasComponent:
     ZIndex: =1
 
     Gallery1_4 As gallery.galleryHorizontal:
-        BorderColor: =RGBA(0, 18, 107, 1)
         Fill: =RGBA(255, 255, 255, 1)
         Height: =65
         Items: =KYCFormTopTab_1.TabItems
@@ -56,9 +55,6 @@ KYCFormTopTab_1 As CanvasComponent:
 
         Label8_5 As label:
             Align: =Align.Center
-            BorderColor: =RGBA(0, 18, 107, 1)
-            Color: =RGBA(0, 0, 0, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
             FontWeight: =FontWeight.Semibold
             Height: =55
             OnSelect: =Navigate(ThisItem.Screen)
@@ -68,10 +64,7 @@ KYCFormTopTab_1 As CanvasComponent:
             ZIndex: =4
 
         Icon6_4 As icon.HorizontalLine:
-            BorderColor: =RGBA(0, 18, 107, 1)
             Color: =If(ThisItem.IsSelected ,RGBA(53, 166, 57, 1), RGBA(255, 255, 255, 1))
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledColor: =RGBA(244, 244, 244, 1)
             Height: =4
             Icon: =HorizontalLine
             OnSelect: =Select(Parent)
