@@ -8,43 +8,12 @@ Filter As screen:
             )
         )
 
-    "'Bottom Navigation_29' As 'Bottom Navigation'":
-        NavItems: |-
-            =Table( {
-                    Title: If(varAttendance = "end" , "End", varAttendance = "start" , "Start", varAttendance = "done" , "Ended"),
-                    //Title: Start,
-                    Screen: If(varAttendance= "start" , StartDay, varAttendance= "end" , 'End day', varAttendance= "done" , 'Day Ended' ),
-                
-                    Icon: CalendarBlank,
-                    Active: false
-                },
-                {
-                    Title: "Visits",
-                    Screen: Visits,
-                    Icon: Waypoint,
-                    Active: true
-                },
-                {
-                    Title: "Dashboard",
-                    Screen: Home,
-                    Icon: Waffle,
-                    Active: false
-                },
-                {
-                    Title: "Orders",
-                    Screen: 'All Orders',
-                    Icon: ShoppingCart,
-                    Active: false
-                }
-                )
-        Y: =1056
-
     Rectangle9 As rectangle:
         Fill: =RGBA(152, 208, 70, 0.04)
         Height: =79
         HoverFill: =
         Width: =640
-        ZIndex: =2
+        ZIndex: =1
 
     Label1_6 As label:
         Font: =Font.Lato
@@ -55,17 +24,17 @@ Filter As screen:
         Width: =293
         X: =34
         Y: =13
-        ZIndex: =3
+        ZIndex: =2
 
     Icon3_2 As icon.Cancel:
-        Color: =RGBA(237, 237, 237, 1)
+        Color: =RGBA(70, 74, 103, 1)
         Height: =42
         Icon: =Icon.Cancel
         OnSelect: =Back()
         Width: =54
         X: =580
         Y: =13
-        ZIndex: =4
+        ZIndex: =3
 
     Button5_2 As button:
         BorderThickness: =0
@@ -82,13 +51,13 @@ Filter As screen:
         Size: =16
         Text: ="Clear"
         Width: =303
-        X: =8
+        X: =10
         Y: =1080
-        ZIndex: =5
+        ZIndex: =4
 
     Button5_3 As button:
         BorderThickness: =0
-        Fill: =RGBA(160, 0, 2, 1)
+        Fill: =RGBA(70, 74, 103, 1)
         FocusedBorderColor: =ColorFade(Self.Fill, 75%)
         Font: =Font.Lato
         Height: =56
@@ -112,13 +81,13 @@ Filter As screen:
         Size: =16
         Text: ="Apply"
         Width: =303
-        X: =324
+        X: =326
         Y: =1080
-        ZIndex: =6
+        ZIndex: =5
 
     "'SubItems Gallery' As gallery.galleryVertical":
         Fill: =RGBA(255, 255, 255, 1)
-        Height: =1001
+        Height: =969
         Items: =subItems
         Layout: =Layout.Vertical
         TemplatePadding: =0
@@ -126,7 +95,7 @@ Filter As screen:
         Width: =382
         X: =258
         Y: =79
-        ZIndex: =7
+        ZIndex: =6
 
         Rectangle11_1 As rectangle:
             Fill: =RGBA(202, 202, 202, 1)
@@ -168,14 +137,14 @@ Filter As screen:
     "'Items Gallery' As gallery.galleryVertical":
         Default: =Last(Categories)
         Fill: =RGBA(103, 204, 107, 0.05)
-        Height: =1001
+        Height: =968
         Items: =Filter(Categories, Level= 1)
         Layout: =Layout.Vertical
         TemplatePadding: =0
         TemplateSize: =52
         Width: =258
         Y: =79
-        ZIndex: =8
+        ZIndex: =7
 
         Rectangle11 As rectangle:
             Fill: =RGBA(202, 202, 202, 1)

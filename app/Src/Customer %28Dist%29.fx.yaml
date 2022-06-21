@@ -1,5 +1,5 @@
 "'Customer (Dist)' As screen":
-    Fill: =RGBA(59, 59, 59, 1)
+    Fill: =RGBA(255, 255, 255, 1)
     OnHidden: =Set(VarDialogOpen, false)
     OnVisible: |-
         =Set(VarDialogOpen, false);
@@ -25,14 +25,14 @@
             Color: =RGBA(242, 242, 242, 1)
             Height: =188
             HtmlText: |-
-                ="<div style='border-radius:15px 15px 15px 15px; background-color:#FFFFF; border:2px solid #D3D4D6; width:590px; height:175px'></div>"
+                ="<div style='border-radius:15px 15px 15px 15px; background-color:#FFFFF; border:2px solid #464A67; width:590px; height:175px'></div>"
             OnSelect: =Select(Parent)
             Width: =610
             X: =15
             ZIndex: =1
 
         Label1_3 As label:
-            Color: =RGBA(237, 237, 237, 1)
+            Color: =RGBA(70, 74, 103, 1)
             Font: =Font.Lato
             FontWeight: =FontWeight.Semibold
             Height: =51
@@ -45,7 +45,7 @@
 
         Label2_62 As label:
             Align: =Align.Center
-            Color: =RGBA(219, 219, 219, 1)
+            Color: =RGBA(243, 132, 133, 1)
             Font: =Font.Lato
             FontWeight: =FontWeight.Semibold
             Height: =27
@@ -56,7 +56,7 @@
             ZIndex: =14
 
         Label2_72 As label:
-            Color: =RGBA(255, 191, 0, 1)
+            Color: =RGBA(243, 132, 133, 1)
             Font: =Font.Lato
             FontWeight: =FontWeight.Semibold
             Height: =52
@@ -69,12 +69,13 @@
             ZIndex: =21
 
         Icon11 As icon.Waypoint:
+            Color: =RGBA(70, 74, 103, 1)
             Height: =25
             Icon: =Icon.Waypoint
             OnSelect: |-
                 =Launch("http://www.google.com/maps/place/" & ThisItem.'Address 1: Latitude' & "," & ThisItem.'Address 1: Longitude')
             Width: =25
-            X: =435
+            X: =445
             Y: =21
             ZIndex: =22
 
@@ -89,7 +90,7 @@
                 Color: =RGBA(242, 242, 242, 1)
                 Height: =52
                 HtmlText: |-
-                    ="<div style='border-radius:10px 10px 10px 10px; background-color:#67CC6B; opacity:0.1; border:2px solid #D3D4D6; width:150px; height:30px'></div>"
+                    ="<div style='border-radius:10px 10px 10px 10px; background-color:#464A67; opacity:0.1; border:2px solid #D3D4D6; width:150px; height:30px'></div>"
                 OnSelect: =Select(Parent)
                 Width: =164
                 X: =252
@@ -98,7 +99,7 @@
 
             Label2_65 As label:
                 Align: =Align.Center
-                Color: =RGBA(237, 237, 237, 1)
+                Color: =RGBA(70, 74, 103, 1)
                 Font: =Font.Lato
                 FontWeight: =FontWeight.Semibold
                 Height: =23
@@ -111,7 +112,7 @@
 
             Label2_68 As label:
                 Align: =Align.Center
-                Color: =RGBA(237, 237, 237, 1)
+                Color: =RGBA(51, 51, 51, 1)
                 Font: =Font.Lato
                 FontWeight: =FontWeight.Semibold
                 Height: =32
@@ -133,7 +134,7 @@
                 Color: =RGBA(242, 242, 242, 1)
                 Height: =52
                 HtmlText: |-
-                    ="<div style='border-radius:10px 10px 10px 10px; background-color:#67CC6B; opacity:0.1; border:2px solid #D3D4D6; width:130px; height:30px'></div>"
+                    ="<div style='border-radius:10px 10px 10px 10px; background-color:#464A67; opacity:0.1; border:2px solid #D3D4D6; width:130px; height:30px'></div>"
                 OnSelect: =Select(Parent)
                 Width: =164
                 X: =74
@@ -142,7 +143,7 @@
 
             Label2_63 As label:
                 Align: =Align.Center
-                Color: =RGBA(237, 237, 237, 1)
+                Color: =RGBA(70, 74, 103, 1)
                 Font: =Font.Lato
                 FontWeight: =FontWeight.Semibold
                 Height: =23
@@ -155,7 +156,7 @@
 
             Label2_66 As label:
                 Align: =Align.Center
-                Color: =RGBA(237, 237, 237, 1)
+                Color: =RGBA(51, 51, 51, 1)
                 Font: =Font.Lato
                 FontWeight: =FontWeight.Semibold
                 Height: =32
@@ -175,11 +176,12 @@
 
             Button2 As button:
                 Align: =Align.Left
-                Color: =RGBA(31, 31, 31, 1)
+                Fill: =RGBA(70, 74, 103, 1)
                 FocusedBorderColor: =ColorFade(Self.Fill, 75%)
                 Font: =Font.Lato
                 FontWeight: =FontWeight.Bold
                 Height: =39
+                HoverFill: =ColorFade(RGBA(70,74,103, 1), -20%)
                 OnSelect: |-
                     =Set(
                         VarDialogOpen,
@@ -203,7 +205,8 @@
                 ZIndex: =23
 
             Icon13 As icon.Add:
-                Color: =RGBA(31, 31, 31, 1)
+                Color: =RGBA(255, 255, 255, 1)
+                Fill: =RGBA(70, 74, 103, 1)
                 Height: =23
                 Icon: =Icon.Add
                 OnSelect: |-
@@ -229,7 +232,7 @@
         Color: =RGBA(103, 204, 107, 1)
         Height: =82
         HtmlText: |-
-            ="<div style='border-radius:0; background-color:#414C60; width:640px; height:70px'></div>"
+            ="<div style='border-radius:0; background-color:#464A67; width:640px; height:70px'></div>"
         PaddingBottom: =0
         PaddingLeft: =0
         PaddingRight: =0

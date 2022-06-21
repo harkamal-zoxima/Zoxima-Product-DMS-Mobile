@@ -49,7 +49,7 @@
                     "Last Month",
                     Filter(
                         Filter(
-                            'Sales Orders',
+                            'SalesOrders',
                             'Order Type' = [@'Order Type1'].'254460001' && 'Order Status' = filter_3.Selected.Value
                         ),
                         'Order Date' > Today() - 30
@@ -57,7 +57,7 @@
                     "Last 7 Days",
                     Filter(
                         Filter(
-                          'Sales Orders',
+                          'SalesOrders',
                             'Order Type' = [@'Order Type1'].'254460001' && 'Order Status' = filter_3.Selected.Value
                         ),
                         'Order Date' > Today() - 7
@@ -65,7 +65,7 @@
                     "Today's Orders",
                     Filter(
                         Filter(
-                            'Sales Orders',
+                            'SalesOrders',
                             'Order Type' = [@'Order Type1'].'254460001' && 'Order Status' = filter_3.Selected.Value
                         ),
                         IsToday('Order Date')
@@ -84,7 +84,7 @@
             DisplayMode: =DisplayMode.View
             Height: =235
             HtmlText: |-
-                ="<div style='border-radius:15px 15px 15px 15px; background-color:#FFFFF; border:2px solid #D3D4D6; width:580px; height:220px'></div>"
+                ="<div style='border-radius:15px 15px 15px 15px; background-color:#FFFFF; border:2px solid #464A67; width:580px; height:220px'></div>"
             OnSelect: =Select(Parent)
             Width: =594
             X: =15
@@ -94,7 +94,7 @@
             Color: =RGBA(242, 242, 242, 1)
             Height: =52
             HtmlText: |-
-                ="<div style='border-radius:10px 10px 10px 10px; background-color:#67CC6B; opacity:0.1; border:2px solid #D3D4D6; width:130px; height:30px'></div>"
+                ="<div style='border-radius:10px 10px 10px 10px; background-color:#464A67; opacity:0.1; border:2px solid #D3D4D6; width:130px; height:30px'></div>"
             OnSelect: =Select(Parent)
             Width: =164
             X: =49
@@ -103,7 +103,7 @@
 
         Label2_70 As label:
             Align: =Align.Center
-            Color: =RGBA(53, 166, 57, 1)
+            Color: =RGBA(70, 74, 103, 1)
             Font: =Font.Lato
             FontWeight: =FontWeight.Semibold
             Height: =23
@@ -118,7 +118,7 @@
             Color: =RGBA(242, 242, 242, 1)
             Height: =52
             HtmlText: |-
-                ="<div style='border-radius:10px 10px 10px 10px; background-color:#67CC6B; opacity:0.1; border:2px solid #D3D4D6; width:130px; height:30px'></div>"
+                ="<div style='border-radius:10px 10px 10px 10px; background-color:#464A67; opacity:0.1; border:2px solid #D3D4D6; width:130px; height:30px'></div>"
             OnSelect: =Select(Parent)
             Width: =164
             X: =228
@@ -127,7 +127,7 @@
 
         Label2_71 As label:
             Align: =Align.Center
-            Color: =RGBA(53, 166, 57, 1)
+            Color: =RGBA(70, 74, 103, 1)
             Font: =Font.Lato
             FontWeight: =FontWeight.Semibold
             Height: =23
@@ -142,7 +142,7 @@
             Color: =RGBA(242, 242, 242, 1)
             Height: =52
             HtmlText: |-
-                ="<div style='border-radius:10px 10px 10px 10px; background-color:#67CC6B; opacity:0.1; border:2px solid #D3D4D6; width:130px; height:30px'></div>"
+                ="<div style='border-radius:10px 10px 10px 10px; background-color:#464A67; opacity:0.1; border:2px solid #D3D4D6; width:130px; height:30px'></div>"
             OnSelect: =Select(Parent)
             Width: =164
             X: =407
@@ -151,7 +151,7 @@
 
         Label2_73 As label:
             Align: =Align.Center
-            Color: =RGBA(53, 166, 57, 1)
+            Color: =RGBA(70, 74, 103, 1)
             Font: =Font.Lato
             FontWeight: =FontWeight.Semibold
             Height: =23
@@ -203,13 +203,13 @@
             Height: =52
             HtmlText: |-
                 ="<div style='border-radius:10px 10px 10px 10px; background-color:" & If(
-                    ThisItem.'Order Status' = 'Order Status (Sales Orders)'.Open,
+                    ThisItem.'Order Status' = 'Order Status (SalesOrders)'.Open,
                     "#F28DB4",
-                    ThisItem.'Order Status' = 'Order Status (Sales Orders)'.Accepted,
+                    ThisItem.'Order Status' = 'Order Status (SalesOrders)'.Accepted,
                     "#95D4E0",
-                    ThisItem.'Order Status' = 'Order Status (Sales Orders)'.Shipped,
+                    ThisItem.'Order Status' = 'Order Status (SalesOrders)'.Shipped,
                     "#1A9FE4",
-                    ThisItem.'Order Status' = 'Order Status (Sales Orders)'.'Partially Shipped',
+                    ThisItem.'Order Status' = 'Order Status (SalesOrders)'.'Partially Shipped',
                     "#EBCD43"
                 
                 ) & "; opacity:0.3; border:2px solid #D3D4D6; width:150px; height:40px'></div>"
@@ -223,13 +223,13 @@
             Align: =Align.Center
             Color: |-
                 =If(
-                    ThisItem.'Order Status' = 'Order Status (Sales Orders)'.Open,
+                    ThisItem.'Order Status' = 'Order Status (SalesOrders)'.Open,
                     RGBA(219, 118, 157,1),
-                    ThisItem.'Order Status' = 'Order Status (Sales Orders)'.Accepted,
+                    ThisItem.'Order Status' = 'Order Status (SalesOrders)'.Accepted,
                    RGBA(107,179,194,1),
-                    ThisItem.'Order Status' = 'Order Status (Sales Orders)'.Shipped,
+                    ThisItem.'Order Status' = 'Order Status (SalesOrders)'.Shipped,
                     RGBA(26,159,228,1),
-                    ThisItem.'Order Status' = 'Order Status (Sales Orders)'.'Partially Shipped',
+                    ThisItem.'Order Status' = 'Order Status (SalesOrders)'.'Partially Shipped',
                     RGBA(209,180,50,1)
                 
                 )
@@ -244,18 +244,19 @@
 
         Button6_1 As button:
             Align: =Align.Left
-            Color: =RGBA(53, 166, 57, 1)
+            BorderThickness: =0
+            Color: =RGBA(70, 74, 103, 1)
             Fill: =RGBA(255, 255, 255, 1)
             FocusedBorderColor: =ColorFade(Self.Fill, 75%)
             FocusedBorderThickness: =
             Font: =Font.Lato
             Height: =50
-            HoverColor: =RGBA(53, 166, 57, 1)
+            HoverColor: =RGBA(70, 74, 103, 1)
             HoverFill: =
             OnSelect: |-
                 =Navigate('Order Info', ScreenTransition.Fade, {order: ThisItem})
             PressedBorderColor: =
-            PressedColor: =RGBA(53, 166, 57, 1)
+            PressedColor: =RGBA(70, 74, 103, 1)
             PressedFill: =
             Size: =18
             Text: =Concatenate("OR",ThisItem.'Order ID')
@@ -275,7 +276,7 @@
                 Color: =RGBA(242, 242, 242, 1)
                 Height: =52
                 HtmlText: |-
-                    ="<div style='border-radius:10px 10px 10px 10px; background-color:#67CC6B; opacity:0.1; border:2px solid #D3D4D6; width:130px; height:30px'></div>"
+                    ="<div style='border-radius:10px 10px 10px 10px; background-color:#464A67; opacity:0.1; border:2px solid #D3D4D6; width:130px; height:30px'></div>"
                 OnSelect: =Select(Parent)
                 Width: =164
                 X: =47
@@ -284,7 +285,7 @@
 
             Label2_92 As label:
                 Align: =Align.Center
-                Color: =RGBA(53, 166, 57, 1)
+                Color: =RGBA(70, 74, 103, 1)
                 Font: =Font.Lato
                 FontWeight: =FontWeight.Semibold
                 Height: =23
@@ -318,7 +319,7 @@
                 Color: =RGBA(242, 242, 242, 1)
                 Height: =52
                 HtmlText: |-
-                    ="<div style='border-radius:10px 10px 10px 10px; background-color:#67CC6B; opacity:0.1; border:2px solid #D3D4D6; width:130px; height:30px'></div>"
+                    ="<div style='border-radius:10px 10px 10px 10px; background-color:#464A67; opacity:0.1; border:2px solid #D3D4D6; width:130px; height:30px'></div>"
                 OnSelect: =Select(Parent)
                 Width: =164
                 X: =226
@@ -327,7 +328,7 @@
 
             Label2_99 As label:
                 Align: =Align.Center
-                Color: =RGBA(53, 166, 57, 1)
+                Color: =RGBA(70, 74, 103, 1)
                 Font: =Font.Lato
                 FontWeight: =FontWeight.Semibold
                 Height: =23
@@ -361,7 +362,7 @@
                 Color: =RGBA(242, 242, 242, 1)
                 Height: =52
                 HtmlText: |-
-                    ="<div style='border-radius:10px 10px 10px 10px; background-color:#67CC6B; opacity:0.1; border:2px solid #D3D4D6; width:130px; height:30px'></div>"
+                    ="<div style='border-radius:10px 10px 10px 10px; background-color:#464A67; opacity:0.1; border:2px solid #D3D4D6; width:130px; height:30px'></div>"
                 OnSelect: =Select(Parent)
                 Width: =164
                 X: =405
@@ -370,7 +371,7 @@
 
             Label2_91 As label:
                 Align: =Align.Center
-                Color: =RGBA(53, 166, 57, 1)
+                Color: =RGBA(70, 74, 103, 1)
                 Font: =Font.Lato
                 FontWeight: =FontWeight.Semibold
                 Height: =23
@@ -397,7 +398,7 @@
         Color: =RGBA(103, 204, 107, 1)
         Height: =82
         HtmlText: |-
-            ="<div style='border-radius:0; background-color:#67CC6B; width:640px; height:70px'></div>"
+            ="<div style='border-radius:0; background-color:#464A67; width:640px; height:70px'></div>"
         PaddingBottom: =0
         PaddingLeft: =0
         PaddingRight: =0
@@ -567,7 +568,8 @@
 
     Label22_5 As label:
         Align: =Align.Center
-        Color: =RGBA(73, 130, 5, 1)
+        BorderColor: =RGBA(70, 74, 103, 1)
+        Color: =RGBA(70, 74, 103, 1)
         Font: =Font.Lato
         FontWeight: =FontWeight.Semibold
         Height: =34
@@ -613,7 +615,7 @@
 
     filter_3 As gallery.galleryHorizontal:
         Height: =64
-        Items: =['Order Status (Sales Orders)'.Open, 'Order Status (Sales Orders)'.Accepted, 'Order Status (Sales Orders)'.'Partially Shipped', 'Order Status (Sales Orders)'.Shipped]
+        Items: =['Order Status (SalesOrders)'.Open, 'Order Status (SalesOrders)'.Accepted, 'Order Status (SalesOrders)'.'Partially Shipped', 'Order Status (SalesOrders)'.Shipped]
         OnSelect: =
         ShowScrollbar: =false
         TemplateSize: =143
@@ -623,14 +625,15 @@
         ZIndex: =21
 
         Button4_8 As button:
-            BorderColor: =RGBA(53, 166, 57, 1)
-            Color: =If(ThisItem.IsSelected, RGBA(255, 255, 255, 1), RGBA(53, 166,57,1))
-            Fill: =If(ThisItem.IsSelected, RGBA(53, 166, 57, 1), White)
+            BorderColor: =RGBA(70, 74, 103, 1)
+            Color: =If(ThisItem.IsSelected, RGBA(255, 255, 255, 1), RGBA(70,74,103,1))
+            Fill: =If(ThisItem.IsSelected, RGBA(70,74,103, 1), White)
             FocusedBorderColor: =
             FocusedBorderThickness: =2
             Font: =Font.Lato
             Height: =36
-            HoverBorderColor: =RGBA(53, 166, 57, 1)
+            HoverBorderColor: =RGBA(70, 74, 103, 1)
+            HoverFill: =ColorFade(RGBA(70,74,103, 1), -20%)
             OnSelect: =Select(Parent)
             PressedBorderColor: =
             PressedFill: =
@@ -642,6 +645,7 @@
             ZIndex: =1
 
     filter_4 As gallery.galleryHorizontal:
+        BorderColor: =RGBA(70, 74, 103, 1)
         Height: =64
         Items: |-
             =[
@@ -659,14 +663,15 @@
         ZIndex: =22
 
         Button4_9 As button:
-            BorderColor: =RGBA(53, 166, 57, 1)
-            Color: =If(ThisItem.IsSelected, RGBA(255, 255, 255, 1), RGBA(53, 166,57,1))
-            Fill: =If(ThisItem.IsSelected, RGBA(53, 166, 57, 1), White)
+            BorderColor: =RGBA(70, 74, 103, 1)
+            Color: =If(ThisItem.IsSelected, RGBA(255, 255, 255, 1), RGBA(70,74,103,1))
+            Fill: =If(ThisItem.IsSelected, RGBA(70,74,103, 1), White)
             FocusedBorderColor: =
             FocusedBorderThickness: =2
             Font: =Font.Lato
             Height: =43
-            HoverBorderColor: =RGBA(53, 166, 57, 1)
+            HoverBorderColor: =RGBA(70, 74, 103, 1)
+            HoverFill: =ColorFade(RGBA(70,74,103, 1), -20%)
             OnSelect: =Select(Parent)
             PressedBorderColor: =
             PressedFill: =
@@ -688,7 +693,7 @@
         Visible: =If(CountRows(Orders_1.AllItems)>0, false, true)
         Width: =560
         X: =45
-        Y: =422
+        Y: =462
         ZIndex: =23
 
     "'Side Bar_18' As 'Side Bar'":

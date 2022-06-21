@@ -245,7 +245,7 @@ Complaints As screen:
         Color: =RGBA(103, 204, 107, 1)
         Height: =82
         HtmlText: |-
-            ="<div style='border-radius:0; background-color:#67CC6B; width:640px; height:70px'></div>"
+            ="<div style='border-radius:0; background-color:#464A67; width:640px; height:70px'></div>"
         PaddingBottom: =0
         PaddingLeft: =0
         PaddingRight: =0
@@ -294,9 +294,9 @@ Complaints As screen:
         ZIndex: =6
 
         Button4_5 As button:
-            BorderColor: =RGBA(53, 166, 57, 1)
-            Color: =If(ThisItem.IsSelected, RGBA(255, 255, 255, 1), RGBA(53, 166,57,1))
-            Fill: =If(ThisItem.IsSelected, RGBA(53, 166, 57, 1), White)
+            BorderColor: =RGBA(70, 74, 103, 1)
+            Color: =If(ThisItem.IsSelected, RGBA(255, 255, 255, 1), RGBA(70,74,103,1))
+            Fill: =If(ThisItem.IsSelected, RGBA(70,74,103, 1), White)
             FocusedBorderColor: =
             FocusedBorderThickness: =2
             Height: =36

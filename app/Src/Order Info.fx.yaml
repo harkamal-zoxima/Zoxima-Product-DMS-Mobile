@@ -40,7 +40,7 @@
         ZIndex: =84
 
         Rectangle3_3 As rectangle:
-            Fill: =If(ThisItem.IsSelected, RGBA(103, 204, 107, 0.26), RGBA(103, 204, 107, 0.1))
+            Fill: =If(ThisItem.IsSelected, RGBA(70,74,103, 0.26), RGBA(70,74,103, 0.1))
             Height: =46
             HoverFill: =RGBA(103, 204, 107, 0.28)
             OnSelect: =Select(Parent)
@@ -50,7 +50,7 @@
 
         Label2_49 As label:
             Align: =Align.Center
-            Color: =If(ThisItem.IsSelected, RGBA(103, 204, 107, 100), RGBA(154, 154, 154, 1))
+            Color: =If(ThisItem.IsSelected, RGBA(70,74,103, 100), RGBA(154, 154, 154, 1))
             Font: =Font.Lato
             FontWeight: =FontWeight.Semibold
             Height: =46
