@@ -5,7 +5,7 @@ Profile As screen:
         Color: =RGBA(103, 204, 107, 1)
         Height: =82
         HtmlText: |-
-            ="<div style='border-radius:0; background-color:#67CC6B; width:640px; height:70px'></div>"
+            ="<div style='border-radius:0; background-color:#464A67; width:640px; height:70px'></div>"
         PaddingBottom: =0
         PaddingLeft: =0
         PaddingRight: =0
@@ -40,7 +40,7 @@ Profile As screen:
         ZIndex: =3
 
     Icon15 As icon.Camera:
-        Color: =RGBA(103, 204, 107, 1)
+        Color: =RGBA(70, 74, 103, 1)
         Height: =32
         Icon: =Icon.Camera
         Width: =32
@@ -59,6 +59,7 @@ Profile As screen:
         ZIndex: =5
 
     TextInput2 As text:
+        BorderColor: =RGBA(70, 74, 103, 1)
         Default: =User().Email
         DisabledColor: =RGBA(128, 128, 128, 1)
         DisplayMode: =DisplayMode.Disabled
@@ -81,6 +82,7 @@ Profile As screen:
         ZIndex: =7
 
     TextInput2_1 As text:
+        BorderColor: =RGBA(70, 74, 103, 1)
         Default: =User().FullName
         DisabledColor: =RGBA(128, 128, 128, 1)
         DisplayMode: =DisplayMode.Disabled
@@ -103,6 +105,7 @@ Profile As screen:
         ZIndex: =9
 
     Birth As text:
+        BorderColor: =RGBA(70, 74, 103, 1)
         Default: ="05-01-1999"
         DisabledColor: =RGBA(128, 128, 128, 1)
         DisplayMode: =varBirthdateVisibility
@@ -125,6 +128,7 @@ Profile As screen:
         ZIndex: =11
 
     TextInput2_3 As text:
+        BorderColor: =RGBA(70, 74, 103, 1)
         Default: ="Retail"
         DisabledColor: =RGBA(128, 128, 128, 1)
         DisplayMode: =DisplayMode.Disabled
@@ -147,6 +151,7 @@ Profile As screen:
         ZIndex: =13
 
     TextInput2_4 As text:
+        BorderColor: =RGBA(70, 74, 103, 1)
         Default: =User().Email
         DisabledColor: =RGBA(128, 128, 128, 1)
         DisplayMode: =DisplayMode.Disabled

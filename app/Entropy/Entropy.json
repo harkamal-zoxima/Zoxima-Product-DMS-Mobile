@@ -1637,7 +1637,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "06/21/2022 16:44:27",
+  "HeaderLastSavedDateTimeUTC": "06/21/2022 17:50:29",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "c9c4816a-4020-432d-9280-92907bb120b2": "\"/providers/microsoft.powerapps/apis/shared_office365users/connections/77aed83e1e774b849109dcd850ec64cf\""
@@ -1740,8 +1740,8 @@
     "Accounts\\cr431_account_cr431_active": 14,
     "Accounts\\default.cds_account_views": 158,
     "AllProducts": 197,
-    "allsalesorderIDs": 198,
-    "allsalesorders": 199,
+    "allsalesorderIDs": 199,
+    "allsalesorders": 209,
     "Areas": 181,
     "Areas\\cr431_area_cr431_branchtype": 41,
     "Areas\\cr431_area_cr431_level": 40,
@@ -1841,7 +1841,7 @@
     "Invoices\\cr431_invoice_statecode": 107,
     "Invoices\\cr431_invoice_statuscode": 108,
     "Invoices\\default.cds_cr431_invoice_views": 166,
-    "InvoicesData": 209,
+    "InvoicesData": 198,
     "MyAddress": 210,
     "NewVisit": 211,
     "Office365Users": 0,
@@ -4454,7 +4454,7 @@
       "typedDataCard": 9
     },
     "DeserializationLoadTime": 10.6538785,
-    "ErrorCount": 506
+    "ErrorCount": 479
   },
   "WasLocalDatabaseReferencesEmpty": false
 }

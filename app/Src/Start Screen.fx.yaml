@@ -1,5 +1,5 @@
 "'Start Screen' As screen":
-    Fill: =RGBA(65, 76, 96, 1)
+    Fill: =RGBA(70, 74, 103, 1)
 
     Label2_38 As label:
         Align: =Align.Center

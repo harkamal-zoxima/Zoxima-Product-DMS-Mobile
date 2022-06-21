@@ -1525,7 +1525,7 @@
 
                 Gallery3 As gallery.galleryVertical:
                     Height: =615
-                    Items: =Filter('Sales Orders','Order Status'=customerinfo_2.Selected.Value && 'Order From'.Account = data2.accountid)
+                    Items: =Filter('SalesOrders','Order Status'=customerinfo_2.Selected.Value && 'Order From'.Account = data2.accountid)
                     Layout: =Layout.Vertical
                     TemplateSize: =290
                     Y: =65
@@ -1825,7 +1825,7 @@
 
                 customerinfo_2 As gallery.galleryHorizontal:
                     Height: =65
-                    Items: =['Order Status (Sales Orders)'.Open,'Order Status (Sales Orders)'.Accepted,'Order Status (Sales Orders)'.'Partially Shipped', 'Order Status (Sales Orders)'.Shipped]
+                    Items: =['Order Status (SalesOrders)'.Open,'Order Status (SalesOrders)'.Accepted,'Order Status (SalesOrders)'.'Partially Shipped', 'Order Status (SalesOrders)'.Shipped]
                     OnSelect: =
                     ShowScrollbar: =false
                     TemplateSize: =165
@@ -2628,12 +2628,12 @@
         ZIndex: =4
 
     Button9_2 As button:
-        Fill: =RGBA(103, 204, 107, 1)
+        Fill: =RGBA(70, 74, 103, 1)
         FocusedBorderColor: =ColorFade(Self.Fill, 75%)
         Height: =67
-        HoverFill: =RGBA(103, 204, 107, 1)
+        HoverFill: =RGBA(70, 74, 103, 1)
         PressedColor: =RGBA(255, 255, 255, 1)
-        PressedFill: =RGBA(103, 204, 107, 1)
+        PressedFill: =RGBA(70, 74, 103, 1)
         RadiusBottomLeft: =40
         RadiusBottomRight: =40
         RadiusTopLeft: =40
@@ -2668,7 +2668,7 @@
         ZIndex: =7
 
     Label15_1 As label:
-        Color: =RGBA(103, 204, 107, 1)
+        Color: =RGBA(70, 74, 103, 1)
         FontWeight: =FontWeight.Semibold
         Height: =70
         Size: =30
@@ -2679,7 +2679,7 @@
         ZIndex: =8
 
     Label66_4 As label:
-        Color: =RGBA(103, 204, 107, 1)
+        Color: =RGBA(70, 74, 103, 1)
         FontWeight: =FontWeight.Semibold
         Height: =69
         Size: =21
@@ -2693,7 +2693,7 @@
         Color: =RGBA(103, 204, 107, 1)
         Height: =82
         HtmlText: |-
-            ="<div style='border-radius:0; background-color:#67CC6B; width:640px; height:70px'></div>"
+            ="<div style='border-radius:0; background-color:#464A67; width:640px; height:70px'></div>"
         PaddingBottom: =0
         PaddingLeft: =0
         PaddingRight: =0
@@ -2768,16 +2768,16 @@
         ZIndex: =13
 
         Button4_12 As button:
-            BorderColor: =RGBA(53, 166, 57, 1)
-            Color: =If(ThisItem.IsSelected, RGBA(255, 255, 255, 1), RGBA(53, 166,57,1))
-            Fill: =If(ThisItem.IsSelected, RGBA(53, 166, 57, 1), White)
+            BorderColor: =RGBA(70, 74, 103, 1)
+            Color: =If(ThisItem.IsSelected, RGBA(255, 255, 255, 1), RGBA(70,74,103,1))
+            Fill: =If(ThisItem.IsSelected, RGBA(70,74,103, 1), White)
             FocusedBorderColor: =
             FocusedBorderThickness: =2
             Font: =Font.Lato
             Height: =46
-            HoverBorderColor: =RGBA(53, 166, 57, 1)
-            HoverColor: =If(ThisItem.IsSelected, RGBA(255, 255, 255, 1), RGBA(53, 166,57,1))
-            HoverFill: =If(ThisItem.IsSelected, RGBA(53, 166, 57, 1), White)
+            HoverBorderColor: =RGBA(70, 74, 103, 1)
+            HoverColor: =If(ThisItem.IsSelected, RGBA(255, 255, 255, 1), RGBA(70,74,103,1))
+            HoverFill: =If(ThisItem.IsSelected, RGBA(70,74,103, 1), White)
             OnSelect: =Select(Parent)
             PressedBorderColor: =
             PressedColor: =If(ThisItem.IsSelected, RGBA(255, 255, 255, 1), RGBA(53, 166,57,1))
