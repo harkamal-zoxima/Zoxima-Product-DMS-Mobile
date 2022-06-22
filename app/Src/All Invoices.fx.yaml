@@ -1,0 +1,598 @@
+"'All Invoices' As screen":
+    OnVisible: |-
+        =Set(varOpen, false);
+        Set(VarRetailerDialog, false)
+
+    "'Side Bar_19' As 'Side Bar'":
+        Fill: =If(varOpen, RGBA(255, 255, 255, 1), Transparent)
+        Height: =1136
+        NavItems: |-
+            =[
+                {
+                    title: "Profile",
+                    screen: Profile
+                },
+                {
+                    title: "Primary Orders",
+                    screen: 'All Invoices'
+                },
+                {
+                    title: "Secondary Orders",
+                    screen: 'Secondary Orders'
+                }
+            ]
+
+    HtmlText1_25 As htmlViewer:
+        Color: =RGBA(103, 204, 107, 1)
+        Height: =82
+        HtmlText: |-
+            ="<div style='border-radius:0; background-color:#464A67; width:640px; height:70px'></div>"
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        Width: =640
+        ZIndex: =3
+
+    Label11_7 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =46
+        Size: =21
+        Text: ="Invoices"
+        Width: =560
+        X: =80
+        Y: =12
+        ZIndex: =14
+
+    Group7_1 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =15
+
+        "'Completed html_15' As htmlViewer":
+            Color: =RGBA(242, 242, 242, 1)
+            Height: =52
+            HtmlText: |-
+                ="<div style='border-radius:10px 10px 10px 10px; background-color:#F28DB4; opacity:0.3; border:2px solid #D3D4D6; width:100px; height:40px'></div>"
+            OnSelect: =
+            Visible: =false
+            Width: =112
+            X: =16
+            Y: =1044
+            ZIndex: =4
+
+        Label2_146 As label:
+            Align: =Align.Center
+            Color: =RGBA(219, 118, 157, 1)
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            Height: =25
+            Size: =10
+            Text: ="OPEN"
+            Visible: =false
+            Width: =90
+            X: =27
+            Y: =1055
+            ZIndex: =5
+
+        "'Completed html_13' As htmlViewer":
+            Color: =RGBA(242, 242, 242, 1)
+            Height: =52
+            HtmlText: |-
+                ="<div style='border-radius:10px 10px 10px 10px; background-color:#95D4E0; opacity:0.3; border:2px solid #D3D4D6; width:100px; height:40px'></div>"
+            OnSelect: =
+            Visible: =false
+            Width: =116
+            X: =131
+            Y: =1042
+            ZIndex: =6
+
+        Label2_144 As label:
+            Align: =Align.Center
+            Color: =RGBA(107, 179, 194, 1)
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            Height: =27
+            Size: =10
+            Text: ="ACCEPTED"
+            Visible: =false
+            Width: =93
+            X: =142
+            Y: =1053
+            ZIndex: =7
+
+        "'Completed html_14' As htmlViewer":
+            Color: =RGBA(242, 242, 242, 1)
+            Height: =52
+            HtmlText: |-
+                ="<div style='border-radius:10px 10px 10px 10px; background-color:#1A9FE4; opacity:0.3; border:2px solid #D3D4D6; width:100px; height:40px'></div>"
+            OnSelect: =
+            Visible: =false
+            Width: =113
+            X: =248
+            Y: =1042
+            ZIndex: =8
+
+        Label2_145 As label:
+            Align: =Align.Center
+            Color: =RGBA(26, 159, 228, 1)
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            Height: =27
+            Size: =10
+            Text: ="SHIPPED"
+            Visible: =false
+            Width: =90
+            X: =259
+            Y: =1053
+            ZIndex: =9
+
+        "'Completed html_11' As htmlViewer":
+            Color: =RGBA(242, 242, 242, 1)
+            Height: =52
+            HtmlText: |-
+                ="<div style='border-radius:10px 10px 10px 10px; background-color:#EBCD43; opacity:0.3; border:2px solid #D3D4D6; width:100px; height:40px'></div>"
+            OnSelect: =
+            Visible: =false
+            Width: =111
+            X: =364
+            Y: =1040
+            ZIndex: =10
+
+        Label2_142 As label:
+            Align: =Align.Center
+            Color: =RGBA(209, 180, 50, 1)
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            Height: =29
+            Size: =10
+            Text: ="PARTIALLY SHIPPED"
+            Visible: =false
+            Width: =86
+            X: =375
+            Y: =1051
+            ZIndex: =11
+
+        "'Completed html_12' As htmlViewer":
+            Color: =RGBA(242, 242, 242, 1)
+            Height: =52
+            HtmlText: |-
+                ="<div style='border-radius:10px 10px 10px 10px; background-color:#95D4E0; opacity:0.3; border:2px solid #D3D4D6; width:100px; height:40px'></div>"
+            OnSelect: =
+            Visible: =false
+            Width: =112
+            X: =475
+            Y: =1040
+            ZIndex: =12
+
+        Label2_143 As label:
+            Align: =Align.Center
+            Color: =RGBA(107, 179, 194, 1)
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            Height: =25
+            Size: =10
+            Text: ="ALL"
+            Visible: =false
+            Width: =90
+            X: =486
+            Y: =1051
+            ZIndex: =13
+
+    "'Completed html_9' As htmlViewer":
+        Color: =RGBA(242, 242, 242, 1)
+        Height: =54
+        HtmlText: |-
+            ="<div style='border-radius:10px 10px 10px 10px; background-color:#FFF; width:120px; height:40px'></div>"
+        OnSelect: =
+        Width: =131
+        X: =502
+        Y: =12
+        ZIndex: =18
+
+    Label22_3 As label:
+        Align: =Align.Center
+        Color: =RGBA(70, 74, 103, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =26
+        OnSelect: =Set(VarRetailerDialog, true)
+        Size: =14
+        Text: ="New"
+        Width: =95
+        X: =520
+        Y: =24
+        ZIndex: =19
+
+    Group10_2 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =20
+
+        "'Completed html_8' As htmlViewer":
+            Color: =RGBA(242, 242, 242, 1)
+            Height: =57
+            HtmlText: |-
+                ="<div style='border-radius:10px 10px 10px 10px; background-color:#FFF; width:120px; height:40px'></div>"
+            OnSelect: =
+            Width: =137
+            X: =371
+            Y: =12
+            ZIndex: =15
+
+        Label22_2 As label:
+            Align: =Align.Center
+            Color: =RGBA(70, 74, 103, 1)
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            Height: =26
+            Size: =14
+            Text: ="Filter"
+            Width: =67
+            X: =417
+            Y: =24
+            ZIndex: =16
+
+        Icon5_1 As icon.FilterFlat:
+            Height: =20
+            Icon: =Icon.FilterFlat
+            Width: =20
+            X: =399
+            Y: =28
+            ZIndex: =17
+
+    "'Side Bar_20' As 'Side Bar'":
+        NavItems: |-
+            =[
+                {
+                    title: "Profile",
+                    screen: Profile
+                },
+                {
+                    title: "Distributor KYC",
+                    screen: Profile
+                },
+                {
+                    title: "Ledger Report",
+                    screen: Profile
+                },
+                {
+                    title: "Primary Orders",
+                    screen: 'Secondary Orders'
+                },
+                {
+                    title: "Secondary Orders",
+                    screen: 'Secondary Orders'
+                },
+                {
+                    title: "Schemes",
+                    screen: Profile
+                },
+                {
+                    title: "Events",
+                    screen: Profile
+                }
+            ]
+        ZIndex: =24
+
+    Rectangle5_6 As rectangle:
+        Fill: =RGBA(204, 204, 204, 0.66)
+        Height: =1136
+        HoverFill: =
+        Visible: =VarRetailerDialog
+        Width: =640
+        ZIndex: =25
+
+    "'Bottom Navigation_29' As 'Bottom Navigation'":
+        NavItems: |-
+            =Table(
+                {
+                    Title: "Customers",
+                    Screen: 'Customer (Dist)_1',
+                    Icon: People,
+                    Active: false
+                },
+                {
+                    Title: "Dashboard",
+                    Screen: Home,
+                    Icon: Waffle,
+                    Active: false
+                },
+                {
+                    Title: "Orders",
+                    Screen: 'All Invoices',
+                    Icon: ShoppingCart,
+                    Active: true
+                },
+                {
+                    Title: "Menu",
+                    Screen: 'All Invoices',
+                    Icon: Hamburger,
+                    Active: false
+                }
+            )
+        Y: =1056
+        ZIndex: =33
+
+    Gallery7_2 As gallery.galleryVertical:
+        Height: =947
+        Items: =Invoices
+        Layout: =Layout.Vertical
+        ShowScrollbar: =false
+        TemplateSize: =289
+        Y: =93
+        ZIndex: =34
+
+        HtmlText1_128 As htmlViewer:
+            Color: =RGBA(242, 242, 242, 1)
+            DisplayMode: =DisplayMode.View
+            Height: =289
+            HtmlText: |-
+                ="<div style='border-radius:15px 15px 15px 15px; background-color:#FFFFF; border:2px solid #D3D4D6; width:580px; height:270px'></div>"
+            OnSelect: =Select(Parent)
+            Width: =594
+            X: =13
+            ZIndex: =1
+
+        Label17_4 As label:
+            Height: =75
+            OnSelect: =Select(Parent)
+            Size: =21
+            Text: =
+            Width: =221
+            X: =40
+            Y: =40
+            ZIndex: =2
+
+        Group27_16 As group:
+            Height: =5
+            Width: =5
+            X: =-39
+            Y: =26
+            ZIndex: =5
+
+            Label2_147 As label:
+                Align: =Align.Center
+                Color: =RGBA(70, 74, 103, 1)
+                Font: =Font.Lato
+                FontWeight: =FontWeight.Semibold
+                Height: =23
+                Size: =12
+                Text: ="Invoice ID"
+                Width: =116
+                X: =40
+                Y: =27
+                ZIndex: =3
+
+            HtmlText1_129 As htmlViewer:
+                Color: =RGBA(242, 242, 242, 1)
+                Height: =52
+                HtmlText: |-
+                    ="<div style='border-radius:10px 10px 10px 10px; background-color:#464A67; opacity:0.1; border:2px solid #D3D4D6; width:130px; height:30px'></div>"
+                OnSelect: =Select(Parent)
+                Width: =164
+                X: =34
+                Y: =21
+                ZIndex: =4
+
+        Group27_18 As group:
+            Height: =5
+            Width: =5
+            X: =26
+            Y: =39
+            ZIndex: =7
+
+            Label2_148 As label:
+                Align: =Align.Center
+                Color: =RGBA(70, 74, 103, 1)
+                Font: =Font.Lato
+                FontWeight: =FontWeight.Semibold
+                Height: =23
+                Size: =12
+                Text: ="Order No"
+                Width: =116
+                X: =239
+                Y: =27
+                ZIndex: =5
+
+            HtmlText1_130 As htmlViewer:
+                Color: =RGBA(242, 242, 242, 1)
+                Height: =52
+                HtmlText: |-
+                    ="<div style='border-radius:10px 10px 10px 10px; background-color:#464A67; opacity:0.1; border:2px solid #D3D4D6; width:130px; height:30px'></div>"
+                OnSelect: =Select(Parent)
+                Width: =164
+                X: =233
+                Y: =21
+                ZIndex: =6
+
+        Label16_17 As label:
+            Font: =Font.Lato
+            Height: =31
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.Name
+            Width: =90
+            X: =60
+            Y: =60
+            ZIndex: =9
+
+        Group27_19 As group:
+            Height: =5
+            Width: =5
+            X: =-146
+            Y: =39
+            ZIndex: =9
+
+            Label2_149 As label:
+                Align: =Align.Center
+                Color: =RGBA(70, 74, 103, 1)
+                Font: =Font.Lato
+                FontWeight: =FontWeight.Semibold
+                Height: =23
+                Size: =12
+                Text: ="Invoice Date"
+                Width: =116
+                X: =436
+                Y: =27
+                ZIndex: =7
+
+            HtmlText1_131 As htmlViewer:
+                Color: =RGBA(242, 242, 242, 1)
+                Height: =52
+                HtmlText: |-
+                    ="<div style='border-radius:10px 10px 10px 10px; background-color:#464A67; opacity:0.1; border:2px solid #D3D4D6; width:130px; height:30px'></div>"
+                OnSelect: =Select(Parent)
+                Width: =164
+                X: =430
+                Y: =21
+                ZIndex: =8
+
+        Label16_18 As label:
+            Font: =Font.Lato
+            Height: =31
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.'Sales Order Number'.'Order ID'
+            Width: =90
+            X: =255
+            Y: =60
+            ZIndex: =10
+
+        Label16_19 As label:
+            Font: =Font.Lato
+            Height: =29
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.'Invoice Date'
+            Width: =107
+            X: =449
+            Y: =62
+            ZIndex: =11
+
+        Group27_20 As group:
+            Height: =5
+            Width: =5
+            X: =46
+            Y: =59
+            ZIndex: =14
+
+            Label2_151 As label:
+                Align: =Align.Center
+                Color: =RGBA(70, 74, 103, 1)
+                Font: =Font.Lato
+                FontWeight: =FontWeight.Semibold
+                Height: =23
+                Size: =12
+                Text: ="Bill To Party"
+                Width: =116
+                X: =46
+                Y: =138
+                ZIndex: =12
+
+            HtmlText1_133 As htmlViewer:
+                Color: =RGBA(242, 242, 242, 1)
+                Height: =52
+                HtmlText: |-
+                    ="<div style='border-radius:10px 10px 10px 10px; background-color:#464A67; opacity:0.1; border:2px solid #D3D4D6; width:130px; height:30px'></div>"
+                OnSelect: =Select(Parent)
+                Width: =164
+                X: =40
+                Y: =132
+                ZIndex: =13
+
+        Group27_21 As group:
+            Height: =5
+            Width: =5
+            X: =40
+            Y: =-52
+            ZIndex: =16
+
+            Label2_152 As label:
+                Align: =Align.Center
+                Color: =RGBA(70, 74, 103, 1)
+                Font: =Font.Lato
+                FontWeight: =FontWeight.Semibold
+                Height: =23
+                Size: =12
+                Text: ="Ship To Party"
+                Width: =116
+                X: =250
+                Y: =138
+                ZIndex: =14
+
+            HtmlText1_134 As htmlViewer:
+                Color: =RGBA(242, 242, 242, 1)
+                Height: =52
+                HtmlText: |-
+                    ="<div style='border-radius:10px 10px 10px 10px; background-color:#464A67; opacity:0.1; border:2px solid #D3D4D6; width:130px; height:30px'></div>"
+                OnSelect: =Select(Parent)
+                Width: =164
+                X: =244
+                Y: =132
+                ZIndex: =15
+
+        Label16_20 As label:
+            Font: =Font.Lato
+            Height: =46
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.'Bill To Party'.'Account Name (name)'
+            Width: =102
+            X: =47
+            Y: =168
+            ZIndex: =18
+
+        Group27_22 As group:
+            Height: =5
+            Width: =5
+            X: =-164
+            Y: =-52
+            ZIndex: =18
+
+            Label2_150 As label:
+                Align: =Align.Center
+                Color: =RGBA(70, 74, 103, 1)
+                Font: =Font.Lato
+                FontWeight: =FontWeight.Semibold
+                Height: =23
+                Size: =12
+                Text: ="Total Amount"
+                Width: =116
+                X: =436
+                Y: =135
+                ZIndex: =16
+
+            HtmlText1_132 As htmlViewer:
+                Color: =RGBA(242, 242, 242, 1)
+                Height: =52
+                HtmlText: |-
+                    ="<div style='border-radius:10px 10px 10px 10px; background-color:#464A67; opacity:0.1; border:2px solid #D3D4D6; width:130px; height:30px'></div>"
+                OnSelect: =Select(Parent)
+                Width: =164
+                X: =430
+                Y: =129
+                ZIndex: =17
+
+        Label16_21 As label:
+            Font: =Font.Lato
+            Height: =31
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.'Bill To Party'.'Account Name (name)'
+            Width: =107
+            X: =261
+            Y: =168
+            ZIndex: =19
+
+        Label16_22 As label:
+            Font: =Font.Lato
+            Height: =31
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.'Bill Amoount'
+            Width: =90
+            X: =449
+            Y: =168
+            ZIndex: =20
+

@@ -12,39 +12,34 @@
                     varAttendance = "done",
                     "Ended"
                 ),
+                //Title: Start,
                 Screen: If(
                     varAttendance = "start",
-                    Start,
+                    StartDay,
                     varAttendance = "end",
-                    Start_3,
+                    'End day',
                     varAttendance = "done",
-                    Start_5
+                    'Day Ended'
                 ),
                 Icon: CalendarBlank,
                 Active: false
             },
             {
-                Title: "Visits",
-                Screen: Visits,
-                Icon: Waypoint,
-                Active: false
-            },
-            {
-                Title: "Dashboard",
-                Screen: 'Dashboard Daily Reports',
-                Icon: Waffle,
-                Active: true
-            },
-            {
-                Title: "Customer",
-                Screen: Customer,
+                Title: "Customers",
+                Screen: 'Customer (Dist)_1',
                 Icon: People,
                 Active: false
             },
             {
-                Title: "Menu",
-                Screen: Menu,
-                Icon: Hamburger,
+                Title: "Dashboard",
+                Screen: Home,
+                Icon: Waffle,
+                Active: true
+            },
+            {
+                Title: "Orders",
+                Screen: 'All Orders',
+                Icon: ShoppingCart,
                 Active: false
             }
         )

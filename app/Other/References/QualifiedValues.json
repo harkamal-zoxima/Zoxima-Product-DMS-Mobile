@@ -136,17 +136,17 @@
       }
     },
     {
-      "Kind": "default.cds_cr431_sales_order_forms",
-      "Namespace": "Sales Orders (Forms)",
-      "Values": {
-        "Information": "9cee9101-066b-4fe7-8ac8-4340981754ab"
-      }
-    },
-    {
       "Kind": "default.cds_cr431_salesorderlines_forms",
       "Namespace": "Sales Order Lines (Forms)",
       "Values": {
         "Information": "417f7c43-8b34-4efb-87ae-8a98de333563"
+      }
+    },
+    {
+      "Kind": "default.cds_cr431_sales_order_forms",
+      "Namespace": "Sales Orders (Forms)",
+      "Values": {
+        "Information": "9cee9101-066b-4fe7-8ac8-4340981754ab"
       }
     }
   ]

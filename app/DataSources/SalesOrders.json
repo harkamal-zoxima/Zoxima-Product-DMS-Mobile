@@ -6,7 +6,6 @@
     "IsSampleData": false,
     "IsWritable": true,
     "LogicalName": "cr431_sales_order",
-    "MaxGetRowsCount": 500,
     "Name": "SalesOrders",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",
@@ -85,6 +84,26 @@
       "ca4e90a3-9666-4968-a1de-102c179b52e0": "Sales Order Advanced Find View",
       "fc3319b5-cc3b-4331-8b28-5796c4a4bde8": "Inactive Sales Orders"
     }
+  },
+  {
+    "DisplayName": "Order Type1",
+    "Name": "cr431_ordertype",
+    "OptionSetInfoNameMapping": {
+      "254460000": "Primary Order",
+      "254460001": "Secondary Order"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr431_ordertype",
+        "OptionSetReferenceEntityName": "SalesOrders"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "cr431_ordertype",
+    "RelatedEntityName": "SalesOrders",
+    "Type": "OptionSetInfo"
   },
   {
     "DisplayName": "Order Status (SalesOrders)",

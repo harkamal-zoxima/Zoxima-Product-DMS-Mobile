@@ -1,10 +1,6 @@
 "'Order Info' As screen":
     OnVisible: =Set(varOpen, false)
 
-    "'Bottom Navigation_9' As 'Bottom Navigation'":
-        Y: =1056
-        ZIndex: =4
-
     "'Header Component_17' As 'Header Component_11'":
         Height: =108
         ScreenName: ="Order Info"
@@ -62,7 +58,7 @@
 
     Gallery5_4 As gallery.galleryVertical:
         Height: =859
-        Items: =Filter('Order Line', cr431_OrderNo.cr431_dealer= order.cr431_dealer)
+        Items: =Filter('Order Line', 'Order No'.Dealer= order.Dealer)
         Layout: =Layout.Vertical
         TemplateSize: =204
         Visible: ='Dashboard Toptab_1'.Selected.Title = "Order Lines"
@@ -139,6 +135,10 @@
             X: =400
             Y: =100
             ZIndex: =6
+
+    "'Bottom Navigation_9' As 'Bottom Navigation'":
+        Y: =1056
+        ZIndex: =86
 
     Group22 As group:
         Height: =5
@@ -306,7 +306,7 @@
             ZIndex: =66
 
         TextInput2_9 As text:
-            Default: =order.cr431_OrderFrom.'Account Name (name)'
+            Default: =order.'Order From'.'Account Name (name)'
             DisabledColor: =RGBA(128, 128, 128, 1)
             DisplayMode: =DisplayMode.Disabled
             Font: =Font.Lato
@@ -344,7 +344,7 @@
             ZIndex: =69
 
         TextInput2_10 As text:
-            Default: =order.cr431_OrderTo.'Account Name (name)'
+            Default: =order.'Order To'.'Account Name (name)'
             DisabledColor: =RGBA(128, 128, 128, 1)
             DisplayMode: =DisplayMode.Disabled
             Font: =Font.Lato

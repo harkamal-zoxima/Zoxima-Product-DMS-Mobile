@@ -15,7 +15,7 @@
                 "Last Month",
                 Filter(
                     Filter(
-                        'SalesOrders',
+                        SalesOrders,
                         'Created By'.'Primary Email' = User().Email && 'Order Type'= 'Order Type1'.'254460000' && 'Order Status'= filter.Selected.Value
                     ),
                     'Order Date' > Today() - 30
@@ -23,7 +23,7 @@
                 "Last 7 Days",
                 Filter(
                     Filter(
-                        'SalesOrders',
+                        SalesOrders,
                         'Created By'.'Primary Email' = User().Email && 'Order Type'= 'Order Type1'.'254460000' && 'Order Status'= filter.Selected.Value
                     ),
                    'Order Date' > Today() - 7
@@ -31,12 +31,12 @@
                 "Today's Orders",
                 Filter(
                     Filter(
-                        'SalesOrders',
-                       createdby.internalemailaddress = User().Email && cr431_ordertype= 'Order Type1'.'254460000' && cr431_orderstatus= filter.Selected.Value
+                        SalesOrders,
+                       'Created By'.'Primary Email' = User().Email && 'Order Type'= 'Order Type1'.'254460000' && 'Order Status'= filter.Selected.Value
                     ),
-                    IsToday(cr431_orderdate )
+                    IsToday('Order Date' )
                 )
-            ), cr431_dealer, Descending)
+            ), Dealer, Descending)
         Layout: =Layout.Vertical
         TemplateSize: =226
         Y: =213
@@ -264,7 +264,7 @@
                 Font: =Font.Lato
                 FontWeight: =FontWeight.Semibold
                 Height: =44
-                Text: =ThisItem.cr431_OrderTo.'Account Name (name)'
+                Text: =ThisItem.'Order To'.'Account Name (name)'
                 Width: =155
                 X: =42
                 Y: =176
@@ -542,38 +542,6 @@
         Y: =24
         ZIndex: =19
 
-    "'Bottom Navigation_3' As 'Bottom Navigation'":
-        NavItems: |-
-            =Table( {
-                    Title: If(varAttendance = "end" , "End", varAttendance = "start" , "Start", varAttendance = "done" , "Ended"),
-                    //Title: Start,
-                    Screen: If(varAttendance= "start" , StartDay, varAttendance= "end" , 'End day', varAttendance= "done" , 'Day Ended' ),
-                
-                    Icon: CalendarBlank,
-                    Active: false
-                },
-                {
-                    Title: "Visits",
-                    Screen: Visits,
-                    Icon: Waypoint,
-                    Active: false
-                },
-                {
-                    Title: "Dashboard",
-                    Screen: Home,
-                    Icon: Waffle,
-                    Active: false
-                },
-                {
-                    Title: "Orders",
-                    Screen: 'All Orders',
-                    Icon: ShoppingCart,
-                    Active: true
-                }
-                )
-        Y: =1056
-        ZIndex: =20
-
     Group10 As group:
         Height: =5
         Width: =5
@@ -695,6 +663,37 @@
         ZIndex: =23
 
     "'Side Bar_16' As 'Side Bar'":
+        NavItems: |-
+            =[
+                {
+                    title: "Profile",
+                    screen: Profile
+                },
+                {
+                    title: "Distributor KYC",
+                    screen: Profile
+                },
+                {
+                    title: "Ledger Report",
+                    screen: Profile
+                },
+                {
+                    title: "Primary Orders",
+                    screen: 'Secondary Orders'
+                },
+                {
+                    title: "Secondary Orders",
+                    screen: 'Secondary Orders'
+                },
+                {
+                    title: "Schemes",
+                    screen: Profile
+                },
+                {
+                    title: "Events",
+                    screen: Profile
+                }
+            ]
         ZIndex: =24
 
     Rectangle5_5 As rectangle:
@@ -704,6 +703,37 @@
         Visible: =VarRetailerDialog
         Width: =640
         ZIndex: =25
+
+    "'Bottom Navigation_3' As 'Bottom Navigation'":
+        NavItems: |-
+            =Table(
+                {
+                    Title: "Customers",
+                    Screen: 'Customer (Dist)_1',
+                    Icon: People,
+                    Active: false
+                },
+                {
+                    Title: "Dashboard",
+                    Screen: Home,
+                    Icon: Waffle,
+                    Active: false
+                },
+                {
+                    Title: "Orders",
+                    Screen: 'All Orders',
+                    Icon: ShoppingCart,
+                    Active: true
+                },
+                {
+                    Title: "Menu",
+                    Screen: 'All Orders',
+                    Icon: Hamburger,
+                    Active: false
+                }
+            )
+        Y: =1056
+        ZIndex: =33
 
     Group26_1 As group:
         Height: =5
@@ -725,7 +755,7 @@
             ZIndex: =26
 
         Icon10_6 As icon.Cancel:
-            Color: =RGBA(53, 166, 57, 1)
+            Color: =RGBA(70, 74, 103, 1)
             Height: =42
             Icon: =Icon.Cancel
             OnSelect: =Set(VarRetailerDialog, false)
@@ -738,11 +768,12 @@
         Button2_9 As button:
             DisabledBorderColor: =RGBA(0, 0, 0, 0.4)
             DisplayMode: =If( CountRows(Retailer_1.SelectedItems)>0, DisplayMode.Edit, DisplayMode.Disabled)
-            Fill: =RGBA(53, 166, 57, 1)
+            Fill: =RGBA(70, 74, 103, 1)
             FocusedBorderColor: =ColorFade(Self.Fill, 75%)
             Font: =Font.Lato
             FontWeight: =FontWeight.Bold
             Height: =51
+            HoverFill: =ColorFade(RGBA(70,74,103, 1), -20%)
             OnSelect: |-
                 =Set(ConfirmButtonClicked, true);
                 Set(SelectedRetailerForPriOrder, Retailer_1.SelectedItems);
@@ -756,7 +787,7 @@
             ZIndex: =29
 
         Label7_6 As label:
-            Color: =RGBA(53, 166, 57, 1)
+            Color: =RGBA(70, 74, 103, 1)
             Font: =Font.Lato
             FontWeight: =FontWeight.Semibold
             Height: =51
@@ -770,7 +801,9 @@
             ZIndex: =31
 
         Retailer_1 As combobox:
-            ChevronFill: =RGBA(53, 166, 57, 1)
+            BorderColor: =RGBA(70, 74, 103, 1)
+            ChevronBackground: =RGBA(70, 74, 103, 1)
+            ChevronHoverBackground: =ColorFade(RGBA(70,74,103, 1), -20%)
             DisplayFields: =["name"]
             FocusedBorderThickness: =3
             FontWeight: =FontWeight.Semibold
@@ -780,6 +813,7 @@
             Items: =Filter(Accounts, 'Account Type'= 'Account Type (Accounts)'.Retailer)
             SearchFields: =["name"]
             SearchItems: =[]
+            SelectionFill: =RGBA(70, 74, 103, 1)
             SelectMultiple: =false
             Size: =21
             Visible: =VarRetailerDialog

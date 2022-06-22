@@ -163,53 +163,38 @@ Profile As screen:
         Y: =878
         ZIndex: =14
 
-    "'Bottom Navigation_6' As 'Bottom Navigation'":
-        NavItems: |-
-            =Table(
-                {
-                    Title: If(
-                        varAttendance = "end",
-                        "End",
-                        varAttendance = "start",
-                        "Start",
-                        varAttendance = "done",
-                        "Ended"
-                    ),
-                    //Title: Start,
-                    Screen: If(
-                        varAttendance = "start",
-                        StartDay,
-                        varAttendance = "end",
-                        'End day',
-                        varAttendance = "done",
-                        'Day Ended'
-                    ),
-                    Icon: CalendarBlank,
-                    Active: false
-                },
-                {
-                    Title: "Visits",
-                    Screen: Visits,
-                    Icon: Waypoint,
-                    Active: false
-                },
-                {
-                    Title: "Dashboard",
-                    Screen: Home,
-                    Icon: Waffle,
-                    Active: false
-                },
-                {
-                    Title: "Orders",
-                    Screen: 'All Orders',
-                    Icon: ShoppingCart,
-                    Active: false
-                }
-            )
-        Y: =1056
-        ZIndex: =15
-
     "'Side Bar_5' As 'Side Bar'":
+        NavItems: |-
+            =[
+                {
+                    title: "Profile",
+                    screen: Profile
+                },
+                {
+                    title: "Distributor KYC",
+                    screen: Profile
+                },
+                {
+                    title: "Ledger Report",
+                    screen: Profile
+                },
+                {
+                    title: "Primary Orders",
+                    screen: 'Secondary Orders'
+                },
+                {
+                    title: "Secondary Orders",
+                    screen: 'Secondary Orders'
+                },
+                {
+                    title: "Schemes",
+                    screen: Profile
+                },
+                {
+                    title: "Events",
+                    screen: Profile
+                }
+            ]
         ZIndex: =16
 
     Icon16 As icon.Edit:
@@ -221,4 +206,8 @@ Profile As screen:
         X: =549
         Y: =638
         ZIndex: =17
+
+    "'Bottom Navigation_6' As 'Bottom Navigation'":
+        Y: =1056
+        ZIndex: =18
 

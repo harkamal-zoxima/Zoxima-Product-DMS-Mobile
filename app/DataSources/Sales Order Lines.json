@@ -6,6 +6,7 @@
     "IsSampleData": false,
     "IsWritable": true,
     "LogicalName": "cr431_salesorderlines",
+    "MaxGetRowsCount": 500,
     "Name": "Sales Order Lines",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",

@@ -8,37 +8,6 @@
         )
     OnVisible: =Set(varOpen, false)
 
-    "'Bottom Navigation_19' As 'Bottom Navigation'":
-        NavItems: |-
-            =Table( {
-                    Title: If(varAttendance = "end" , "End", varAttendance = "start" , "Start", varAttendance = "done" , "Ended"),
-                    //Title: Start,
-                    Screen: If(varAttendance= "start" , StartDay, varAttendance= "end" , 'End day', varAttendance= "done" , 'Day Ended' ),
-                
-                    Icon: CalendarBlank,
-                    Active: false
-                },
-                {
-                    Title: "Visits",
-                    Screen: Visits,
-                    Icon: Waypoint,
-                    Active: false
-                },
-                {
-                    Title: "Dashboard",
-                    Screen: Home,
-                    Icon: Waffle,
-                    Active: false
-                },
-                {
-                    Title: "Orders",
-                    Screen: 'All Orders',
-                    Icon: ShoppingCart,
-                    Active: true
-                }
-                )
-        Y: =1056
-
     Icon14_8 As icon.BackArrow:
         BorderColor: =RGBA(70, 74, 103, 1)
         Color: =RGBA(70, 74, 103, 1)
@@ -93,7 +62,7 @@
         Height: =70
         HoverFill: =ColorFade(RGBA(70,74,193, 1), -20%)
         OnSelect: |-
-            =Navigate('Order Info', ScreenTransition.Fade, {order: LookUp('SalesOrders', Dealer = First(CreateOrderRecord).cr431_dealer)})
+            =Navigate('Order Info', ScreenTransition.Fade, {order: LookUp(SalesOrders, Dealer = First(CreateOrderRecord).Dealer)})
         Size: =24
         Text: ="Order Information"
         Width: =305
@@ -116,4 +85,8 @@
         X: =260
         Y: =261
         ZIndex: =8
+
+    "'Bottom Navigation_19' As 'Bottom Navigation'":
+        Y: =1056
+        ZIndex: =9
 

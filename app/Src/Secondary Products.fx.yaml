@@ -202,52 +202,6 @@
         Width: =640
         ZIndex: =2
 
-    "'Bottom Navigation_11' As 'Bottom Navigation'":
-        NavItems: |-
-            =Table(
-                {
-                    Title: If(
-                        varAttendance = "end",
-                        "End",
-                        varAttendance = "start",
-                        "Start",
-                        varAttendance = "done",
-                        "Ended"
-                    ),
-                    //Title: Start,
-                    Screen: If(
-                        varAttendance = "start",
-                        StartDay,
-                        varAttendance = "end",
-                        'End day',
-                        varAttendance = "done",
-                        'Day Ended'
-                    ),
-                    Icon: CalendarBlank,
-                    Active: false
-                },
-                {
-                    Title: "Visits",
-                    Screen: Visits,
-                    Icon: Waypoint,
-                    Active: false
-                },
-                {
-                    Title: "Dashboard",
-                    Screen: Home,
-                    Icon: Waffle,
-                    Active: false
-                },
-                {
-                    Title: "Orders",
-                    Screen: 'All Orders',
-                    Icon: ShoppingCart,
-                    Active: true
-                }
-            )
-        Y: =1056
-        ZIndex: =3
-
     Button1_4 As button:
         Align: =Align.Left
         Color: =RGBA(70, 74, 103, 1)
@@ -282,11 +236,6 @@
         Width: =330
         X: =80
         ZIndex: =7
-
-    "'Side Bar_6' As 'Side Bar'":
-        Fill: =If(varOpen, RGBA(255, 255, 255, 1), Transparent)
-        Height: =If(varOpen, 1136, 70)
-        ZIndex: =8
 
     CategoryFilter_1 As gallery.galleryHorizontal:
         Height: =65
@@ -388,4 +337,42 @@
         X: =606
         Y: =12
         ZIndex: =14
+
+    "'Bottom Navigation_11' As 'Bottom Navigation'":
+        Y: =1056
+        ZIndex: =15
+
+    "'Side Bar_6' As 'Side Bar'":
+        NavItems: |-
+            =[
+                {
+                    title: "Profile",
+                    screen: Profile
+                },
+                {
+                    title: "Distributor KYC",
+                    screen: Profile
+                },
+                {
+                    title: "Ledger Report",
+                    screen: Profile
+                },
+                {
+                    title: "Primary Orders",
+                    screen: 'Secondary Orders'
+                },
+                {
+                    title: "Secondary Orders",
+                    screen: 'Secondary Orders'
+                },
+                {
+                    title: "Schemes",
+                    screen: Profile
+                },
+                {
+                    title: "Events",
+                    screen: Profile
+                }
+            ]
+        ZIndex: =16
 

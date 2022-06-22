@@ -2,32 +2,47 @@
     Fill: =RGBA(0, 0, 0, 0)
     Height: =80
     NavItems: |-
-        =Table( {
-                Title: "Start",
-                Screen:App.ActiveScreen,
-                Icon: CalendarBlank
+        =Table(
+            {
+                Title: If(
+                    varAttendance = "end",
+                    "End",
+                    varAttendance = "start",
+                    "Start",
+                    varAttendance = "done",
+                    "Ended"
+                ),
+                //Title: Start,
+                Screen: If(
+                    varAttendance = "start",
+                    StartDay,
+                    varAttendance = "end",
+                    'End day',
+                    varAttendance = "done",
+                    'Day Ended'
+                ),
+                Icon: CalendarBlank,
+                Active: false
             },
             {
-                Title: "Visits",
-                Screen: App.ActiveScreen,
-                Icon: Waypoint
+                Title: "Customers",
+                Screen: 'Customer (Dist)_1',
+                Icon: People,
+                Active: false
             },
             {
                 Title: "Dashboard",
-                Screen: App.ActiveScreen,
-                Icon: Waffle
+                Screen: Home,
+                Icon: Waffle,
+                Active: true
             },
             {
-                Title: "Customer",
-                Screen: App.ActiveScreen,
-                Icon: People
-            },
-            {
-                Title: "Menu",
-                Screen: App.ActiveScreen,
-                Icon: Hamburger
+                Title: "Orders",
+                Screen: 'All Orders',
+                Icon: ShoppingCart,
+                Active: false
             }
-            )
+        )
     Width: =640
     X: =0
     Y: =0

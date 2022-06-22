@@ -202,10 +202,6 @@
         Width: =640
         ZIndex: =2
 
-    "'Bottom Navigation_2' As 'Bottom Navigation'":
-        Y: =1056
-        ZIndex: =3
-
     Button1 As button:
         Align: =Align.Left
         Color: =RGBA(70, 74, 103, 1)
@@ -346,5 +342,67 @@
     "'Side Bar_3' As 'Side Bar'":
         Fill: =If(varOpen, RGBA(255, 255, 255, 1), Transparent)
         Height: =If(varOpen, 1136, 70)
+        NavItems: |-
+            =[
+                {
+                    title: "Profile",
+                    screen: Profile
+                },
+                {
+                    title: "Distributor KYC",
+                    screen: Profile
+                },
+                {
+                    title: "Ledger Report",
+                    screen: Profile
+                },
+                {
+                    title: "Primary Orders",
+                    screen: 'Secondary Orders'
+                },
+                {
+                    title: "Secondary Orders",
+                    screen: 'Secondary Orders'
+                },
+                {
+                    title: "Schemes",
+                    screen: Profile
+                },
+                {
+                    title: "Events",
+                    screen: Profile
+                }
+            ]
         ZIndex: =13
+
+    "'Bottom Navigation_2' As 'Bottom Navigation'":
+        NavItems: |-
+            =Table(
+                {
+                    Title: "Customers",
+                    Screen: 'Customer (Dist)_1',
+                    Icon: People,
+                    Active: false
+                },
+                {
+                    Title: "Dashboard",
+                    Screen: Home,
+                    Icon: Waffle,
+                    Active: false
+                },
+                {
+                    Title: "Orders",
+                    Screen: 'All Orders',
+                    Icon: ShoppingCart,
+                    Active: true
+                },
+                {
+                    Title: "Menu",
+                    Screen: 'All Orders',
+                    Icon: Hamburger,
+                    Active: false
+                }
+            )
+        Y: =1056
+        ZIndex: =14
 

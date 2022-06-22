@@ -35,6 +35,9 @@
             Font: =Font.Lato
             FontWeight: =FontWeight.Semibold
             Height: =51
+            OnSelect: |-
+                =Set(data2, ThisItem);
+                Navigate('customer info')
             Size: =17
             Text: =ThisItem.'Account Name (name)'
             Width: =364
@@ -313,41 +316,40 @@
         Width: =640
         ZIndex: =6
 
-    "'Bottom Navigation_25' As 'Bottom Navigation'":
-        NavItems: |-
-            =Table( {
-                    Title: If(varAttendance = "end" , "End", varAttendance = "start" , "Start", varAttendance = "done" , "Ended"),
-                    //Title: Start,
-                    Screen: If(varAttendance= "start" , StartDay, varAttendance= "end" , 'End day', varAttendance= "done" , 'Day Ended' ),
-                
-                    Icon: CalendarBlank,
-                    Active: false
-                },
-                {
-                    Title: "Visits",
-                    Screen: Visits,
-                    Icon: Waypoint,
-                    Active: true
-                },
-                {
-                    Title: "Dashboard",
-                    Screen: Home,
-                    Icon: Waffle,
-                    Active: false
-                },
-                {
-                    Title: "Orders",
-                    Screen: 'All Orders',
-                    Icon: ShoppingCart,
-                    Active: false
-                }
-                )
-        Y: =1056
-        ZIndex: =11
-
     "'Side Bar_17' As 'Side Bar'":
         Fill: =If(varOpen, RGBA(255, 255, 255, 1), Transparent)
         Height: =If(varOpen, 1136, 60)
+        NavItems: |-
+            =[
+                {
+                    title: "Profile",
+                    screen: Profile
+                },
+                {
+                    title: "Distributor KYC",
+                    screen: Profile
+                },
+                {
+                    title: "Ledger Report",
+                    screen: Profile
+                },
+                {
+                    title: "Primary Orders",
+                    screen: 'Secondary Orders'
+                },
+                {
+                    title: "Secondary Orders",
+                    screen: 'Secondary Orders'
+                },
+                {
+                    title: "Schemes",
+                    screen: Profile
+                },
+                {
+                    title: "Events",
+                    screen: Profile
+                }
+            ]
         ZIndex: =12
 
     Circle1_3 As circle:
@@ -466,4 +468,8 @@
             X: =268
             Y: =560
             ZIndex: =10
+
+    "'Bottom Navigation_25' As 'Bottom Navigation'":
+        Y: =1056
+        ZIndex: =14
 

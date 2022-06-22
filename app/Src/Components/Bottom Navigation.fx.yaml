@@ -4,30 +4,9 @@
     NavItems: |-
         =Table(
             {
-                Title: If(
-                    varAttendance = "end",
-                    "End",
-                    varAttendance = "start",
-                    "Start",
-                    varAttendance = "done",
-                    "Ended"
-                ),
-                //Title: Start,
-                Screen: If(
-                    varAttendance = "start",
-                    StartDay,
-                    varAttendance = "end",
-                    'End day',
-                    varAttendance = "done",
-                    'Day Ended'
-                ),
-                Icon: CalendarBlank,
-                Active: false
-            },
-            {
-                Title: "Visits",
-                Screen: Visits,
-                Icon: Waypoint,
+                Title: "Customers",
+                Screen: 'Customer (Dist)_1',
+                Icon: People,
                 Active: false
             },
             {
@@ -40,6 +19,12 @@
                 Title: "Orders",
                 Screen: 'All Orders',
                 Icon: ShoppingCart,
+                Active: false
+            },
+            {
+                Title: "Menu",
+                Screen: 'All Orders',
+                Icon: Hamburger,
                 Active: false
             }
         )

@@ -49,7 +49,7 @@
                     "Last Month",
                     Filter(
                         Filter(
-                            'SalesOrders',
+                            SalesOrders,
                             'Order Type' = [@'Order Type1'].'254460001' && 'Order Status' = filter_3.Selected.Value
                         ),
                         'Order Date' > Today() - 30
@@ -57,7 +57,7 @@
                     "Last 7 Days",
                     Filter(
                         Filter(
-                          'SalesOrders',
+                          SalesOrders,
                             'Order Type' = [@'Order Type1'].'254460001' && 'Order Status' = filter_3.Selected.Value
                         ),
                         'Order Date' > Today() - 7
@@ -65,7 +65,7 @@
                     "Today's Orders",
                     Filter(
                         Filter(
-                            'SalesOrders',
+                            SalesOrders,
                             'Order Type' = [@'Order Type1'].'254460001' && 'Order Status' = filter_3.Selected.Value
                         ),
                         IsToday('Order Date')
@@ -581,38 +581,6 @@
         Y: =20
         ZIndex: =19
 
-    "'Bottom Navigation_12' As 'Bottom Navigation'":
-        NavItems: |-
-            =Table( {
-                    Title: If(varAttendance = "end" , "End", varAttendance = "start" , "Start", varAttendance = "done" , "Ended"),
-                    //Title: Start,
-                    Screen: If(varAttendance= "start" , StartDay, varAttendance= "end" , 'End day', varAttendance= "done" , 'Day Ended' ),
-                
-                    Icon: CalendarBlank,
-                    Active: false
-                },
-                {
-                    Title: "Visits",
-                    Screen: Visits,
-                    Icon: Waypoint,
-                    Active: false
-                },
-                {
-                    Title: "Dashboard",
-                    Screen: Home,
-                    Icon: Waffle,
-                    Active: false
-                },
-                {
-                    Title: "Orders",
-                    Screen: 'Secondary Orders',
-                    Icon: ShoppingCart,
-                    Active: true
-                }
-                )
-        Y: =1056
-        ZIndex: =20
-
     filter_3 As gallery.galleryHorizontal:
         Height: =64
         Items: =['Order Status (SalesOrders)'.Open, 'Order Status (SalesOrders)'.Accepted, 'Order Status (SalesOrders)'.'Partially Shipped', 'Order Status (SalesOrders)'.Shipped]
@@ -739,6 +707,10 @@
         Width: =640
         ZIndex: =25
 
+    "'Bottom Navigation_12' As 'Bottom Navigation'":
+        Y: =1056
+        ZIndex: =34
+
     Group26 As group:
         Height: =5
         Width: =5
@@ -759,7 +731,7 @@
             ZIndex: =26
 
         Icon10_5 As icon.Cancel:
-            Color: =RGBA(53, 166, 57, 1)
+            Color: =RGBA(70, 74, 103, 1)
             Height: =51
             Icon: =Icon.Cancel
             OnSelect: =Set(VarRetailerDialog, false)
@@ -770,7 +742,7 @@
             ZIndex: =27
 
         Label7_4 As label:
-            Color: =RGBA(53, 166, 57, 1)
+            Color: =RGBA(70, 74, 103, 1)
             Font: =Font.Lato
             FontWeight: =FontWeight.Semibold
             Height: =62
@@ -786,11 +758,12 @@
         Button2_8 As button:
             DisabledBorderColor: =RGBA(0, 0, 0, 0.4)
             DisplayMode: =If(CountRows(Distributor.SelectedItems) && CountRows(Retailer.SelectedItems), DisplayMode.Edit, DisplayMode.Disabled)
-            Fill: =RGBA(53, 166, 57, 1)
+            Fill: =RGBA(70, 74, 103, 1)
             FocusedBorderColor: =ColorFade(Self.Fill, 75%)
             Font: =Font.Lato
             FontWeight: =FontWeight.Bold
             Height: =62
+            HoverFill: =ColorFade(RGBA(70,74,103, 1), -20%)
             OnSelect: |-
                 =Set(ConfirmButtonClicked, true);
                 Set(SelectedDistributorForSecOrder, Distributor.SelectedItems);
@@ -805,7 +778,8 @@
             ZIndex: =29
 
         Distributor As combobox:
-            ChevronFill: =RGBA(53, 166, 57, 1)
+            BorderColor: =RGBA(70, 74, 103, 1)
+            ChevronBackground: =RGBA(70, 74, 103, 1)
             DisplayFields: =["name"]
             FocusedBorderThickness: =3
             FontWeight: =FontWeight.Semibold
@@ -815,6 +789,7 @@
             Items: =Filter(Accounts, 'Account Type'= 'Account Type (Accounts)'.Distributer)
             SearchFields: =["name"]
             SearchItems: =[]
+            SelectionFill: =RGBA(70, 74, 103, 1)
             SelectMultiple: =false
             Size: =21
             Visible: =VarRetailerDialog
@@ -824,7 +799,7 @@
             ZIndex: =30
 
         Label7_5 As label:
-            Color: =RGBA(53, 166, 57, 1)
+            Color: =RGBA(70, 74, 103, 1)
             Font: =Font.Lato
             FontWeight: =FontWeight.Semibold
             Height: =62
@@ -838,7 +813,8 @@
             ZIndex: =31
 
         Retailer As combobox:
-            ChevronFill: =RGBA(53, 166, 57, 1)
+            BorderColor: =RGBA(70, 74, 103, 1)
+            ChevronBackground: =RGBA(70, 74, 103, 1)
             DisplayFields: =["name"]
             FocusedBorderThickness: =3
             FontWeight: =FontWeight.Semibold
@@ -848,6 +824,7 @@
             Items: =Filter(Accounts, 'Account Type'= 'Account Type (Accounts)'.Retailer)
             SearchFields: =["name"]
             SearchItems: =[]
+            SelectionFill: =RGBA(70, 74, 103, 1)
             SelectMultiple: =false
             Size: =21
             Visible: =VarRetailerDialog

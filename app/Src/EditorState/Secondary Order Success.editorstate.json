@@ -40,13 +40,13 @@
       },
       "MetaDataIDKey": "",
       "Name": "Bottom Navigation_20",
-      "ParentIndex": 7,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
           "Category": "Data",
           "PropertyName": "NavItems",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "System"
         },
         {
           "Category": "Design",
@@ -160,7 +160,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Button7_2",
-      "ParentIndex": 5,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -425,7 +425,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Button7_3",
-      "ParentIndex": 6,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -661,7 +661,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Circle1_4",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -797,7 +797,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Icon14_9",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -967,7 +967,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Image8_1",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1207,7 +1207,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label13_1",
-      "ParentIndex": 3,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1490,7 +1490,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label14_1",
-      "ParentIndex": 4,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

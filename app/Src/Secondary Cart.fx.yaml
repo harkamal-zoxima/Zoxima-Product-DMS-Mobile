@@ -214,11 +214,11 @@
             =ClearCollect(
                 CreateOrderRecord,
                 Patch(
-                    'Sales Order',
-                    Defaults('Sales Order'),
+                    'SalesOrders',
+                    Defaults('SalesOrders'),
                     {
                         cr431_orderdate: Today(),
-                        cr431_orderstatus: 'Order Status (Sales Order)'.'254460000',
+                        cr431_orderstatus: 'Order Status (SalesOrders)'.'254460000',
                         cr431_ordertype: 'Order Type1'.'254460001',
                         cr431_beforetaxamount: Sum(
                             SecondaryCart,
@@ -309,38 +309,6 @@
         X: =181
         Y: =701
         ZIndex: =22
-
-    "'Bottom Navigation_17' As 'Bottom Navigation'":
-        NavItems: |-
-            =Table( {
-                    Title: If(varAttendance = "end" , "End", varAttendance = "start" , "Start", varAttendance = "done" , "Ended"),
-                    //Title: Start,
-                    Screen: If(varAttendance= "start" , StartDay, varAttendance= "end" , 'End day', varAttendance= "done" , 'Day Ended' ),
-                
-                    Icon: CalendarBlank,
-                    Active: false
-                },
-                {
-                    Title: "Visits",
-                    Screen: Visits,
-                    Icon: Waypoint,
-                    Active: false
-                },
-                {
-                    Title: "Dashboard",
-                    Screen: Home,
-                    Icon: Waffle,
-                    Active: false
-                },
-                {
-                    Title: "Orders",
-                    Screen: 'All Orders',
-                    Icon: ShoppingCart,
-                    Active: true
-                }
-                )
-        Y: =1056
-        ZIndex: =23
 
     Icon14_6 As icon.BackArrow:
         Color: =RGBA(255, 255, 255, 1)
@@ -584,4 +552,8 @@
                 X: =473
                 Y: =146
                 ZIndex: =10
+
+    "'Bottom Navigation_17' As 'Bottom Navigation'":
+        Y: =1056
+        ZIndex: =26
 
