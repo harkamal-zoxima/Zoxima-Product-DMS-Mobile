@@ -319,37 +319,6 @@
     "'Side Bar_17' As 'Side Bar'":
         Fill: =If(varOpen, RGBA(255, 255, 255, 1), Transparent)
         Height: =If(varOpen, 1136, 60)
-        NavItems: |-
-            =[
-                {
-                    title: "Profile",
-                    screen: Profile
-                },
-                {
-                    title: "Distributor KYC",
-                    screen: Profile
-                },
-                {
-                    title: "Ledger Report",
-                    screen: Profile
-                },
-                {
-                    title: "Primary Orders",
-                    screen: 'Secondary Orders'
-                },
-                {
-                    title: "Secondary Orders",
-                    screen: 'Secondary Orders'
-                },
-                {
-                    title: "Schemes",
-                    screen: Profile
-                },
-                {
-                    title: "Events",
-                    screen: Profile
-                }
-            ]
         ZIndex: =12
 
     Circle1_3 As circle:

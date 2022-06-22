@@ -343,36 +343,5 @@
         ZIndex: =15
 
     "'Side Bar_6' As 'Side Bar'":
-        NavItems: |-
-            =[
-                {
-                    title: "Profile",
-                    screen: Profile
-                },
-                {
-                    title: "Distributor KYC",
-                    screen: Profile
-                },
-                {
-                    title: "Ledger Report",
-                    screen: Profile
-                },
-                {
-                    title: "Primary Orders",
-                    screen: 'Secondary Orders'
-                },
-                {
-                    title: "Secondary Orders",
-                    screen: 'Secondary Orders'
-                },
-                {
-                    title: "Schemes",
-                    screen: Profile
-                },
-                {
-                    title: "Events",
-                    screen: Profile
-                }
-            ]
         ZIndex: =16
 
