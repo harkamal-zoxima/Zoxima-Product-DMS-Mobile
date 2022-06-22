@@ -16,7 +16,7 @@
                 Filter(
                     Filter(
                         SalesOrders,
-                        'Created By'.'Primary Email' = User().Email && 'Order Type'= 'Order Type1'.'254460000' && 'Order Status'= filter.Selected.Value
+                        'Created By'.'Primary Email' = User().Email && 'Order Type'= 'Order Type1'.'Primary Order' && 'Order Status'= filter.Selected.Value
                     ),
                     'Order Date' > Today() - 30
                 ),
@@ -24,7 +24,7 @@
                 Filter(
                     Filter(
                         SalesOrders,
-                        'Created By'.'Primary Email' = User().Email && 'Order Type'= 'Order Type1'.'254460000' && 'Order Status'= filter.Selected.Value
+                        'Created By'.'Primary Email' = User().Email && 'Order Type'= 'Order Type1'.'Primary Order' && 'Order Status'= filter.Selected.Value
                     ),
                    'Order Date' > Today() - 7
                 ),
@@ -32,7 +32,7 @@
                 Filter(
                     Filter(
                         SalesOrders,
-                       'Created By'.'Primary Email' = User().Email && 'Order Type'= 'Order Type1'.'254460000' && 'Order Status'= filter.Selected.Value
+                       'Created By'.'Primary Email' = User().Email && 'Order Type'= 'Order Type1'.'Primary Order' && 'Order Status'= filter.Selected.Value
                     ),
                     IsToday('Order Date' )
                 )

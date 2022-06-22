@@ -58,7 +58,7 @@
 
     Gallery5_4 As gallery.galleryVertical:
         Height: =859
-        Items: =Filter('Order Line', 'Order No'.Dealer= order.Dealer)
+        Items: =Filter('Order Line', 'Order No'.cr431_dealer= order.Dealer)
         Layout: =Layout.Vertical
         TemplateSize: =204
         Visible: ='Dashboard Toptab_1'.Selected.Title = "Order Lines"

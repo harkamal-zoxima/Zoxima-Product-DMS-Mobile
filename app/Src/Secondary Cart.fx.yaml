@@ -214,8 +214,8 @@
             =ClearCollect(
                 CreateOrderRecord,
                 Patch(
-                    'SalesOrders',
-                    Defaults('SalesOrders'),
+                    SalesOrders,
+                    Defaults(SalesOrders),
                     {
                         cr431_orderdate: Today(),
                         cr431_orderstatus: 'Order Status (SalesOrders)'.'254460000',
