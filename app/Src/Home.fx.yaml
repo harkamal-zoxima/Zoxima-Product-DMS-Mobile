@@ -8,7 +8,7 @@
         Set(
             PrimarySalesDataForDashboardToday,
             Filter(
-                'Sales Order',
+                'SalesOrders',
                 'Created By'.'Primary Email' = User().Email &&
                 'Order Type' = 'Order Type1'.'Primary Order' && 'Order Date'=Today()
             ).'Bill Amoount'
@@ -16,7 +16,7 @@
         Set(
             PrimarySalesDataForDashboardWeekly,
             Filter(
-                'Sales Order',
+                'SalesOrders',
                 'Created By'.'Primary Email' = User().Email &&
                 'Order Type' = [@'Order Type1'].'Primary Order' && 'Order Date' > Today() - 7  
             ).'Bill Amoount'
@@ -24,7 +24,7 @@
         Set(
             PrimarySalesDataForDashboardMonthly,
             Filter(
-                'Sales Order',
+                'SalesOrders',
                  'Created By'.'Primary Email' = User().Email &&
                 'Order Type' = [@'Order Type1'].'Primary Order' && If(
                     And(
@@ -40,7 +40,7 @@
         Set(
             SecondarySalesDataForDashboardToday,
             Filter(
-                'Sales Order',
+                'SalesOrders',
                  'Created By'.'Primary Email' = User().Email &&
                 'Order Type' = [@'Order Type1'].'Secondary Order' && IsToday('Order Date')
             ).'Bill Amoount'
@@ -48,7 +48,7 @@
         Set(
             SecondarySalesDataForDashboardWeekly,
             Filter(
-                'Sales Order',
+                'SalesOrders',
                  'Created By'.'Primary Email' = User().Email &&
                 'Order Type' = [@'Order Type1'].'Secondary Order' && 'Order Date' > Today() - 7
             ).'Bill Amoount'
@@ -56,7 +56,7 @@
         Set(
             SecondarySalesDataForDashboardMonthly,
             Filter(
-                'Sales Order',
+                'SalesOrders',
                  'Created By'.'Primary Email' = User().Email &&
                 'Order Type' = [@'Order Type1'].'Secondary Order' && If(
                     And(

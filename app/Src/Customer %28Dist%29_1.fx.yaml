@@ -360,116 +360,34 @@
         Y: =7
         ZIndex: =13
 
-    Group14_1 As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =13
-
-        Rectangle7_7 As rectangle:
-            BorderColor: =RGBA(219, 219, 219, 1)
-            Fill: =RGBA(237, 237, 237, 1)
-            Height: =395
-            HoverFill: =RGBA(237, 237, 237, 1)
-            OnSelect: |-
-                =If(VarDialogOpen, Patch(
-                    Visits_1,
-                    Defaults(Visits_1),
-                    {cr431_visittype:'Visit Type (Visits_1)'.'254460001',
-                    cr431_customer: LookUp(Accounts, )}
-                );
-                )
-            PressedFill: =RGBA(237, 237, 237, 1)
-            Visible: =VarDialogOpen
-            Width: =550
-            X: =45
-            Y: =320
-            ZIndex: =7
-
-        Icon10_7 As icon.Cancel:
-            Height: =37
-            Icon: =Icon.Cancel
-            OnSelect: =Set(VarDialogOpen, false)
-            Visible: =VarDialogOpen
-            Width: =37
-            X: =543
-            Y: =333
-            ZIndex: =8
-
-        Label7_7 As label:
-            Align: =Align.Center
-            Font: =Font.Lato
-            FontWeight: =FontWeight.Semibold
-            Height: =119
-            OnSelect: =
-            Size: =21
-            Text: ="Do you want to add visit for this customer?"
-            Visible: =VarDialogOpen
-            Width: =488
-            X: =75
-            Y: =426
-            ZIndex: =9
-
-        Button2_11 As button:
-            FocusedBorderColor: =ColorFade(Self.Fill, 75%)
-            Font: =Font.Lato
-            FontWeight: =FontWeight.Normal
-            Height: =45
-            OnSelect: |
-                =If(
-                    Connection.Connected,
-                    Patch(
-                        Visits_1,
-                        Defaults(Visits_1),
-                        {
-                            'Visit Date': Today(),
-                            Customer: LookUp(
-                                Accounts,
-                                Account = First(SingleVisit.Customer).Customer
-                            ),
-                            'Visit Type': 'Visit Type (Visits_1)'.Unplanned
-                        }
-                    );
-                    Set(
-                        VarVisit,
-                        true
-                    ),
-                    ClearCollect(
-                        NewVisit,
-                        {
-                            'Visit Date': Today(),
-                            Customer: First(SingleVisit).Account,
-                            'Visit Type': 'Visit Type (Visits_1)'.Unplanned
-                        }
-                    );
-                    Patch(
-                        OfflineVisits,
-                        Defaults(OfflineVisits),
-                        {
-                            'Visit Date': Today(),
-                            Customer: First(SingleVisit).Account,
-                            'Visit Type': 'Visit Type (Visits_1)'.Unplanned
-                        }
-                    );
-                    Set(
-                        VarVisit,
-                        false
-                    )
-                );
-                Navigate(
-                    Visits,
-                    ScreenTransition.Fade
-                );
-            Size: =14
-            Text: ="CONFIRM"
-            Visible: =VarDialogOpen
-            Width: =137
-            X: =268
-            Y: =560
-            ZIndex: =10
-
     "'Bottom Navigation_25' As 'Bottom Navigation'":
+        NavItems: |-
+            =Table(
+                {
+                    Title: "Customers",
+                    Screen: 'Customer (Dist)_1',
+                    Icon: People,
+                    Active: true
+                },
+                {
+                    Title: "Dashboard",
+                    Screen: Home,
+                    Icon: Waffle,
+                    Active: false
+                },
+                {
+                    Title: "Orders",
+                    Screen: 'All Orders',
+                    Icon: ShoppingCart,
+                    Active: false
+                },
+                {
+                    Title: "Menu",
+                    Screen: 'All Orders',
+                    Icon: Hamburger,
+                    Active: false
+                }
+            )
         Y: =1056
         ZIndex: =14
 
