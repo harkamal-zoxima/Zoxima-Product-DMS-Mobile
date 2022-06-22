@@ -121,7 +121,7 @@
       },
       "MetaDataIDKey": "",
       "Name": "Bottom Navigation_29",
-      "ParentIndex": 0,
+      "ParentIndex": 21,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1042,7 +1042,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Completed html_8",
-      "ParentIndex": 6,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1200,7 +1200,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Completed html_9",
-      "ParentIndex": 7,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1346,7 +1346,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Gallery7_2",
-      "ParentIndex": 21,
+      "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3011,7 +3011,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "HtmlText1_25",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3169,7 +3169,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Icon5_1",
-      "ParentIndex": 10,
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3372,7 +3372,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label11_7",
-      "ParentIndex": 5,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9087,7 +9087,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label22_2",
-      "ParentIndex": 8,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9399,7 +9399,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label22_3",
-      "ParentIndex": 9,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9657,7 +9657,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Rectangle5_6",
-      "ParentIndex": 4,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9791,7 +9791,7 @@
       },
       "MetaDataIDKey": "",
       "Name": "Side Bar_19",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9887,7 +9887,7 @@
       },
       "MetaDataIDKey": "",
       "Name": "Side Bar_20",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

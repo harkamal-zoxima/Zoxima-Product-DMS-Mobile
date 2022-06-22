@@ -40,7 +40,7 @@
       },
       "MetaDataIDKey": "",
       "Name": "Bottom Navigation_1",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -12833,7 +12833,7 @@
       },
       "MetaDataIDKey": "",
       "Name": "Side Bar_2",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
